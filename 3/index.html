@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baum & Garten Dresden – Baumdienst | GaLaBau | Baumpflege & Gartenbau</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <meta name="description"
+        content="Baum & Garten Dresden GmbH – Ihr Partner für professionelle Baumdienste und Garten- & Landschaftsbau im Großraum Dresden. Baumpflege, Baumfällung, Planung, Wege- & Mauerbau aus einer Hand.">
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 lg:px-8 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="tree-pine" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Baum&nbsp;&amp;&nbsp;Garten Dresden</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-orange-500">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-orange-500">Über&nbsp;uns</a>
+          <a href="#services" class="text-gray-700 hover:text-orange-500">Leistungen</a>
+          <a href="#projects" class="text-gray-700 hover:text-orange-500">Projekte</a>
+          <a href="#news" class="text-gray-700 hover:text-orange-500">Aktuelles</a>
+          <a href="#contact" class="text-gray-700 hover:text-orange-500">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">Angebot anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section
+    class="relative h-[600px] bg-cover bg-center"
+    style="background-image:url('https://via.placeholder.com/1200x600?text=Baum+%26+Garten+Dresden');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-6 lg:px-8 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center">
+        <h1 class="text-5xl font-bold mb-6 text-gray-100 leading-tight">
+          Baumdienst &amp; GaLaBau,<br/>die Wurzeln schlagen.
+        </h1>
+        <p class="text-xl text-gray-100 mb-8 opacity-90">
+          Von der Baumpflege bis zum Wegebau – seit 2010 realisieren wir grüne Projekte im Großraum Dresden. :contentReference[oaicite:1]{index=1}
+        </p>
+        <a href="#services" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Leistungen entdecken
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Baumpflege -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="leaf" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Baumpflege</h3>
+          <p class="text-gray-600">Kronenschnitt, Verkehrssicherungs- & Erhaltungspflege</p>
+        </div>
+        <!-- Baumfällung -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="axe" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Baumfällung</h3>
+          <p class="text-gray-600">SKT-Abtragung & Hub­bühnen­einsatz auf engem Raum</p>
+        </div>
+        <!-- Gartenplanung -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="sprout" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Gartenplanung</h3>
+          <p class="text-gray-600">Idee → Konzept → Begrünung für private & gewerbliche Anlagen</p>
+        </div>
+        <!-- Wege- & Mauerbau -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="wall" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Wege- & Mauerbau</h3>
+          <p class="text-gray-600">Pflasterflächen, Naturstein- & Trockenmauern</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Baumdienst+im+Einsatz" alt="Team Baum & Garten Dresden" class="rounded-lg w-full h-auto"/>
+        </div>
+        <div>
+          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">seit 2010</span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Junges Team,<br/>stark verwurzelt in Dresden
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Als fach­kundiger Meister­betrieb decken wir die komplette Palette vom Baumdienst bis zum Garten- und Landschaftsbau ab – zuverlässig, termintreu und kosten­bewusst. :contentReference[oaicite:2]{index=2}
+          </p>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Mehr über uns
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Alles aus einer Hand –<br/>für Ihr grünes Projekt
+      </h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="award" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Meisterbetrieb</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="users" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">12 Mitarbeiter</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="calendar-check" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Termintreue</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="leaf" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Nachhaltig</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="map-pin" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Dresden & Umland</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="smile" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Zufriedene Kunden</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4 md:mb-0 leading-snug">
+          Schaffen wir gemeinsam<br/>grüne Lebensräume.
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Kostenloses Angebot
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preisbeispiele -->
+  <section class="py-16">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Preisbeispiele</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Baumpflege -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 120 €</div>
+          <p class="text-gray-600 mb-6">Baumpflege pro Stunde</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Zertifizierte SKT-Arbeiter</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Entsorgung inkl.</li>
+            <li class="flex items-center justify-center"><i data-lucide="clock" class="w-5 h-5 text-green-500 mr-2"></i>Schnell verfügbar</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Anfragen</a>
+        </div>
+        <!-- Baumfällung -->
+        <div class="bg-white text-center p-8 border-2 border-orange-500 relative rounded-lg">
+          <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-gray-900 text-sm px-3 py-1 rounded-full">Beliebt</span>
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 350 €</div>
+          <p class="text-gray-600 mb-6">Baumfällung bis 20 m</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>SKT oder Bühne</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Genehmigungs­hilfe</li>
+            <li class="flex items-center justify-center"><i data-lucide="clock" class="w-5 h-5 text-green-500 mr-2"></i>Dauer 1 Tag</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Anfragen</a>
+        </div>
+        <!-- Gartenpflege -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 499 €</div>
+          <p class="text-gray-600 mb-6">Gartenpflege-Paket</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Rasen, Hecken, Beete</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Saison­abschluss­pflege</li>
+            <li class="flex items-center justify-center"><i data-lucide="package" class="w-5 h-5 text-green-500 mr-2"></i>Entsorgung inkl.</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Anfragen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Garantie -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Zufriedenheits­garantie<br/>auf alle Leistungen
+      </h2>
+    </div>
+  </section>
+
+  <!-- Professional Service -->
+  <section
+    class="py-16 bg-cover bg-center relative"
+    style="background-image:url('https://via.placeholder.com/1200x400?text=Gartenbau+Dresden');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl text-gray-900">
+        <h2 class="text-3xl font-bold mb-6 leading-snug">
+          Für Bäume, Wege & Gärten,<br/>die lange Freude schenken.
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Jetzt kontaktieren</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- So läuft’s ab -->
+  <section class="py-16">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft’s ab</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-4">Beratung</h3>
+          <p class="text-gray-600">Vor-Ort-Besichtigung & Ziel­definition</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-4">Planung</h3>
+          <p class="text-gray-600">Detailliertes Angebot & Termin­plan</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-4">Umsetzung</h3>
+          <p class="text-gray-600">Fachgerechte Ausführung & Abnahme</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Interessiert? Wir freuen uns auf Ihr Projekt – schreiben Sie uns jetzt!
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Warum wir -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Baum&nbsp;&amp;&nbsp;Garten Dresden?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Alles aus einer Hand</h4>
+                <p class="text-gray-700">Baumdienst & GaLaBau kombiniert – ein Ansprechpartner.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Meisterqualität</h4>
+                <p class="text-gray-700">Fachgerechte Ausführung nach neuesten Standards.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Regionale Verbundenheit</h4>
+                <p class="text-gray-700">Dresden & Umgebung seit 2010. :contentReference[oaicite:3]{index=3}</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Transparente Preise</h4>
+                <p class="text-gray-700">Faire Kalkulation ohne versteckte Kosten.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg text-gray-800">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Direkt anrufen</h4>
+            <p class="text-gray-900 mb-3">Baum & Garten Dresden GmbH</p>
+            <div class="flex items-center text-orange-600 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              +49 351 4821344
+            </div>
+          </div>
+        </div>
+
+        <!-- Formular -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Unverbindliche Anfrage</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+                <input type="text" placeholder="Nachname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              <input type="tel" placeholder="Telefon"
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              <textarea placeholder="Projekt / Leistungswunsch…" rows="4" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
+              <button type="submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+                Nachricht senden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="tree-pine" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold">Baum&nbsp;&amp;&nbsp;Garten Dresden</span>
+          </div>
+          <p class="text-gray-400 mb-4">Baumdienst & GaLaBau – fachgerecht, termintreu, regional.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="linkedin" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Baumpflege</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Baumfällung</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Gartenplanung</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Wege&nbsp;- & Mauerbau</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-gray-900">Projekte</a></li>
+            <li><a href="#news" class="hover:text-gray-900">Aktuelles</a></li>
+            <li><a href="#contact" class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>+49 351 4821344</span></div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>info@baumundgartendresden.de</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Fabrikstr. 42–44, 01159 Dresden</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Baum & Garten Dresden GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
