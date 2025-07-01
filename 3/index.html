@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peter Albert – Maler & Architekt Dresden | Konkrete & Konstruktive Kunst</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <meta name="description"
+        content="Originale Ölgemälde, Aquarelle & Zeichnungen von Peter Albert – einem der wichtigsten Vertreter des Dresdner Konstruktivismus. Jetzt Werke entdecken oder Auftragskunst anfragen.">
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-6 lg:px-8 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="palette" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Peter Albert Kunst</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-orange-500">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-orange-500">Biografie</a>
+          <a href="#services" class="text-gray-700 hover:text-orange-500">Werke</a>
+          <a href="#projects" class="text-gray-700 hover:text-orange-500">Ausstellungen</a>
+          <a href="#news" class="text-gray-700 hover:text-orange-500">Presse</a>
+          <a href="#contact" class="text-gray-700 hover:text-orange-500">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">Werk anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="relative h-[600px] bg-cover bg-center"
+    style="background-image: url('https://via.placeholder.com/1200x600?text=Peter+Albert+%E2%80%93+Konkrete+Kunst');"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-6 lg:px-8 h-full flex items-center">
+      <div class="max-w-2xl text-gray-900 text-center mx-auto">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Konkrete&nbsp;Farbräume,<br/>
+          die Räume&nbsp;beleben
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Originale Ölgemälde, Aquarelle und Zeichnungen von Peter Albert – seit 1962 wegweisend für den Dresdner Konstruktivismus.
+        </p>
+        <a href="#services" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Galerie öffnen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Cards -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Ölgemälde -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="brush" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Ölgemälde</h3>
+          <p class="text-gray-600">Konstruktive Kompositionen in leuchtenden Farbklängen</p>
+        </div>
+        <!-- Aquarelle -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="droplet" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Aquarelle</h3>
+          <p class="text-gray-600">Lichtdurchflutete Studien aus Natur & Architektur</p>
+        </div>
+        <!-- Zeichnungen -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="pen-line" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Zeichnungen</h3>
+          <p class="text-gray-600">Über 35 Skizzenbücher voller präziser Linien</p>
+        </div>
+        <!-- Kunstkataloge -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="book-open" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Kunstkataloge</h3>
+          <p class="text-gray-600">Limitierte Werkbände mit 100 farbigen Abbildungen</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Atelier+Peter+Albert" alt="Atelier Peter Albert" class="rounded-lg w-full h-auto"/>
+        </div>
+        <div>
+          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">60+ Jahre Werk</span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Peter Albert – Maler,<br/>Architekt & Pionier des Konstruktivismus
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Seit 1962 untersucht Peter Albert in Hunderten von Gemälden den Dialog von Farbe und Struktur und prägte damit die Dresdner Schule des Konstruktivismus. :contentReference[oaicite:1]{index=1}
+          </p>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Biografie lesen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights List -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Kunst, die weltweit<br/>Beachtung findet
+      </h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="museum" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Galerie Neue Meister</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="library" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Kupferstich-<br/>kabinett</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="scroll" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Städt. Galerie Dresden</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="graduation-cap" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">TU-Sammlung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="globe" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Europarat, Straßburg</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="award" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Privat­sammlungen</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4 md:mb-0 leading-snug">
+          Entdecken Sie originale<br/>Kunst für Ihr Zuhause oder Projekt.
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Verfügbarkeit prüfen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Preisbeispiele</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Aquarell -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 490 €</div>
+          <p class="text-gray-600 mb-6">Aquarell-Edition</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Limitierte Auflage / signiert</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Echtheitszertifikat</li>
+            <li class="flex items-center justify-center"><i data-lucide="clock" class="w-5 h-5 text-green-500 mr-2"></i>Lieferzeit 7 Tage</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Anfragen</a>
+        </div>
+        <!-- Ölgemälde -->
+        <div class="bg-white text-center p-8 border-2 border-orange-500 relative rounded-lg">
+          <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-gray-900 text-sm px-3 py-1 rounded-full">Beliebt</span>
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 3.200 €</div>
+          <p class="text-gray-600 mb-6">Ölgemälde Mittel</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Original 80×100 cm</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Signiert & datiert</li>
+            <li class="flex items-center justify-center"><i data-lucide="clock" class="w-5 h-5 text-green-500 mr-2"></i>Lieferzeit 3 Wochen</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Anfragen</a>
+        </div>
+        <!-- Auftragswerk -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 9.800 €</div>
+          <p class="text-gray-600 mb-6">Auftragswerk Großformat</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Individuelles Konzept</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Persönliche Beratung</li>
+            <li class="flex items-center justify-center"><i data-lucide="clock" class="w-5 h-5 text-green-500 mr-2"></i>Lieferzeit nach Absprache</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Anfragen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Echtheits- und Qualitäts­garantie<br/>für jedes Werk.
+      </h2>
+    </div>
+  </section>
+
+  <!-- Professional Service -->
+  <section
+    class="py-16 bg-cover bg-center relative"
+    style="background-image: url('https://via.placeholder.com/1200x400?text=Kunst+in+Situ');"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl text-gray-900">
+        <h2 class="text-3xl font-bold mb-6 leading-snug">
+          Wählen Sie Werke,<br/>die dauerhaft beeindrucken.
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Jetzt Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="py-16">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft’s ab</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-4">Kontakt</h3>
+          <p class="text-gray-600">Teilen Sie Ihre Wunsch­größe & Farbwelt.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-4">Angebot</h3>
+          <p class="text-gray-600">Sie erhalten ein transparentes Angebot mit Lieferzeit.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-4">Lieferung</h3>
+          <p class="text-gray-600">Das Werk kommt sicher verpackt direkt zu Ihnen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Interessiert an einem Original oder einer Auftragsarbeit? Fragen Sie unverbindlich an.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Peter Albert?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Konstruktive Meisterschaft</h4>
+                <p class="text-gray-700">Über 500 Werke in über 60 Jahren Schaffenszeit.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Internationale Präsenz</h4>
+                <p class="text-gray-700">Ausstellungen von Zürich bis Straßburg. :contentReference[oaicite:2]{index=2}</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Persönliche Beratung</h4>
+                <p class="text-gray-700">Direkter Austausch mit dem Künstler – ohne Galerieaufschlag.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Echtheitszertifikat</h4>
+                <p class="text-gray-700">Jedes Werk kommt mit signiertem Zertifikat & Provenienz.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg text-gray-800">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Direkt anrufen</h4>
+            <p class="text-gray-900 mb-3">Atelier Peter Albert</p>
+            <div class="flex items-center text-orange-600 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              +49 351 4012232
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Unverbindliche Anfrage</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+                <input type="text" placeholder="Nachname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              <input type="tel" placeholder="Telefon"
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              <textarea placeholder="Nachricht / Wunschformat…" rows="4" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
+              <button type="submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+                Nachricht senden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="palette" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold">Peter Albert Kunst</span>
+          </div>
+          <p class="text-gray-400 mb-4">Konkrete & konstruktive Malerei – made in Dresden.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="linkedin" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Werke</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Ölgemälde</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Aquarelle</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Zeichnungen</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Kataloge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Website</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-gray-900">Biografie</a></li>
+            <li><a href="#projects" class="hover:text-gray-900">Ausstellungen</a></li>
+            <li><a href="#news" class="hover:text-gray-900">Presse</a></li>
+            <li><a href="#contact" class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>+49 351 4012232</span></div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>pa@peter-albert.com</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Steinadlerstr. 11, 01187 Dresden</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Peter Albert. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
