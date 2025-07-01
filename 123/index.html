@@ -1,413 +1,748 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Präzisionstechnik Dresden – Modell- & Kleinserienfertigung</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body class="min-h-screen bg-white antialiased text-gray-900">
+import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Shield,
+  Zap,
+  Home,
+  Building,
+  Wrench,
+  CheckCircle,
+  Star,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react"
 
-  <!-- Header -->
-  <header class="bg-white shadow-sm">
-    <div class="container mx-auto px-6 lg:px-8 py-4">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-            <i data-lucide="cube" class="w-4 h-4 text-white"></i>
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white shadow-sm">
+        <div className="container mx-auto px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                <Zap className="w-4 h-4 text-white" />
+              </div>
+              <span className="text-xl font-bold text-gray-900">electiz</span>
+            </div>
+            <nav className="hidden md:flex items-center space-x-8">
+              <Link href="/" className="text-gray-700 hover:text-orange-500">
+                Home
+              </Link>
+              <Link href="/about" className="text-gray-700 hover:text-orange-500">
+                About
+              </Link>
+              <Link href="/services" className="text-gray-700 hover:text-orange-500">
+                Services
+              </Link>
+              <Link href="/projects" className="text-gray-700 hover:text-orange-500">
+                Projects
+              </Link>
+              <Link href="/blog" className="text-gray-700 hover:text-orange-500">
+                Blog
+              </Link>
+              <Link href="/contact" className="text-gray-700 hover:text-orange-500">
+                Contact
+              </Link>
+            </nav>
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white">Get Quote</Button>
           </div>
-          <span class="text-xl font-bold text-gray-900">Präzisionstechnik Dresden</span>
         </div>
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="#" class="text-gray-700 hover:text-orange-500">Home</a>
-          <a href="#about" class="text-gray-700 hover:text-orange-500">Über&nbsp;uns</a>
-          <a href="#services" class="text-gray-700 hover:text-orange-500">Leistungen</a>
-          <a href="#projects" class="text-gray-700 hover:text-orange-500">Projekte</a>
-          <a href="#news" class="text-gray-700 hover:text-orange-500">News</a>
-          <a href="#contact" class="text-gray-700 hover:text-orange-500">Kontakt</a>
-        </nav>
-        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg">Angebot anfragen</a>
-      </div>
-    </div>
-  </header>
+      </header>
 
-  <!-- Hero Section -->
-  <section
-    class="relative h-[600px] bg-cover bg-center"
-    style="background-image:url('https://via.placeholder.com/1200x600?text=Pr%C3%A4zise+Modellfertigung');">
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div class="relative container mx-auto px-6 lg:px-8 h-full flex items-center">
-      <div class="max-w-2xl text-white text-center mx-auto">
-        <h1 class="text-5xl font-bold mb-6 leading-tight">
-          Unsere Experten<br/>für präzise Modelle<br/>&amp; Kleinserien liefern<br/>Qualität
-        </h1>
-        <p class="text-xl mb-8 opacity-90">
-          Prototypen, Kleinserien und feinmechanische Bauteile – aus einer Hand, auf den Punkt genau.
-        </p>
-        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg">
-          Projekt starten
-        </a>
-      </div>
-    </div>
-  </section>
+      {/* Hero Section */}
+      <section
+        className="relative h-[600px] bg-cover bg-center"
+        style={{ backgroundImage: "url(/placeholder.svg?height=600&width=1200&text=Professional+Electrician+at+Work)" }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative container mx-auto px-6 lg:px-8 h-full flex items-center">
+          <div className="max-w-2xl text-white text-center mx-auto">
+            <h1 className="text-5xl font-bold mb-6">
+              Our expert
+              <br />
+              electricians are
+              <br />
+              trustworthy and
+              <br />
+              reliable
+            </h1>
+            <p className="text-xl mb-8 opacity-90">
+              We provide professional electrical services with guaranteed quality and safety standards for your home and
+              business.
+            </p>
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3">
+              Get Started
+            </Button>
+          </div>
+        </div>
+      </section>
 
-  <!-- Services Cards -->
-  <section id="services" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="grid md:grid-cols-4 gap-6">
-        <!-- Prototypenbau -->
-        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="package" class="w-8 h-8 text-orange-500"></i>
+      {/* Services Cards */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-6">
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Home className="w-8 h-8 text-orange-500" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Residential</h3>
+                <p className="text-gray-600">Complete electrical solutions for your home</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building className="w-8 h-8 text-orange-500" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Commercial</h3>
+                <p className="text-gray-600">Professional electrical services for businesses</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Wrench className="w-8 h-8 text-orange-500" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Maintenance</h3>
+                <p className="text-gray-600">Regular maintenance and repair services</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6 hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-orange-500" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Emergency</h3>
+                <p className="text-gray-600">24/7 emergency electrical services</p>
+              </CardContent>
+            </Card>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Prototypenbau</h3>
-          <p class="text-gray-600">Funktionsmuster schnell &amp; präzise</p>
         </div>
-        <!-- Kleinserien -->
-        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="layers" class="w-8 h-8 text-orange-500"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Kleinserien</h3>
-          <p class="text-gray-600">Wirtschaftliche Fertigung kleiner Losgrößen</p>
-        </div>
-        <!-- Feinmechanik -->
-        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="settings" class="w-8 h-8 text-orange-500"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Feinmechanik</h3>
-          <p class="text-gray-600">Bauteile für Industrie &amp; Forschung</p>
-        </div>
-        <!-- Oberflächenfinish -->
-        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="brush" class="w-8 h-8 text-orange-500"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Oberflächenfinish</h3>
-          <p class="text-gray-600">Lackierung &amp; Veredelung</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <img src="https://via.placeholder.com/500x400?text=Pr%C3%A4zisionsmaschinen"
-               alt="Werkstatt" class="rounded-lg w-full h-auto"/>
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <Image
+                src="/placeholder.svg?height=400&width=500&text=Electricians+Installing+Wiring"
+                alt="Electricians at work"
+                width={500}
+                height={400}
+                className="rounded-lg"
+              />
+            </div>
+            <div>
+              <Badge className="bg-orange-100 text-orange-600 mb-4">15+</Badge>
+              <h2 className="text-4xl font-bold mb-6">
+                We get the lights on fast and for
+                <br />
+                great price.
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Our team of certified electricians brings years of experience and expertise to every project. We pride
+                ourselves on delivering quality work at competitive prices with a focus on safety and customer
+                satisfaction.
+              </p>
+              <Button className="bg-orange-500 hover:bg-orange-600 text-white">Learn More</Button>
+            </div>
+          </div>
         </div>
-        <div>
-          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">20+</span>
-          <h2 class="text-4xl font-bold mb-6 leading-snug">
-            Wir bringen Ihre Ideen präzise<br/>in Form – schnell &amp; fair.
+      </section>
+
+      {/* 24/7 Services */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Serving you 24 hours a day, 365
+            <br />
+            days a year.
           </h2>
-          <p class="text-gray-600 mb-6">
-            Modernste Technik, langjährige Erfahrung und Leidenschaft fürs Detail – das ist unser Rezept für Modelle
-            und Kleinserien, die optisch wie funktional überzeugen.
-          </p>
-          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg">
-            Mehr erfahren
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Leistungen Grid -->
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold mb-4 leading-snug">
-        Alles aus einer Hand –<br/>rund um die Uhr.
-      </h2>
-      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
-        <div class="text-center">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="pencil-ruler" class="w-8 h-8 text-orange-500"></i>
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Home className="w-8 h-8 text-orange-500" />
+              </div>
+              <h3 className="font-semibold">Electrical Installation</h3>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Zap className="w-8 h-8 text-orange-500" />
+              </div>
+              <h3 className="font-semibold">Circuit Inspection</h3>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-orange-500" />
+              </div>
+              <h3 className="font-semibold">Lighting Solutions</h3>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Wrench className="w-8 h-8 text-orange-500" />
+              </div>
+              <h3 className="font-semibold">Panel Upgrades</h3>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-orange-500" />
+              </div>
+              <h3 className="font-semibold">Electrical safety inspection</h3>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-orange-500" />
+              </div>
+              <h3 className="font-semibold">Additional requests</h3>
+            </div>
           </div>
-          <h3 class="font-semibold">CAD-Konstruktion</h3>
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="printer" class="w-8 h-8 text-orange-500"></i>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-yellow-400">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">
+                Let us fix it so that you can focus on what
+                <br />
+                you need to do.
+              </h2>
+            </div>
+            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
+              Get Quote
+            </Button>
           </div>
-          <h3 class="font-semibold">3D-Druck</h3>
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="cpu" class="w-8 h-8 text-orange-500"></i>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">
+              Serving you 24 hours a day,
+              <br />
+              365 days a year
+            </h2>
           </div>
-          <h3 class="font-semibold">CNC-Fräsen</h3>
-        </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="scan-line" class="w-8 h-8 text-orange-500"></i>
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <Card className="text-center p-8 border-2">
+              <CardContent className="pt-6">
+                <div className="text-4xl font-bold text-orange-500 mb-2">$39</div>
+                <p className="text-gray-600 mb-6">per hour</p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Basic electrical work
+                  </li>
+                  <li className="flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Standard response time
+                  </li>
+                  <li className="flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Quality guarantee
+                  </li>
+                </ul>
+                <Button variant="outline" className="w-full bg-transparent">
+                  Choose Plan
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-8 border-2 border-orange-500 relative">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white">
+                Most Popular
+              </Badge>
+              <CardContent className="pt-6">
+                <div className="text-4xl font-bold text-orange-500 mb-2">$59</div>
+                <p className="text-gray-600 mb-6">per hour</p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Advanced electrical work
+                  </li>
+                  <li className="flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Priority response
+                  </li>
+                  <li className="flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Extended warranty
+                  </li>
+                </ul>
+                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">Choose Plan</Button>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-8 border-2">
+              <CardContent className="pt-6">
+                <div className="text-4xl font-bold text-orange-500 mb-2">$99</div>
+                <p className="text-gray-600 mb-6">per hour</p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Complex electrical projects
+                  </li>
+                  <li className="flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Emergency response
+                  </li>
+                  <li className="flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Premium support
+                  </li>
+                </ul>
+                <Button variant="outline" className="w-full bg-transparent">
+                  Choose Plan
+                </Button>
+              </CardContent>
+            </Card>
           </div>
-          <h3 class="font-semibold">Laser­schneiden</h3>
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="wrench" class="w-8 h-8 text-orange-500"></i>
+      </section>
+
+      {/* Money Back Guarantee */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            100% money-back guarantee for
+            <br />
+            your first 30 days.
+          </h2>
+        </div>
+      </section>
+
+      {/* Professional Service */}
+      <section
+        className="py-16 bg-cover bg-center relative"
+        style={{ backgroundImage: "url(/placeholder.svg?height=400&width=1200&text=Electrical+Panel+Maintenance)" }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="relative container mx-auto px-6 lg:px-8">
+          <div className="max-w-2xl text-white">
+            <h2 className="text-3xl font-bold mb-6">
+              When you choose professional
+              <br />
+              results, choose a professional
+              <br />
+              electrician.
+            </h2>
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white">Get Started</Button>
           </div>
-          <h3 class="font-semibold">Montage</h3>
         </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="check-circle" class="w-8 h-8 text-orange-500"></i>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-16">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold">How it works</h2>
           </div>
-          <h3 class="font-semibold">Qualitätsprüfung</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                1
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Consultation</h3>
+              <p className="text-gray-600">
+                We discuss your electrical needs and provide a detailed assessment of the work required.
+              </p>
+              <Button variant="outline" className="mt-4 bg-transparent">
+                Get Quote
+              </Button>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                2
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Select Package</h3>
+              <p className="text-gray-600">
+                Choose from our range of service packages that best fits your requirements and budget.
+              </p>
+              <Button variant="outline" className="mt-4 bg-transparent">
+                Get Quote
+              </Button>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                3
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Get Results</h3>
+              <p className="text-gray-600">
+                Our certified electricians complete the work efficiently with guaranteed quality results.
+              </p>
+              <Button variant="outline" className="mt-4 bg-transparent">
+                Get Quote
+              </Button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- CTA Section -->
-  <section class="py-16 bg-yellow-400">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center justify-between">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4 md:mb-0 leading-snug">
-          Überlassen Sie uns die Fertigung,<br/>konzentrieren Sie sich auf Innovation.
-        </h2>
-        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg">
-          Angebot anfordern
-        </a>
-      </div>
-    </div>
-  </section>
+      {/* Trust Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">
+                Electricians you can trust for
+                <br />
+                all your electrical needs.
+              </h2>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-orange-500 mr-3" />
+                  <span>Affordable rates</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-orange-500 mr-3" />
+                  <span>24/7 Support</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-orange-500 mr-3" />
+                  <span>Fast response</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-6">
+                Do you need help with
+                <br />
+                Electrical Maintenance?
+              </h2>
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="space-y-4">
+                  <input type="text" placeholder="Your Name" className="w-full p-3 border border-gray-300 rounded-md" />
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    className="w-full p-3 border border-gray-300 rounded-md"
+                  />
+                  <textarea
+                    placeholder="Your Message"
+                    rows={4}
+                    className="w-full p-3 border border-gray-300 rounded-md"
+                  ></textarea>
+                  <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">Send Message</Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- Pricing Section -->
-  <section class="py-16">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold mb-4">Preisbeispiele</h2>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-        <!-- Basic -->
-        <div class="bg-white text-center p-8 border-2 rounded-lg">
-          <div class="text-4xl font-bold text-orange-500 mb-2">ab 499 €</div>
-          <p class="text-gray-600 mb-6">Prototype Paket</p>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>1 Prototyp inkl. CAD</li>
-            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Basisfinish</li>
-            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Lieferzeit 10 Tage</li>
-          </ul>
-          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+      {/* Customer Feedback */}
+      <section className="py-16">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold">Customer Feedback</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="p-6">
+              <CardContent className="pt-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-4">
+                  "Excellent service! The electrician was professional, punctual, and solved our electrical issues
+                  quickly."
+                </p>
+                <div className="flex items-center">
+                  <Image
+                    src="/placeholder.svg?height=40&width=40&text=Customer+Photo"
+                    alt="Customer"
+                    width={40}
+                    height={40}
+                    className="rounded-full mr-3"
+                  />
+                  <div>
+                    <p className="font-semibold">John Smith</p>
+                    <p className="text-sm text-gray-500">Homeowner</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="p-6">
+              <CardContent className="pt-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-4">
+                  "Great experience from start to finish. Fair pricing and quality work. Highly recommend!"
+                </p>
+                <div className="flex items-center">
+                  <Image
+                    src="/placeholder.svg?height=40&width=40&text=Customer+Photo"
+                    alt="Customer"
+                    width={40}
+                    height={40}
+                    className="rounded-full mr-3"
+                  />
+                  <div>
+                    <p className="font-semibold">Sarah Johnson</p>
+                    <p className="text-sm text-gray-500">Business Owner</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="p-6">
+              <CardContent className="pt-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-4">
+                  "Emergency service was fantastic. They came out late at night and fixed our power outage."
+                </p>
+                <div className="flex items-center">
+                  <Image
+                    src="/placeholder.svg?height=40&width=40&text=Customer+Photo"
+                    alt="Customer"
+                    width={40}
+                    height={40}
+                    className="rounded-full mr-3"
+                  />
+                  <div>
+                    <p className="font-semibold">Mike Davis</p>
+                    <p className="text-sm text-gray-500">Property Manager</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
-        <!-- Popular -->
-        <div class="bg-white text-center p-8 border-2 border-orange-500 relative rounded-lg">
-          <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white text-sm px-3 py-1 rounded-full">Beliebt</span>
-          <div class="text-4xl font-bold text-orange-500 mb-2">ab 2.499 €</div>
-          <p class="text-gray-600 mb-6">Serie Paket</p>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>bis 100 Teile</li>
-            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Komplettfinish</li>
-            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Lieferzeit 4 Wochen</li>
-          </ul>
-          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg">Wählen</a>
-        </div>
-        <!-- Premium -->
-        <div class="bg-white text-center p-8 border-2 rounded-lg">
-          <div class="text-4xl font-bold text-orange-500 mb-2">ab 4.999 €</div>
-          <p class="text-gray-600 mb-6">Premium Paket</p>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Komplexe Baugruppen</li>
-            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Express-Service</li>
-            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Persönlicher Ansprechpartner</li>
-          </ul>
-          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Guarantee -->
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold mb-4">
-        30 Tage Geld-zurück-Garantie<br/>auf Ihren ersten Auftrag.
-      </h2>
-    </div>
-  </section>
-
-  <!-- Professional Service -->
-  <section
-    class="py-16 bg-cover bg-center relative"
-    style="background-image:url('https://via.placeholder.com/1200x400?text=Pr%C3%A4zisionsfertigung+in+Aktion');">
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div class="relative container mx-auto px-6 lg:px-8">
-      <div class="max-w-2xl text-white">
-        <h2 class="text-3xl font-bold mb-6 leading-snug">
-          Wenn Sie professionelle Ergebnisse wollen,<br/>wählen Sie professionelle Modellbauer.
-        </h2>
-        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg">Projekt starten</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- How it Works -->
-  <section class="py-16">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold">So läuft's ab</h2>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center">
-          <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
-          <h3 class="text-xl font-semibold mb-4">Beratung</h3>
-          <p class="text-gray-600">Gemeinsam definieren wir Anforderungen &amp; Ziele.</p>
-        </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
-          <h3 class="text-xl font-semibold mb-4">Angebot</h3>
-          <p class="text-gray-600">Sie erhalten ein transparentes, faires Angebot.</p>
-        </div>
-        <div class="text-center">
-          <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
-          <h3 class="text-xl font-semibold mb-4">Fertigung</h3>
-          <p class="text-gray-600">Wir produzieren termingerecht &amp; liefern einsatzbereit.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Kontakt -->
-  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
-        <p class="text-xl text-gray-700">
-          Bereit für Ihr nächstes Projekt? Fordern Sie jetzt ein unverbindliches Angebot an.
-        </p>
-      </div>
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Warum wir -->
-        <div>
-          <h3 class="text-2xl font-bold mb-6">Warum Präzisionstechnik Dresden?</h3>
-          <div class="space-y-8">
-            <div class="flex items-start">
-              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+      {/* Contact Form Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
+              <p className="text-xl text-gray-600">
+                Ready to solve your electrical problems? Contact us today for a free consultation and quote.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h4 class="font-semibold mb-1 text-gray-900">Erfahrenes Team</h4>
-                <p class="text-gray-700">Über 20 Jahre Expertise im Modell- und Kleinserienbau.</p>
+                <h3 className="text-2xl font-bold mb-6">Why Choose Our Electrical Services?</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-orange-500 mr-3 mt-1" />
+                    <div>
+                      <h4 className="font-semibold mb-1">Licensed & Insured</h4>
+                      <p className="text-gray-600">
+                        All our electricians are fully licensed and insured for your peace of mind.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-orange-500 mr-3 mt-1" />
+                    <div>
+                      <h4 className="font-semibold mb-1">24/7 Emergency Service</h4>
+                      <p className="text-gray-600">
+                        Electrical emergencies don't wait - neither do we. Available around the clock.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-orange-500 mr-3 mt-1" />
+                    <div>
+                      <h4 className="font-semibold mb-1">Upfront Pricing</h4>
+                      <p className="text-gray-600">
+                        No hidden fees or surprises. You'll know the cost before we start any work.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-orange-500 mr-3 mt-1" />
+                    <div>
+                      <h4 className="font-semibold mb-1">Satisfaction Guarantee</h4>
+                      <p className="text-gray-600">We stand behind our work with a 100% satisfaction guarantee.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8 p-6 bg-orange-50 rounded-lg">
+                  <h4 className="font-bold text-lg mb-2">Need Emergency Service?</h4>
+                  <p className="text-gray-700 mb-3">Call us now for immediate assistance</p>
+                  <div className="flex items-center text-orange-600 font-bold text-xl">
+                    <Phone className="w-5 h-5 mr-2" />
+                    (555) 123-4567
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="flex items-start">
-              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
               <div>
-                <h4 class="font-semibold mb-1 text-gray-900">Modernste Technik</h4>
-                <p class="text-gray-700">Von 3D-Druck bis CNC – alles unter einem Dach.</p>
+                <div className="bg-white p-8 rounded-lg shadow-lg">
+                  <h3 className="text-2xl font-bold mb-6">Request Your Free Quote</h3>
+                  <form className="space-y-4">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <input
+                        type="text"
+                        placeholder="First Name"
+                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Last Name"
+                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      />
+                    </div>
+                    <input
+                      type="email"
+                      placeholder="Email Address"
+                      className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Phone Number"
+                      className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Address"
+                      className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    />
+                    <select className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                      <option value="">Select Service Type</option>
+                      <option value="residential">Residential Electrical</option>
+                      <option value="commercial">Commercial Electrical</option>
+                      <option value="emergency">Emergency Service</option>
+                      <option value="maintenance">Maintenance & Repair</option>
+                      <option value="installation">New Installation</option>
+                      <option value="upgrade">Panel Upgrade</option>
+                    </select>
+                    <textarea
+                      placeholder="Describe your electrical needs..."
+                      rows={4}
+                      className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    ></textarea>
+                    <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 text-lg">
+                      Get My Free Quote
+                    </Button>
+                  </form>
+                  <p className="text-sm text-gray-500 mt-4 text-center">
+                    By submitting this form, you agree to receive communications from us. You can unsubscribe at any
+                    time.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="flex items-start">
-              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
-              <div>
-                <h4 class="font-semibold mb-1 text-gray-900">Termintreue</h4>
-                <p class="text-gray-700">Verbindliche Lieferzeiten für Ihre Planungssicherheit.</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
-              <div>
-                <h4 class="font-semibold mb-1 text-gray-900">Qualitätsgarantie</h4>
-                <p class="text-gray-700">Jedes Teil wird geprüft und dokumentiert.</p>
-              </div>
-            </div>
-          </div>
-          <div class="mt-12 p-6 bg-orange-50 rounded-lg text-gray-800">
-            <h4 class="font-bold text-lg mb-2 text-gray-900">Direkt anrufen</h4>
-            <p class="text-gray-800 mb-3">Wir beraten Sie gerne persönlich</p>
-            <div class="flex items-center text-orange-600 font-bold text-xl">
-              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
-              +49 351 123456
             </div>
           </div>
         </div>
-        <!-- Formular -->
-        <div>
-          <div class="bg-white p-8 rounded-xl shadow-lg">
-            <h3 class="text-2xl font-bold mb-6">Kostenloses Angebot anfordern</h3>
-            <form class="space-y-4">
-              <div class="grid md:grid-cols-2 gap-4">
-                <input type="text" placeholder="Vorname" required
-                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
-                <input type="text" placeholder="Nachname" required
-                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
-              </div>
-              <input type="email" placeholder="E-Mail" required
-                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
-              <input type="tel" placeholder="Telefon" required
-                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
-              <textarea placeholder="Projektbeschreibung…" rows="4" required
-                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
-              <button type="submit"
-                class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 text-lg rounded-lg">
-                Angebot anfordern
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-6 lg:px-8">
-      <div class="grid md:grid-cols-4 gap-8">
-        <div>
-          <div class="flex items-center space-x-2 mb-4">
-            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-              <i data-lucide="cube" class="w-4 h-4 text-white"></i>
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                  <Zap className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-xl font-bold">electiz</span>
+              </div>
+              <p className="text-gray-400 mb-4">
+                Professional electrical services you can trust. Available 24/7 for all your electrical needs.
+              </p>
+              <div className="flex space-x-4">
+                <Facebook className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer" />
+                <Twitter className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer" />
+                <Instagram className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer" />
+                <Linkedin className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer" />
+              </div>
             </div>
-            <span class="text-xl font-bold">Präzisionstechnik Dresden</span>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Services</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <Link href="#" className="hover:text-white">
+                    Residential
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white">
+                    Commercial
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white">
+                    Emergency
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white">
+                    Maintenance
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <Link href="#" className="hover:text-white">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white">
+                    Our Team
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white">
+                    Careers
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+              <div className="space-y-3 text-gray-400">
+                <div className="flex items-center">
+                  <Phone className="w-4 h-4 mr-2" />
+                  <span>(555) 123-4567</span>
+                </div>
+                <div className="flex items-center">
+                  <Mail className="w-4 h-4 mr-2" />
+                  <span>info@electiz.com</span>
+                </div>
+                <div className="flex items-center">
+                  <MapPin className="w-4 h-4 mr-2" />
+                  <span>123 Electric Ave, City, ST 12345</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="text-gray-400 mb-4">Modelle, Prototypen &amp; Kleinserien – made in Dresden.</p>
-          <div class="flex space-x-4">
-            <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-white cursor-pointer"></i>
-            <i data-lucide="twitter" class="w-5 h-5 text-gray-400 hover:text-white cursor-pointer"></i>
-            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-white cursor-pointer"></i>
-            <i data-lucide="linkedin" class="w-5 h-5 text-gray-400 hover:text-white cursor-pointer"></i>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 Electiz. All rights reserved.</p>
           </div>
         </div>
-        <div>
-          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="#services" class="hover:text-white">Prototypenbau</a></li>
-            <li><a href="#services" class="hover:text-white">Kleinserien</a></li>
-            <li><a href="#services" class="hover:text-white">Feinmechanik</a></li>
-            <li><a href="#services" class="hover:text-white">Oberflächenfinish</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="#about" class="hover:text-white">Über uns</a></li>
-            <li><a href="#projects" class="hover:text-white">Referenzen</a></li>
-            <li><a href="#news" class="hover:text-white">News</a></li>
-            <li><a href="#contact" class="hover:text-white">Kontakt</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
-          <div class="space-y-3 text-gray-400">
-            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>+49 351 123456</span></div>
-            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>info@praezisionstechnik-dresden.de</span></div>
-            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Technologiepark 1, 01234 Dresden</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-        <p>&copy; 2025 Präzisionstechnik Dresden. Alle Rechte vorbehalten.</p>
-      </div>
+      </footer>
     </div>
-  </footer>
-
-  <!-- Lucide init -->
-  <script>lucide.createIcons();</script>
-</body>
-</html>
+  )
+}
