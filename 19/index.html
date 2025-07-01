@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elektro Erler & Fellner – Elektro- & Smart-Home-Lösungen | Tittmoning</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <meta name="description"
+        content="Elektro Erler & Fellner GmbH – Ihr Fachbetrieb für Elektroinstallationen, Smart-Home-/KNX-Systeme, Photovoltaik, Antennen- & Kommunikationstechnik sowie Hausgeräte-Service in Tittmoning und Umgebung.">
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-2">
+        <span class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+          <i data-lucide="plug" class="w-4 h-4 text-gray-900"></i>
+        </span>
+        <span class="text-xl font-bold">Elektro Erler</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#services" class="text-gray-700 hover:text-orange-500">Leistungen</a>
+        <a href="#about"    class="text-gray-700 hover:text-orange-500">Über&nbsp;uns</a>
+        <a href="#process"  class="text-gray-700 hover:text-orange-500">Ablauf</a>
+        <a href="#contact"  class="text-gray-700 hover:text-orange-500">Kontakt</a>
+      </nav>
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">
+        Angebot anfragen
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[650px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1600x650?text=Elektro+Erler+Tittmoning');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative container mx-auto px-6 lg:px-8 h-full flex items-center">
+      <div class="max-w-2xl text-center mx-auto">
+        <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-100 mb-6 leading-tight drop-shadow">
+          Elektrotechnik, die Zukunft schafft.
+        </h1>
+        <p class="text-xl text-gray-100/90 mb-8">
+          Von klassischen Elektro­anlagen bis zum vernetzten Smart-Home – wir planen, installieren und warten alles aus einer Hand.
+        </p>
+        <a href="#services"
+           class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Leistungen entdecken
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12">Unsere Kernleistungen</h2>
+      <div class="grid md:grid-cols-5 gap-6">
+        <!-- Elektroanlagen -->
+        <div class="bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg transition">
+          <span class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="cpu" class="w-8 h-8 text-orange-500"></i>
+          </span>
+          <h3 class="text-xl font-semibold mb-2">Elektroanlagen</h3>
+          <p class="text-gray-600 text-sm">Neu- & Altbau, Gewerbe, Beleuchtungskonzepte</p>
+        </div>
+        <!-- Smart-Home / KNX -->
+        <div class="bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg transition">
+          <span class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="home" class="w-8 h-8 text-orange-500"></i>
+          </span>
+          <h3 class="text-xl font-semibold mb-2">Smart-Home / KNX</h3>
+          <p class="text-gray-600 text-sm">EIB-Bus-Systeme, Automatisierung & Energiesparen</p>
+        </div>
+        <!-- Photovoltaik -->
+        <div class="bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg transition">
+          <span class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="sun" class="w-8 h-8 text-orange-500"></i>
+          </span>
+          <h3 class="text-xl font-semibold mb-2">Photovoltaik</h3>
+          <p class="text-gray-600 text-sm">PV-Anlagen, Speicher & Eigenverbrauchslösungen</p>
+        </div>
+        <!-- Antennen & Kommunikation -->
+        <div class="bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg transition">
+          <span class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="radio" class="w-8 h-8 text-orange-500"></i>
+          </span>
+          <h3 class="text-xl font-semibold mb-2">Antennen & IT</h3>
+          <p class="text-gray-600 text-sm">SAT-/Kabel-, Telefon- & Netzwerk­installationen</p>
+        </div>
+        <!-- Hausgeräte-Service -->
+        <div class="bg-white p-6 text-center rounded-lg shadow-sm hover:shadow-lg transition">
+          <span class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="washer" class="w-8 h-8 text-orange-500"></i>
+          </span>
+          <h3 class="text-xl font-semibold mb-2">Hausgeräte-Service</h3>
+          <p class="text-gray-600 text-sm">Verkauf, Wartung & Reparatur von Groß-/Klein­geräten</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20">
+    <div class="container mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://via.placeholder.com/600x420?text=Elektro+Erler+Team"
+           alt="Team Elektro Erler & Fellner" class="rounded-lg shadow-md">
+      <div>
+        <span class="bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4 inline-block">
+          Seit 1948 – Familienbetrieb in 3. Generation
+        </span>
+        <h2 class="text-4xl font-bold mb-6">
+          Tradition trifft Innovation
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Mit mehr als 75 Jahren Erfahrung verbinden wir bewährtes Handwerk mit modernster Technik – und begleiten Sie
+          von der ersten Idee bis zur fertigen Anlage.
+        </p>
+        <ul class="space-y-3 text-gray-700 mb-8">
+          <li class="flex"><i data-lucide="check" class="w-5 h-5 text-orange-500 mr-2"></i>
+            Meistergeführtes Team & individuelle Beratung
+          </li>
+          <li class="flex"><i data-lucide="check" class="w-5 h-5 text-orange-500 mr-2"></i>
+            Eigene CAD-Planung & Energie­konzepte
+          </li>
+          <li class="flex"><i data-lucide="check" class="w-5 h-5 text-orange-500 mr-2"></i>
+            Kundendienst für Haushaltsgeräte aller Marken
+          </li>
+        </ul>
+        <a href="#contact"
+           class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+          Persönliche Beratung
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prozess -->
+  <section id="process" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12">Projektablauf</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-2">Analyse</h3>
+          <p class="text-gray-600 text-sm">Bedarf, Budget & Energie­effizienz</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-2">Umsetzung</h3>
+          <p class="text-gray-600 text-sm">Fachgerechte Installation & Dokumentation</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-2">Service</h3>
+          <p class="text-gray-600 text-sm">DGUV-Prüfungen, Wartung & 24 h-Notdienst</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-yellow-400">
+    <div class="container mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 md:mb-0 leading-snug">
+        Jetzt Strom clever nutzen – wir beraten Sie gerne!
+      </h2>
+      <a href="#contact"
+         class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+        Angebot anfordern
+      </a>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-24 bg-[#f9fafb]">
+    <div class="container mx-auto px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center mb-12">Kontakt</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Kontaktdaten -->
+        <div class="space-y-6 text-gray-700">
+          <p class="flex items-center"><i data-lucide="phone" class="w-5 h-5 mr-3 text-orange-500"></i>
+            08683&nbsp;321
+          </p>
+          <p class="flex items-center"><i data-lucide="mail" class="w-5 h-5 mr-3 text-orange-500"></i>
+            office@elektro-erler.de
+          </p>
+          <p class="flex items-center"><i data-lucide="map-pin" class="w-5 h-5 mr-3 text-orange-500"></i>
+            Pillerfeld 2, 84529 Tittmoning
+          </p>
+          <p class="text-xs text-gray-500">Öffnungszeiten: Mo–Fr 08:00–12:00 & 13:30–17:00 Uhr (Mi Nachmittag geschlossen)</p>
+        </div>
+        <!-- Formular -->
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-6">Unverbindliche Anfrage</h3>
+          <form class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Vorname" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <input type="text" placeholder="Nachname" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+            </div>
+            <input type="email" placeholder="E-Mail" required
+                   class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <input type="tel" placeholder="Telefon"
+                   class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <textarea placeholder="Projekt / Termin …" rows="4" required
+                      class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+            <button type="submit"
+                    class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+              Nachricht senden
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-10">
+    <div class="container mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start">
+      <div class="mb-6 md:mb-0">
+        <div class="flex items-center space-x-2 mb-4">
+          <span class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="plug" class="w-4 h-4 text-gray-900"></i>
+          </span>
+          <span class="text-lg text-gray-200 font-bold">Elektro Erler & Fellner</span>
+        </div>
+        <p>© 2025 Elektro Erler & Fellner GmbH</p>
+      </div>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#services" class="hover:text-gray-100">Leistungen</a></li>
+        <li><a href="#about"    class="hover:text-gray-100">Über uns</a></li>
+        <li><a href="#contact"  class="hover:text-gray-100">Kontakt</a></li>
+      </ul>
+    </div>
+    <script>lucide.createIcons();</script>
+  </footer>
+</body>
+</html>
