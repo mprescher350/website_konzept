@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schmiede- &amp; Metallbau Brauner – Treppen, Geländer &amp; Stahlbau aus Waldheim</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 lg:px-16 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+            <i data-lucide="hammer" class="w-4 h-4 text-white"></i>
+          </div>
+          <span class="text-xl font-bold">Metallbau&nbsp;Brauner</span>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#"        class="hover:text-red-600">Home</a>
+          <a href="#about"   class="hover:text-red-600">Unternehmen</a>
+          <a href="#services"class="hover:text-red-600">Leistungen</a>
+          <a href="#projects"class="hover:text-red-600">Referenzen</a>
+          <a href="#contact" class="hover:text-red-600">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg">Angebot anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1200x600?text=Metallbau+Brauner+Waldheim');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-6 lg:px-16 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Maßgeschneiderter Stahl- &amp; Metallbau<br/>seit über 30 Jahren
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Treppen, Balkone, Geländer, Zäune &amp; Tore – individuell geplant, präzise gefertigt und fachgerecht montiert. :contentReference[oaicite:1]{index=1}
+        </p>
+        <a href="#contact" class="bg-red-600 hover:bg-red-700 px-8 py-3 rounded-lg text-lg">
+          Jetzt beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Treppen & Balkone -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="stairs" class="w-8 h-8 text-red-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Treppen &amp; Balkone</h3>
+          <p class="text-gray-600">Innen- &amp; Außentreppen, Balkon­anlagen in Stahl &amp; Edelstahl</p>
+        </div>
+        <!-- Geländer & Zäune -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="shield" class="w-8 h-8 text-red-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Geländer &amp; Zäune</h3>
+          <p class="text-gray-600">Schlichte oder schmiedeeiserne Schutz­systeme nach DIN & Gestaltungsvorgabe</p>
+        </div>
+        <!-- Tore & Arbeitsbühnen -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="gate" class="w-8 h-8 text-red-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Tore &amp; Arbeitsbühnen</h3>
+          <p class="text-gray-600">Schiebe-, Dreh- &amp; Sektionaltore sowie sichere Bühnen­konstruktionen</p>
+        </div>
+        <!-- Sonderkonstruktionen -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="layers" class="w-8 h-8 text-red-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Individuelle Anfertigungen</h3>
+          <p class="text-gray-600">Von Kunstschmiedearbeiten bis Edelstahl-Design – wir setzen Ideen um</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Werkstatt+Metallbau+Brauner" alt="Werkstatt Metallbau Brauner" class="rounded-lg w-full h-auto">
+        </div>
+        <div>
+          <span class="inline-block bg-red-100 text-red-600 font-semibold px-4 py-1 rounded-full mb-4">
+            Meisterbetrieb&nbsp;– Dipl.&nbsp;Ing. F. Grundmann &amp; Mst. S. Brauner
+          </span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Qualität, die schützt –<br/>Design, das begeistert.
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Unser Team aus erfahrenen Metallbauern plant, fertigt und montiert
+            Projekte vom Einfamilien­haus bis zur Industrie­anlage – zuverlässig,
+            termintreu und immer mit Blick auf die optimale Verbindung von
+            Stabilität und Ästhetik. :contentReference[oaicite:2]{index=2}
+          </p>
+          <a href="#contact" class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg text-white">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-red-600">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+          Lassen Sie Ihre Ideen in Stahl entstehen –<br/>wir schmieden die Lösung!
+        </h2>
+        <a href="#contact" class="bg-white hover:bg-gray-200 text-red-600 px-8 py-3 rounded-lg text-lg">
+          Projekt anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie planen ein Metallbau-Projekt oder benötigen eine Reparatur? Rufen Sie uns an oder senden Sie Ihre Anfrage – wir melden uns kurzfristig.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Brauner?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="award" class="w-6 h-6 text-red-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">30 Jahre Erfahrung</h4>
+                <p class="text-gray-700">Meister­betrieb seit 1991 im sächsischen Metall­handwerk.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-red-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Termintreue</h4>
+                <p class="text-gray-700">Eigenfertigung = kurze Lieferzeiten &amp; Montage­slots.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="hammer" class="w-6 h-6 text-red-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Handwerk &amp; High-Tech</h4>
+                <p class="text-gray-700">CNC-gestützte Produktion plus traditionelle Schmiedekunst.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="leaf" class="w-6 h-6 text-red-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Nachhaltige Lösungen</h4>
+                <p class="text-gray-700">Langlebige Materialien &amp; ressourcen­schonende Prozesse.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-red-50 rounded-lg">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Telefonische Beratung</h4>
+            <p class="mb-3">Mo – Fr 07:00 – 17:00 Uhr</p>
+            <div class="flex items-center text-red-700 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              +49 34327 93584
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Nachricht senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent">
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent">
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent">
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent">
+              <textarea rows="4" placeholder="Ihre Nachricht …" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent"></textarea>
+              <button type="submit"
+                      class="w-full bg-red-600 hover:bg-red-700 text-white py-3 text-lg rounded-lg">
+                Abschicken
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+              <i data-lucide="hammer" class="w-4 h-4 text-white"></i>
+            </div>
+            <span class="text-xl font-bold text-white">Metallbau Brauner</span>
+          </div>
+          <p>Treppen • Geländer • Stahlbau – Waldheim / Dresden.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Leistungen</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-white">Treppen &amp; Balkone</a></li>
+            <li><a href="#services" class="hover:text-white">Geländer &amp; Zäune</a></li>
+            <li><a href="#services" class="hover:text-white">Tore &amp; Bühnen</a></li>
+            <li><a href="#services" class="hover:text-white">Sonder­konstruktionen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Unternehmen</h3>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-white">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-white">Referenzen</a></li>
+            <li><a href="#contact" class="hover:text-white">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Kontakt</h3>
+          <div class="space-y-3">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>+49 34327 93584</span></div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>kontakt@brauner-metallbau.de</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Hauptstraße 66, 04736 Waldheim</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p>&copy; 2025 Schmiede-Metallbau Brauner GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
