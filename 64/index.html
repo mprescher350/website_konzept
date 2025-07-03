@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messinghaus Rehlken – NE-Metallhandel & Zuschnitt in Dresden</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 lg:px-16 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-yellow-600 rounded-full flex items-center justify-center">
+            <i data-lucide="package" class="w-4 h-4 text-white"></i>
+          </div>
+          <span class="text-xl font-bold">Messinghaus Rehlken</span>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#"        class="hover:text-yellow-600">Home</a>
+          <a href="#about"   class="hover:text-yellow-600">Unternehmen</a>
+          <a href="#services"class="hover:text-yellow-600">Sortiment</a>
+          <a href="#projects"class="hover:text-yellow-600">Referenzen</a>
+          <a href="#contact" class="hover:text-yellow-600">Kontakt</a>
+        </nav>
+        <a href="#contact"
+           class="bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-lg">
+          Angebot anfragen
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1200x600?text=NE-Metalle+ab+Lager+Dresden');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-6 lg:px-16 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Halbzeuge aus NE-Metall<br/>– präzise zugeschnitten
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Aluminium, Messing, Kupfer, Bronze &amp; Edelstahl in Stangen, Blechen und
+          Profilen – sofort verfügbar oder exakt nach Maß.
+        </p>
+        <a href="#contact"
+           class="bg-yellow-600 hover:bg-yellow-700 px-8 py-3 rounded-lg text-lg">
+          Jetzt Material anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Aluminium & Edelstahl -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-yellow-100 flex items-center justify-center">
+            <i data-lucide="layers" class="w-8 h-8 text-yellow-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Aluminium &amp; Edelstahl</h3>
+          <p class="text-gray-600">Bleche, Profile, Stangen – lagernd in vielen Legierungen</p>
+        </div>
+        <!-- Messing & Kupfer -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-yellow-100 flex items-center justify-center">
+            <i data-lucide="cube" class="w-8 h-8 text-yellow-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Messing &amp; Kupfer</h3>
+          <p class="text-gray-600">Rohre, Rund- &amp; Flachstangen, Winkel, U-Profile</p>
+        </div>
+        <!-- Bronze & Rotguss -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-yellow-100 flex items-center justify-center">
+            <i data-lucide="hexagon" class="w-8 h-8 text-yellow-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Bronze &amp; Rotguss</h3>
+          <p class="text-gray-600">Gleitlager-, Guss- &amp; Schmiedequalitäten</p>
+        </div>
+        <!-- Zuschnitt & Lieferung -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-yellow-100 flex items-center justify-center">
+            <i data-lucide="truck" class="w-8 h-8 text-yellow-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Zuschnitt &amp; Express</h3>
+          <p class="text-gray-600">Präzisions­säge, Entgratung &amp; 24-h Regional­lieferung</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Lager+Messinghaus+Rehlken"
+               alt="Lager Messinghaus Rehlken"
+               class="rounded-lg w-full h-auto" />
+        </div>
+        <div>
+          <span class="inline-block bg-yellow-100 text-yellow-600 font-semibold px-4 py-1 rounded-full mb-4">
+            Seit 1991 in Dresden
+          </span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Ihr Partner für<br/>NE-Metalle &amp; Service
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Messinghaus Rehlken beliefert Handwerk, Industrie und private
+            Tüftler mit hochwertigen NE-Metallhalbzeugen. Dank großem Lager,
+            eigener Präzisions­sägen und ebenso freundlichem wie fachkundigem
+            Team erhalten Sie Ihr Wunschmaß innerhalb kürzester Zeit – vom
+            Einzelstück bis zur Serie.
+          </p>
+          <a href="#contact"
+             class="bg-yellow-600 hover:bg-yellow-700 px-6 py-3 rounded-lg text-white">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-yellow-600">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+          Material sofort verfügbar –<br/>fragen Sie jetzt Ihre Stückliste an!
+        </h2>
+        <a href="#contact"
+           class="bg-white hover:bg-gray-200 text-yellow-600 px-8 py-3 rounded-lg text-lg">
+          Angebot bekommen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Senden Sie uns Ihre Materialliste oder rufen Sie direkt durch – wir
+          kalkulieren schnell und transparent.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Messinghaus?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="award" class="w-6 h-6 text-yellow-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Breites Lager­sortiment</h4>
+                <p class="text-gray-700">300+ Abmessungen sofort abhol­bereit.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="scissors" class="w-6 h-6 text-yellow-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Millimeter­genauer Zuschnitt</h4>
+                <p class="text-gray-700">Säge- &amp; Entgratung inklusive.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-yellow-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Schnelle Verfügbarkeit</h4>
+                <p class="text-gray-700">24-h Lieferservice im Großraum Dresden.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="leaf" class="w-6 h-6 text-yellow-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Recycling &amp; Nachhaltigkeit</h4>
+                <p class="text-gray-700">Ressourcen­schonende Rücknahme von Verschnitt.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 p-6 bg-yellow-50 rounded-lg">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Telefonische Beratung</h4>
+            <p class="mb-3">Mo–Fr 07:00 – 12:30 &nbsp;/ 13:00 – 16:00 Uhr</p>
+            <div class="flex items-center text-yellow-700 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              +49&nbsp;351&nbsp;803 07 60
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Nachricht senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent" />
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent" />
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent" />
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent" />
+              <textarea rows="4" placeholder="Ihre Nachricht …" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent"></textarea>
+              <button type="submit"
+                      class="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3 text-lg rounded-lg">
+                Abschicken
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-yellow-600 rounded-full flex items-center justify-center">
+              <i data-lucide="package" class="w-4 h-4 text-white"></i>
+            </div>
+            <span class="text-xl font-bold text-white">Messinghaus Rehlken</span>
+          </div>
+          <p>NE-Metalle • Zuschnitt • Express – Dresden.</p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Sortiment</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-white">Aluminium</a></li>
+            <li><a href="#services" class="hover:text-white">Messing</a></li>
+            <li><a href="#services" class="hover:text-white">Kupfer</a></li>
+            <li><a href="#services" class="hover:text-white">Bronze</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Unternehmen</h3>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-white">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-white">Referenzen</a></li>
+            <li><a href="#contact" class="hover:text-white">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Kontakt</h3>
+          <div class="space-y-3">
+            <div class="flex items-center">
+              <i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>+49 351 8030760</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>info@messinghaus.de</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Straße des 17. Juni 10, 01257 Dresden</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p>&copy; 2025 Messinghaus Rehlken GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
