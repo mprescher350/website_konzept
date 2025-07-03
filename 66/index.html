@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMD Dresden – Stahlbau, Behälterbau & Industriemontagen</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 lg:px-16 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center">
+            <i data-lucide="factory" class="w-4 h-4 text-white"></i>
+          </div>
+          <span class="text-xl font-bold">IMD&nbsp;Dresden</span>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#"        class="hover:text-indigo-600">Home</a>
+          <a href="#about"   class="hover:text-indigo-600">Unternehmen</a>
+          <a href="#services"class="hover:text-indigo-600">Leistungen</a>
+          <a href="#projects"class="hover:text-indigo-600">Referenzen</a>
+          <a href="#contact" class="hover:text-indigo-600">Kontakt</a>
+        </nav>
+        <a href="#contact"
+           class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg">
+          Angebot anfragen
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1200x600?text=Stahlbau+%7C+Beh%C3%A4lterbau+%7C+Montage');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-6 lg:px-16 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Präzision in Stahl &amp; Edelstahl<br/>seit mehr als 20&nbsp;Jahren
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Stahlbau EXC3, Druckbehälter nach AD 2000, Wartungs­bühnen und
+          Industriemontagen – komplett aus einer Hand. :contentReference[oaicite:1]{index=1}
+        </p>
+        <a href="#contact"
+           class="bg-indigo-600 hover:bg-indigo-700 px-8 py-3 rounded-lg text-lg">
+          Jetzt beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Stahlbau -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-100 flex items-center justify-center">
+            <i data-lucide="building-2" class="w-8 h-8 text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Stahl- &amp; Metallbau</h3>
+          <p class="text-gray-600">Maschinenrahmen, Gestelle &amp; Tragwerke&nbsp;EXC3</p>
+        </div>
+        <!-- Behälterbau -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-100 flex items-center justify-center">
+            <i data-lucide="database" class="w-8 h-8 text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Behälter- &amp; Filterbau</h3>
+          <p class="text-gray-600">Druckbehälter & Filter nach AD 2000 HP0</p>
+        </div>
+        <!-- Wartungsbühnen & Steigleitern -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-100 flex items-center justify-center">
+            <i data-lucide="stairs" class="w-8 h-8 text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Bühnen &amp; Steigleitern</h3>
+          <p class="text-gray-600">Wartungs­bühnen &amp; Leitersysteme im Baukasten</p>
+        </div>
+        <!-- Industriemontagen -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-100 flex items-center justify-center">
+            <i data-lucide="wrench" class="w-8 h-8 text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Industriemontagen</h3>
+          <p class="text-gray-600">Aufzugsbau, Container­umbau &amp; System­integration</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Werkhalle+IMD+Dresden"
+               alt="Werkhalle IMD Dresden"
+               class="rounded-lg w-full h-auto">
+        </div>
+        <div>
+          <span class="inline-block bg-indigo-100 text-indigo-600 font-semibold px-4 py-1 rounded-full mb-4">
+            Schweißfachbetrieb EXC3
+          </span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Engineering &amp; Fertigung<br/>unter einem Dach
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Ob einzelne Baugruppe oder komplette Anlage – unser zertifiziertes
+            Team übernimmt Konstruktion, FEM-Berechnung, Fertigung und
+            Montage. Modernste Schweiß­technik, CNC-Blechbearbeitung und
+            strenge Qualitäts­kontrolle sichern maximale Präzision. :contentReference[oaicite:2]{index=2}
+          </p>
+          <a href="#contact"
+             class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg text-white">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-indigo-600">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+          Lassen Sie Ihre Konstruktion Realität werden –<br/>wir liefern Stahl mit System.
+        </h2>
+        <a href="#contact"
+           class="bg-white hover:bg-gray-200 text-indigo-600 px-8 py-3 rounded-lg text-lg">
+          Projekt anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie benötigen Stahlbau-Unterstützung oder einen zertifizierten
+          Behälterbauer? Wir freuen uns auf Ihre Anfrage.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum IMD Dresden?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="award" class="w-6 h-6 text-indigo-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Zertifizierte Qualität</h4>
+                <p class="text-gray-700">EN 1090-2 EXC3 &amp; ISO 3834-2 für höchste
+                  Schweiß­güte.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="layers" class="w-6 h-6 text-indigo-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Flexibler Anlagenbau</h4>
+                <p class="text-gray-700">Vom Filter­behälter bis zur Bitcoin-Container­lösung.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-indigo-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Termintreue Produktion</h4>
+                <p class="text-gray-700">Eigenfertigung &amp; Montage­teams sichern kurze
+                  Durchlaufzeiten.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="globe" class="w-6 h-6 text-indigo-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Weltweite Projekte</h4>
+                <p class="text-gray-700">Erfahrung in Luftfahrt-, Bahn- &amp; Industrie­aufträgen.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 p-6 bg-indigo-50 rounded-lg">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Telefonische Beratung</h4>
+            <p class="mb-3">Mo–Fr&nbsp;08:00 – 17:00&nbsp;Uhr</p>
+            <div class="flex items-center text-indigo-700 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              +49&nbsp;351&nbsp;4135690
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Nachricht senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
+              <textarea rows="4" placeholder="Ihre Nachricht …" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"></textarea>
+              <button type="submit"
+                      class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 text-lg rounded-lg">
+                Abschicken
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 lg:px-16">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center">
+              <i data-lucide="factory" class="w-4 h-4 text-white"></i>
+            </div>
+            <span class="text-xl font-bold text-white">IMD Dresden</span>
+          </div>
+          <p>Stahlbau • Behälterbau • Montage – Dresden.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Leistungen</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-white">Stahl- &amp; Metallbau</a></li>
+            <li><a href="#services" class="hover:text-white">Behälterbau</a></li>
+            <li><a href="#services" class="hover:text-white">Bühnen &amp; Leitern</a></li>
+            <li><a href="#services" class="hover:text-white">Industriemontagen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Unternehmen</h3>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-white">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-white">Referenzen</a></li>
+            <li><a href="#contact" class="hover:text-white">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Kontakt</h3>
+          <div class="space-y-3">
+            <div class="flex items-center">
+              <i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>+49 351 4135690</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>info@imd-dresden.de</span>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Karlsruher Str. 109, 01189 Dresden</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p>&copy; 2025 IMD Dresden GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
