@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hausmeisterservice Madera – Gebäudeservice, Gartenpflege & Winterdienst in Dresden</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+            <i data-lucide="home" class="w-4 h-4 text-white"></i>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Hausmeisterservice&nbsp;Madera</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-emerald-500">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-emerald-500">Über&nbsp;uns</a>
+          <a href="#services" class="text-gray-700 hover:text-emerald-500">Leistungen</a>
+          <a href="#projects" class="text-gray-700 hover:text-emerald-500">Referenzen</a>
+          <a href="#contact" class="text-gray-700 hover:text-emerald-500">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg">Angebot anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="relative h-[600px] bg-cover bg-center"
+    style="background-image: url('https://via.placeholder.com/1200x600?text=Hausmeisterservice+Madera+Dresden');"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl text-white text-center mx-auto">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Rundum-Service für<br/>Haus, Hof &amp; Garten
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Objektreinigung, Garten­pflege, Winterdienst &amp; kleine Reparaturen – zuverlässig in Dresden und Umgebung. :contentReference[oaicite:1]{index=1}
+        </p>
+        <a href="#contact" class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg text-lg">
+          Jetzt Kontakt aufnehmen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Cards -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Hausmeisterservice -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="settings" class="w-8 h-8 text-emerald-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Hausmeisterservice</h3>
+          <p class="text-gray-600">Objektbetreuung &amp; kleine Reparaturen</p>
+        </div>
+        <!-- Reinigung -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="broom" class="w-8 h-8 text-emerald-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Reinigung</h3>
+          <p class="text-gray-600">Hausordnung, Objekt- &amp; Fensterreinigung</p>
+        </div>
+        <!-- Gartenpflege -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="leaf" class="w-8 h-8 text-emerald-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Gartenpflege</h3>
+          <p class="text-gray-600">Rasen- &amp; Baumpflege, Heckenverschnitt</p>
+        </div>
+        <!-- Winterdienst -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="snowflake" class="w-8 h-8 text-emerald-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Winterdienst</h3>
+          <p class="text-gray-600">Schnee- &amp; Eis­beräumung, Streudienst</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Team+Hausmeisterservice+Madera" alt="Team Madera" class="rounded-lg w-full h-auto"/>
+        </div>
+        <div>
+          <span class="inline-block bg-emerald-100 text-emerald-600 font-semibold px-4 py-1 rounded-full mb-4">Familienbetrieb</span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Persönlich &amp; zuverlässig<br/>seit über 20&nbsp;Jahren.
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Seit 2001 betreuen wir Wohn- und Gewerbe­objekte in Dresden-Großzschachwitz
+            und Umgebung – mit fairen Preisen, klarer Kommunikation und hand­festem
+            Service rund ums Jahr. :contentReference[oaicite:2]{index=2}
+          </p>
+          <a href="#contact" class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-emerald-500">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+          Lehnen Sie sich zurück –<br/>wir kümmern uns um Ihr Objekt.
+        </h2>
+        <a href="#contact" class="inline-block bg-white hover:bg-gray-200 text-emerald-600 px-8 py-3 rounded-lg text-lg">
+          Angebot sichern
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie möchten ein maßgeschneidertes Leistungs­paket? Wir freuen uns auf Ihre Anfrage!
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Madera?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="award" class="w-6 h-6 text-emerald-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Langjährige Erfahrung</h4>
+                <p class="text-gray-700">Über zwei Jahrzehnte regionaler Service.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-emerald-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Kurzfristige Verfügbarkeit</h4>
+                <p class="text-gray-700">Flexible Einsatz­zeiten, auch im Winter.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="leaf" class="w-6 h-6 text-emerald-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Nachhaltige Pflege</h4>
+                <p class="text-gray-700">Umwelt­schonende Methoden &amp; Geräte.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="shield-check" class="w-6 h-6 text-emerald-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Transparente Preise</h4>
+                <p class="text-gray-700">Faire Abrechnung ohne versteckte Kosten.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-emerald-50 rounded-lg text-gray-800">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Telefonische Beratung</h4>
+            <p class="text-gray-900 mb-3">Mo–Fr 08:00 – 17:00&nbsp;Uhr</p>
+            <div class="flex items-center text-emerald-600 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              +49&nbsp;351&nbsp;3104364
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Anfrage senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"/>
+                <input type="text" placeholder="Nachname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"/>
+              <input type="tel" placeholder="Telefon" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"/>
+              <textarea placeholder="Ihre Nachricht…" rows="4" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"></textarea>
+              <button type="submit"
+                class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3 text-lg rounded-lg">
+                Abschicken
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+              <i data-lucide="home" class="w-4 h-4 text-white"></i>
+            </div>
+            <span class="text-xl font-bold text-white">Hausmeisterservice Madera</span>
+          </div>
+          <p class="text-gray-400 mb-4">Hausmeister • Reinigung • Gartenpflege – Dresden.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-white cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-white cursor-pointer"></i>
+            <i data-lucide="linkedin" class="w-5 h-5 text-gray-400 hover:text-white cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-white">Hausmeisterservice</a></li>
+            <li><a href="#services" class="hover:text-white">Reinigung</a></li>
+            <li><a href="#services" class="hover:text-white">Gartenpflege</a></li>
+            <li><a href="#services" class="hover:text-white">Winterdienst</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-white">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-white">Referenzen</a></li>
+            <li><a href="#contact" class="hover:text-white">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-white">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>+49 351 3104364</span></div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>webmaster@hausmeisterservicemadera.de</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Bahnhofstr.&nbsp;45, 01259 Dresden</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Hausmeisterservice Madera – Sven Madera. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
