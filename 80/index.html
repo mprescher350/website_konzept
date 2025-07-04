@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Müller Haustechnik – Heizung · Sanitär · Klima in Dresden</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="droplet" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold">Müller&nbsp;Haustechnik</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-orange-500">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-orange-500">Über&nbsp;uns</a>
+          <a href="#services" class="text-gray-700 hover:text-orange-500">Leistungen</a>
+          <a href="#projects" class="text-gray-700 hover:text-orange-500">Referenzen</a>
+          <a href="#news" class="text-gray-700 hover:text-orange-500">News</a>
+          <a href="#contact" class="text-gray-700 hover:text-orange-500">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">
+          Termin vereinbaren
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section
+    class="relative h-[600px] bg-cover bg-center"
+    style="background-image:url('https://via.placeholder.com/1200x600?text=Heizung+Sanit%C3%A4r+Klima+M%C3%BCller+Dresden');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl text-center mx-auto text-white">
+        <h1 class="text-5xl font-bold leading-tight mb-6">
+          Wärme, Wasser,&nbsp;Wohlfühlen<span class="text-orange-400">.</span>
+        </h1>
+        <p class="text-xl opacity-90 mb-8">
+          Meisterbetrieb für Heizungs- &amp; Klimatechnik, Bad & Sanitär sowie Solartechnik – alles aus einer Hand in Dresden. :contentReference[oaicite:1]{index=1}
+        </p>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Kostenloses Angebot
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Cards -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Heizungs- & Klimatechnik -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="flame" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Heizung & Klima</h3>
+          <p class="text-gray-600">Neu­installation · Modernisierung :contentReference[oaicite:2]{index=2}</p>
+        </div>
+        <!-- Bad & Sanitär -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="bath" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Bad & Sanitär</h3>
+          <p class="text-gray-600">Komplett­bäder & Teilsanierung :contentReference[oaicite:3]{index=3}</p>
+        </div>
+        <!-- Umwelt & Solar -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="sun" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Solar & Umwelt</h3>
+          <p class="text-gray-600">Wärmepumpe · PV · Pellet :contentReference[oaicite:4]{index=4}</p>
+        </div>
+        <!-- Wartung & Notdienst -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="clock" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Wartung 24/7</h3>
+          <p class="text-gray-600">Service­funk & Notruf</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=M%C3%BCller+Haustechnik+Team" alt="Müller Haustechnik Team" class="rounded-lg w-full h-auto">
+        </div>
+        <div>
+          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">
+            Meisterbetrieb&nbsp;seit&nbsp;>20&nbsp;Jahren
+          </span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Ihr Partner für<br/>moderne Haustechnik
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Ob effiziente Brennwert­heizung, barrierefreies Wohlfühlbad oder zukunftssichere Solaranlage – 
+            unser erfahrenes Team plant, installiert und wartet Anlagen, die Komfort
+            und Nachhaltigkeit verbinden. :contentReference[oaicite:5]{index=5}
+          </p>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 360° Service Icons -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">360°-Service</h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="check-circle-2" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">HU/AU DEKRA</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="move-3d" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Achsvermessung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="alert-triangle" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Notdienst</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="truck" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Hol- & Bringservice</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="brush" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Karosserie & Lack</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <i data-lucide="award" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Aufbereitung</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between">
+      <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+        Wohlfühlklima zuhause?<br/>Wir kümmern uns darum.
+      </h2>
+      <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+        Beratung sichern
+      </a>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Preisbeispiele</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Wartung -->
+        <div class="bg-white p-8 text-center border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab&nbsp;129&nbsp;€</div>
+          <p class="text-gray-600 mb-6">Heizungswartung</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex justify-center items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Sicherheits- & Effizienzcheck</li>
+            <li class="flex justify-center items-center"><i data-lucide="clock" class="w-5 h-5 text-green-500 mr-2"></i>ca. 1 h</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Buchen</a>
+        </div>
+        <!-- Badplanung -->
+        <div class="bg-white p-8 text-center border-2 border-orange-500 rounded-lg relative">
+          <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-gray-900 text-sm px-3 py-1 rounded-full">Beliebt</span>
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab&nbsp;4 990 €</div>
+          <p class="text-gray-600 mb-6">Komplettbad</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex justify-center items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>3D-Planung inklusive</li>
+            <li class="flex justify-center items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Barrierefrei optional</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Buchen</a>
+        </div>
+        <!-- Wärmepumpe -->
+        <div class="bg-white p-8 text-center border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab&nbsp;14 990 €</div>
+          <p class="text-gray-600 mb-6">Wärmepumpenpaket</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex justify-center items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Förder­mittel­service</li>
+            <li class="flex justify-center items-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Hydraulischer Abgleich</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Buchen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        24 Monate Garantie<br/>auf Teile&nbsp;&amp;&nbsp;Arbeit
+      </h2>
+    </div>
+  </section>
+
+  <!-- Professional Banner -->
+  <section
+    class="py-16 bg-cover bg-center relative"
+    style="background-image:url('https://via.placeholder.com/1200x400?text=M%C3%BCller+Haustechnik+in+Aktion');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-10 lg:px-20">
+      <div class="max-w-2xl text-white">
+        <h2 class="text-3xl font-bold mb-6 leading-snug">
+          Meister­service, auf den Sie sich verlassen können.
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+          Jetzt Termin sichern
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft’s ab</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-4">Beratung</h3>
+          <p class="text-gray-600">Vor-Ort-Analyse & Bedarfscheck</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-4">Angebot</h3>
+          <p class="text-gray-600">Transparent & förderfähig</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-4">Umsetzung</h3>
+          <p class="text-gray-600">Fachgerecht & termintreu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Fragen? Wir helfen gern – rufen Sie an oder senden Sie eine Nachricht.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Müller Haustechnik?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Meisterbetrieb</h4>
+                <p class="text-gray-700">Langjährige Erfahrung</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Servicefunk 24/7</h4>
+                <p class="text-gray-700">Schnelle Hilfe im Notfall</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Fördermittel­beratung</h4>
+                <p class="text-gray-700">BAFA & KfW inklusive</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">24 Monate Garantie</h4>
+                <p class="text-gray-700">Auf Teile & Arbeit</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Direkt anrufen</h4>
+            <p class="text-gray-900 mb-3">Wir beraten Sie persönlich</p>
+            <div class="flex items-center text-orange-600 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              0351 424 27 49
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Nachricht senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                <input type="text" placeholder="Nachname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <input type="tel" placeholder="Telefon" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <textarea placeholder="Ihre Nachricht …" rows="4" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+              <button type="submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+                Nachricht senden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="droplet" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold">Müller Haustechnik</span>
+          </div>
+          <p class="text-gray-400 mb-4">Heizung • Sanitär • Klima – Dresden</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Heizung & Klima</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Bad & Sanitär</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Solar & Umwelt</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Wartung 24/7</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-gray-900">Referenzen</a></li>
+            <li><a href="#news" class="hover:text-gray-900">News</a></li>
+            <li><a href="#contact" class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>0351 424 27 49</span></div>
+            <div class="flex items-center"><i data-lucide="smartphone" class="w-4 h-4 mr-2"></i><span>0151 5911 1883</span></div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>mueller-haustechnik@online.de</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Cossebauder Str. 42, 01157 Dresden</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Müller Heizung Sanitär Klima Haustechnik GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
