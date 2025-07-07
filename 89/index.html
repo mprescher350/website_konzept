@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baubetrieb Fleischer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="text-gray-900 bg-white">
+
+  <!-- Navigation -->
+  <header class="bg-[#08304B] sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-white text-xl font-bold">Baubetrieb Fleischer</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#leistungen" class="text-white hover:text-orange-400">Leistungen</a>
+        <a href="#preise" class="text-white hover:text-orange-400">Preise</a>
+        <a href="#kontakt" class="text-white hover:text-orange-400">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-[#08304B] text-white text-center flex flex-col justify-center items-center h-screen px-6">
+    <h2 class="text-4xl font-bold mb-4">Ihr zuverlässiger Partner für Bauarbeiten</h2>
+    <p class="text-lg mb-6">Fassaden‑Dämmung, Sanierung und Terrassenbau – seit über 20 Jahren in Pirna &amp; Dresden.</p>
+    <a href="#kontakt" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-lg">Jetzt Angebot einholen</a>
+  </section>
+
+  <!-- Stärken -->
+  <section class="py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-[#08304B]">Unsere Stärken</h2>
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <i data-lucide="user-check" class="w-10 h-10 mx-auto text-orange-500 mb-4"></i>
+          <h3 class="font-semibold mb-2">20 Jahre Erfahrung</h3>
+          <p>Traditionelles Handwerk trifft moderne Technik.</p>
+        </div>
+        <div>
+          <i data-lucide="handshake" class="w-10 h-10 mx-auto text-orange-500 mb-4"></i>
+          <h3 class="font-semibold mb-2">Zuverlässige Termine</h3>
+          <p>Feste Zeitpläne – Ihr Projekt bleibt planbar.</p>
+        </div>
+        <div>
+          <i data-lucide="shield-check" class="w-10 h-10 mx-auto text-orange-500 mb-4"></i>
+          <h3 class="font-semibold mb-2">Geprüfte Qualität</h3>
+          <p>Zertifizierte Materialien & geschulte Fachkräfte.</p>
+        </div>
+        <div>
+          <i data-lucide="badge-dollar-sign" class="w-10 h-10 mx-auto text-orange-500 mb-4"></i>
+          <h3 class="font-semibold mb-2">Faire Preise</h3>
+          <p>Transparente Angebote ohne versteckte Kosten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section class="py-16 bg-gray-50" id="about">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-center md:text-left">
+        <i data-lucide="helmet" class="w-24 h-24 text-orange-500 mx-auto md:mx-0 mb-6"></i>
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-[#08304B]">Über uns</h2>
+        <p class="mb-4">Seit unserer Gründung im Jahr 2003 steht der Name <strong>Baubetrieb Fleischer</strong> für solides Handwerk, regionale Verbundenheit und persönliche Betreuung.</p>
+        <p>Ob Einfamilienhaus, Gewerbebau oder Außenanlage – wir begleiten Ihr Projekt von der ersten Idee bis zur schlüsselfertigen Übergabe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="leistungen" class="py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-[#08304B]">Unsere Leistungen</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Hochbau</h3>
+          <p>Neu‑ und Anbauten von Fundament bis Dachstuhl.</p>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Tief‑ & Straßenbau</h3>
+          <p>Erd‑, Kanal‑ und Pflasterarbeiten für langlebige Infrastruktur.</p>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Fassaden‑Dämmung</h3>
+          <p>Effiziente Wärmedämmverbundsysteme gegen hohe Energiekosten.</p>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Fassaden‑Sanierung</h3>
+          <p>Schonende Aufarbeitung historischer und moderner Fassaden.</p>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Terrassen‑ & Pflasterbau</h3>
+          <p>Individuelle Terrassen, Wege und Einfahrten aus Stein.</p>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Innenausbau</h3>
+          <p>Trockenbau, Estrich und Putz für perfektes Wohnklima.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-[#08304B] text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Bereit, Ihr Bauprojekt zu starten?</h2>
+    <a href="#kontakt" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-lg">Kostenloses Beratungsgespräch</a>
+  </section>
+
+  <!-- Preise -->
+  <section id="preise" class="py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-[#08304B]">Preispakete</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="border-2 border-orange-500 rounded-lg p-6">
+          <h3 class="font-bold text-xl mb-2">Basis</h3>
+          <p class="text-2xl text-orange-500 mb-4">ab 199€/m²</p>
+          <ul class="mb-6 space-y-2 text-left">
+            <li>✔ Material & Montage</li>
+            <li>✔ Standard‑Garantie</li>
+          </ul>
+          <a href="#kontakt" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg">Anfragen</a>
+        </div>
+        <div class="border-2 border-orange-500 rounded-lg p-6">
+          <h3 class="font-bold text-xl mb-2">Komfort</h3>
+          <p class="text-2xl text-orange-500 mb-4">ab 279€/m²</p>
+          <ul class="mb-6 space-y-2 text-left">
+            <li>✔ Alle Basis‑Leistungen</li>
+            <li>✔ Energieberatung</li>
+          </ul>
+          <a href="#kontakt" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg">Anfragen</a>
+        </div>
+        <div class="border-2 border-orange-500 rounded-lg p-6">
+          <h3 class="font-bold text-xl mb-2">Premium</h3>
+          <p class="text-2xl text-orange-500 mb-4">ab 349€/m²</p>
+          <ul class="mb-6 space-y-2 text-left">
+            <li>✔ Alle Komfort‑Leistungen</li>
+            <li>✔ Priorisierte Ausführung</li>
+          </ul>
+          <a href="#kontakt" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg">Anfragen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-[#08304B]">So läuft Ihr Projekt ab</h2>
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="mx-auto mb-4 bg-orange-500 w-16 h-16 flex items-center justify-center text-white rounded-full">
+            <i data-lucide="phone" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold mb-2">1. Erstgespräch</h4>
+          <p>Wir klären Ziele und Rahmen.</p>
+        </div>
+        <div>
+          <div class="mx-auto mb-4 bg-orange-500 w-16 h-16 flex items-center justify-center text-white rounded-full">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold mb-2">2. Angebot</h4>
+          <p>Sie erhalten ein Festpreisangebot.</p>
+        </div>
+        <div>
+          <div class="mx-auto mb-4 bg-orange-500 w-16 h-16 flex items-center justify-center text-white rounded-full">
+            <i data-lucide="hammer" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold mb-2">3. Umsetzung</h4>
+          <p>Fachgerechte Realisierung durch unser Team.</p>
+        </div>
+        <div>
+          <div class="mx-auto mb-4 bg-orange-500 w-16 h-16 flex items-center justify-center text-white rounded-full">
+            <i data-lucide="flag" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold mb-2">4. Abnahme</h4>
+          <p>Gemeinsame Endabnahme und Übergabe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-[#08304B]">Kontakt</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <p><i data-lucide="map-pin" class="inline w-5 h-5 mr-2 text-orange-500"></i>Hauptstraße 10, 01819 Kurort Berggießhübel</p>
+          <p><i data-lucide="phone" class="inline w-5 h-5 mr-2 text-orange-500"></i><a href="tel:+493502312605">035023 12605</a></p>
+          <p><i data-lucide="phone-forwarded" class="inline w-5 h-5 mr-2 text-orange-500"></i><a href="tel:+491735836728">0173 5836728</a></p>
+        </div>
+        <form class="space-y-4">
+          <input type="text" placeholder="Name" required class="w-full border border-gray-300 p-3 rounded-md" />
+          <input type="email" placeholder="E‑Mail" required class="w-full border border-gray-300 p-3 rounded-md" />
+          <textarea placeholder="Nachricht" rows="4" required class="w-full border border-gray-300 p-3 rounded-md"></textarea>
+          <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg">Absenden</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#08304B] text-white text-center py-6">
+    <p>© 2025 Baubetrieb Fleischer – Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
