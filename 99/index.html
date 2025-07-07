@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glaserei & Metallbau Ziller – Fenster, Türen & Glasnotdienst Dresden</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="triangle" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Glaserei Ziller</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-orange-500">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-orange-500">Über&nbsp;uns</a>
+          <a href="#services" class="text-gray-700 hover:text-orange-500">Leistungen</a>
+          <a href="#projects" class="text-gray-700 hover:text-orange-500">Referenzen</a>
+          <a href="#contact" class="text-gray-700 hover:text-orange-500">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">
+          Angebot anfragen
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1200x600?text=Glaserei+Ziller+Dresden');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl text-white text-center mx-auto">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Fenster, Türen & Glasbau<br/>
+          aus&nbsp;Dresden
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Von der Beratung bis zur 24-h-Glasnotdienst-Reparatur – alles aus einer Hand. :contentReference[oaicite:1]{index=1}
+        </p>
+        <a href="#contact"
+           class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Projekt starten
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Cards -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Fenster & Türen -->
+        <div class="bg-white text-center p-6 hover:shadow-lg rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="home" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fenster & Türen</h3>
+          <p class="text-gray-600">Holz · Alu · Kunststoff</p>
+        </div>
+        <!-- Glasreparatur -->
+        <div class="bg-white text-center p-6 hover:shadow-lg rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="hammer" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Glas­reparatur</h3>
+          <p class="text-gray-600">Schnell & fachgerecht</p>
+        </div>
+        <!-- Dusch­kabinen & Spiegel -->
+        <div class="bg-white text-center p-6 hover:shadow-lg rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="square" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Duschen & Spiegel</h3>
+          <p class="text-gray-600">Individuelle Maß­anfertigung</p>
+        </div>
+        <!-- 24h Notdienst -->
+        <div class="bg-white text-center p-6 hover:shadow-lg rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="alarm-clock" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">24 h Glas­notdienst</h3>
+          <p class="text-gray-600">0174&nbsp;574&nbsp;7371</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Glaserei+Ziller+Team"
+               alt="Team der Glaserei Ziller" class="rounded-lg w-full h-auto"/>
+        </div>
+        <div>
+          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">Dresden</span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Ihr Glas- & Bauelemente-Profi<br/>für Ostsachsen
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Ob Neubau, Instandhaltung oder Reparatur&nbsp;– wir liefern, montieren und warten sämtliche Glas- und Bauelemente.<br/>
+            Unser 24-h-Notdienst hilft Ihnen bei Ein­bruchs-, Unwetter- oder Unfall­schäden sofort weiter. :contentReference[oaicite:2]{index=2}
+          </p>
+          <a href="#contact"
+             class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Service Icons -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Rundum-Service für Glas &amp; Bauelemente.
+      </h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="move" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">XL-Glasmontage</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="shield" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Sicherheitsglas</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="grid" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Ganz­glasanlagen</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="droplet" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Spiegel & Duschen</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="wrench" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Wartung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="package" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Bauelemente</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+          Glasbruch? Wir sind 24 h für Sie da!
+        </h2>
+        <a href="#contact"
+           class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Jetzt Notruf 0174&nbsp;574&nbsp;7371
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Preisbeispiele</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Glasnotdienst -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 99 €</div>
+          <p class="text-gray-600 mb-6">Glasnotdienst</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                class="w-5 h-5 text-green-500 mr-2"></i>Sofort-Sicherung</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                class="w-5 h-5 text-green-500 mr-2"></i>Folie / Holzplatte</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                class="w-5 h-5 text-green-500 mr-2"></i>Termin zur Neuverglasung</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+        <!-- Fenster-Reparatur -->
+        <div class="bg-white text-center p-8 border-2 border-orange-500 relative rounded-lg">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-500 text-gray-900 text-sm px-3 py-1 rounded-full">Beliebt</span>
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 399 €</div>
+          <p class="text-gray-600 mb-6">Fenster-Reparatur</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                class="w-5 h-5 text-green-500 mr-2"></i>Isolierglas bis 1 m²</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                class="w-5 h-5 text-green-500 mr-2"></i>Dichtung & Justage</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                class="w-5 h-5 text-green-500 mr-2"></i>5 Jahre Garantie</li>
+          </ul>
+          <a href="#contact"
+             class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Wählen</a>
+        </div>
+        <!-- Ganzglasdusche -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 1.999 €</div>
+          <p class="text-gray-600 mb-6">Ganzglas-Dusche</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                class="w-5 h-5 text-green-500 mr-2"></i>ESG 8 mm</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                class="w-5 h-5 text-green-500 mr-2"></i>Edelstahl-Beschläge</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                class="w-5 h-5 text-green-500 mr-2"></i>Aufmaß & Montage</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        5 Jahre Gewährleistung<br/>auf alle Verglasungen.
+      </h2>
+    </div>
+  </section>
+
+  <!-- Professional Service -->
+  <section class="py-16 bg-cover bg-center relative"
+           style="background-image:url('https://via.placeholder.com/1200x400?text=Glaserei+Ziller+in+Aktion');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-10 lg:px-20">
+      <div class="max-w-2xl text-gray-900">
+        <h2 class="text-3xl font-bold mb-6 leading-snug">
+          Für klare Sicht &amp; sichere Gebäude<br/>brauchen Sie Profis mit Erfahrung.
+        </h2>
+        <a href="#contact"
+           class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+          Projekt starten
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft's ab</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-4">Beratung</h3>
+          <p class="text-gray-600">Vor-Ort-Aufmaß & Konzept.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-4">Festpreis</h3>
+          <p class="text-gray-600">Angebot & Termin­plan.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-4">Montage</h3>
+          <p class="text-gray-600">Sauber, schnell, garantiert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Schreiben Sie uns oder rufen Sie direkt an – wir melden uns kurzfristig.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Glaserei Ziller?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">24 h Glasnotdienst</h4>
+                <p class="text-gray-700">Soforthilfe bei Glasbruch. :contentReference[oaicite:3]{index=3}</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Komplett­service</h4>
+                <p class="text-gray-700">Beratung, Montage & Wartung. :contentReference[oaicite:4]{index=4}</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Qualifizierte Monteure</h4>
+                <p class="text-gray-700">Spezialisten für Glas & Metall.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Made in Dresden</h4>
+                <p class="text-gray-700">Regional & persönlich.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg text-gray-800">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">24 h Notruf</h4>
+            <div class="flex items-center text-orange-600 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              0174&nbsp;574&nbsp;7371
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Nachricht senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500"/>
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500"/>
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500"/>
+              <textarea placeholder="Projektbeschreibung…" rows="4" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500"></textarea>
+              <button type="submit"
+                      class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+                Anfrage senden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="triangle" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold">Glaserei Ziller</span>
+          </div>
+          <p class="text-gray-400 mb-4">Fenster, Türen & Glasbau aus Dresden.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="linkedin" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Fenster & Türen</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Glas­reparatur</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Duschen & Spiegel</a></li>
+            <li><a href="#services" class="hover:text-gray-900">24 h Notdienst</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-gray-900">Referenzen</a></li>
+            <li><a href="#contact" class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>0351&nbsp;848&nbsp;2831</span></div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>info@glaserei-dresden.com</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Leipziger Str. 270, 01139 Dresden</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Glaserei und Metallbau Ziller GmbH & Co. KG. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
