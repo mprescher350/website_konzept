@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Der Meißelschmied – Handgeschmiedete Steinmetz­werkzeuge aus Sachsen</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
+            <i data-lucide="hammer" class="w-4 h-4 text-white"></i>
+          </div>
+          <span class="text-xl font-bold">Der Meißelschmied</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-amber-600">Startseite</a>
+          <a href="#about" class="text-gray-700 hover:text-amber-600">Über&nbsp;uns</a>
+          <a href="#services" class="text-gray-700 hover:text-amber-600">Werkzeuge</a>
+          <a href="#process" class="text-gray-700 hover:text-amber-600">Ablauf</a>
+          <a href="#contact" class="text-gray-700 hover:text-amber-600">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg">
+          Anfrage stellen
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1600x800?text=Handgeschmiedete+Meissel');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <h1 class="text-5xl font-bold leading-tight mb-6">
+          Handgeschmiedete Steinmetz­werkzeuge<br/>aus Sachsen – seit 1994
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Schlageisen, Zahneisen & Pneumatik­meißel – jedes Stück ein Unikat.<br/>
+          Unsere Meißel halfen beim Wieder­aufbau der Dresdner Frauenkirche. :contentReference[oaicite:1]{index=1}
+        </p>
+        <a href="#contact" class="inline-block bg-amber-600 hover:bg-amber-700 px-8 py-3 rounded-lg text-lg">
+          Jetzt beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <h2 class="text-3xl font-bold text-center mb-10">Werkzeuge & Leistungen</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Handmeißel -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="tool" class="w-8 h-8 text-amber-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Hand­meißel</h3>
+          <p class="text-gray-600">Schlage-, Zahn- & Spitzeisen aus Feder­stahl</p>
+        </div>
+        <!-- Pneumatik -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="wind" class="w-8 h-8 text-amber-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Pneumatik-Meißel</h3>
+          <p class="text-gray-600">Pressluft- & Soft-Air-Werkzeuge für Profis</p>
+        </div>
+        <!-- SDS / Maschinen -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="cpu" class="w-8 h-8 text-amber-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">SDS-Meißel</h3>
+          <p class="text-gray-600">Adapter & Einsätze für SDS-Max / Plus</p>
+        </div>
+        <!-- Schärfservice -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="rotate-ccw" class="w-8 h-8 text-amber-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Aufarbeitung</h3>
+          <p class="text-gray-600">Fach­gerechtes Nachschärfen stumpfer Werkzeuge</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <img src="https://via.placeholder.com/600x400?text=Mike+Griete+in+der+Schmiede"
+             alt="Mike Griete in der Schmiede" class="rounded-lg w-full h-auto">
+        <div>
+          <span class="inline-block bg-amber-100 text-amber-700 font-semibold px-4 py-1 rounded-full mb-4">
+            29 Jahre Erfahrung
+          </span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Mike Griete – <br/>Schmied aus Leidenschaft
+          </h2>
+          <p class="text-gray-600 mb-6">
+            In meiner kleinen Schmiede in Braunsdorf fertige ich jedes Werkzeug von Hand –
+            exakt abgestimmt auf Ihren Stein und Ihre Technik. Grundmaße, Länge oder
+            Schneidbreite passe ich individuell an. :contentReference[oaicite:2]{index=2}
+          </p>
+          <a href="#contact" class="inline-block bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">Warum „Der Meißelschmied“?</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        <div class="flex flex-col items-center">
+          <i data-lucide="check-circle" class="w-10 h-10 text-amber-600 mb-4"></i>
+          <p>100 % Hand­schmiede­qualität</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i data-lucide="ruler" class="w-10 h-10 text-amber-600 mb-4"></i>
+          <p>Maß­anfertigungen ohne Aufpreis</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i data-lucide="award" class="w-10 h-10 text-amber-600 mb-4"></i>
+          <p>Werkzeuge für Frauenkirche Dresden</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i data-lucide="truck" class="w-10 h-10 text-amber-600 mb-4"></i>
+          <p>Schneller Versand ab 7 €</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-amber-600">
+    <div class="container mx-auto px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between">
+      <h2 class="text-3xl font-bold text-white mb-6 md:mb-0 leading-snug">
+        Unverbindliches Muster­eisen testen –<br/>jetzt kostenlos anfragen!
+      </h2>
+      <a href="#contact" class="inline-block bg-white hover:bg-gray-100 text-amber-700 px-8 py-3 rounded-lg text-lg">
+        Muster anfordern
+      </a>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So bestellen Sie</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-4">Kontakt</h3>
+          <p class="text-gray-600">Rufen Sie an oder schreiben Sie uns Ihre Werkzeug­wünsche.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-4">Fertigung</h3>
+          <p class="text-gray-600">Ihr Meißel wird individuell geschmiedet, gehärtet & geprüft.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-4">Versand</h3>
+          <p class="text-gray-600">Deutschlandweit ab 7 € – Stamm­kunden auf Rechnung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-[#f9fafb]">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie benötigen Werkzeuge oder eine Sonder­anfertigung? Schreiben Sie uns!
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Ihre Vorteile</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-amber-600 mr-4 mt-1"></i>
+              <p>Persönliche Beratung direkt vom Schmied</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-amber-600 mr-4 mt-1"></i>
+              <p>Schnelle Lieferzeiten & faire Preise</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-amber-600 mr-4 mt-1"></i>
+              <p>Aufarbeitung statt Wegwerfen – nachhaltig</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-amber-600 mr-4 mt-1"></i>
+              <p>Zahlung per Vorkasse oder Rechnung</p>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-amber-50 rounded-lg">
+            <h4 class="font-bold text-lg mb-2">Direkt anrufen</h4>
+            <div class="flex items-center text-amber-700 text-xl font-bold">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              0173&nbsp;374&nbsp;81&nbsp;79
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Nachricht senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent">
+                <input type="text" placeholder="Nachname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent">
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent">
+              <input type="tel" placeholder="Telefon"
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent">
+              <textarea placeholder="Ihre Nachricht …" rows="4" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"></textarea>
+              <button type="submit"
+                class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg">
+                Absenden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
+              <i data-lucide="hammer" class="w-4 h-4 text-white"></i>
+            </div>
+            <span class="text-xl font-bold">Der Meißelschmied</span>
+          </div>
+          <p class="text-gray-400 mb-4">Handgeschmiedete Werkzeuge für Steinmetz & Bildhauer.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Werkzeuge</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Hand­meißel</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Pneumatik</a></li>
+            <li><a href="#services" class="hover:text-gray-900">SDS</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Aufarbeitung</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#process" class="hover:text-gray-900">Ablauf</a></li>
+            <li><a href="#contact" class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>0173&nbsp;374&nbsp;81&nbsp;79</div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i>Mike-Werkzeuge@t-online.de</div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>Straße&nbsp;der&nbsp;MTS 1, 01737 Braunsdorf</div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        &copy; 2025 Mike Griete – Der Meißelschmied. Alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
