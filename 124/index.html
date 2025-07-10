@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ihr Schmied – Metallbau & Kunstschmiede Koch in Burgstädt</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-stone-600 rounded-full flex items-center justify-center">
+            <i data-lucide="anvil" class="w-4 h-4 text-white"></i>
+          </div>
+          <span class="text-xl font-bold">Ihr Schmied</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-stone-600">Startseite</a>
+          <a href="#about" class="text-gray-700 hover:text-stone-600">Über&nbsp;uns</a>
+          <a href="#services" class="text-gray-700 hover:text-stone-600">Leistungen</a>
+          <a href="#projects" class="text-gray-700 hover:text-stone-600">Referenzen</a>
+          <a href="#contact" class="text-gray-700 hover:text-stone-600">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-stone-600 hover:bg-stone-700 text-white px-4 py-2 rounded-lg">
+          Angebot anfragen
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://www.ihr-schmied.de/images/content/referenzen/zaun_tor_gr.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <h1 class="text-5xl font-bold leading-tight mb-6">
+          Handgefertigte Metallarbeiten<br/>aus Sachsen – seit&nbsp;1877
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Kreative Schmiedekunst, moderne Edelstahl­lösungen und denkmal­gerechte Restaurierungen – alles aus einer Hand. :contentReference[oaicite:1]{index=1}
+        </p>
+        <a href="#contact" class="inline-block bg-stone-600 hover:bg-stone-700 px-8 py-3 rounded-lg text-lg">
+          Jetzt Projekt starten
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Cards -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Schmiedearbeiten -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="hammer" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Schmiede­arbeiten</h3>
+          <p class="text-gray-600">Tore, Zäune & Geländer nach Maß</p>
+        </div>
+        <!-- Bauschlosserei -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="building" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Bauschlosserei</h3>
+          <p class="text-gray-600">Balkone, Treppen & Stahlbau</p>
+        </div>
+        <!-- Restaurierung -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="book-open" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Restaurierung</h3>
+          <p class="text-gray-600">Denkmal­pflege & Metall­konservierung</p>
+        </div>
+        <!-- Edelstahl -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="sparkles" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Edelstahl</h3>
+          <p class="text-gray-600">Moderne Metall­gestaltung</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <img src="https://www.ihr-schmied.de/images/content/arbeiten/werkstatt_gr.jpg"
+             alt="Schmiedewerkstatt Koch" class="rounded-lg w-full h-auto">
+        <div>
+          <span class="inline-block bg-stone-100 text-stone-700 font-semibold px-4 py-1 rounded-full mb-4">
+            Innungsfachbetrieb & Restaurator
+          </span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Tradition trifft Innovation –<br/>Metall in Meisterhand
+          </h2>
+          <p class="text-gray-600 mb-6">
+            In der fünften Generation schmieden wir individuelle Metall­arbeiten – von der ersten Skizze bis zur
+            Montage. Als geprüfter Restaurator im Metallbauer­handwerk vereinen wir historisches Know-how
+            mit modernen Fertigungs­techniken.
+          </p>
+          <a href="#contact" class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-6 py-3 rounded-lg">
+            Mehr über uns
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service List -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">Komplett-Service rund ums Metall</h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="gate" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="font-semibold">Tore & Zäune</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="stairs" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="font-semibold">Treppen</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="fence" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="font-semibold">Vergitterung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="shield" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="font-semibold">Denkmalpflege</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="wand" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="font-semibold">Interieur</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="tool" class="w-8 h-8 text-stone-600"></i>
+          </div>
+          <h3 class="font-semibold">Werkzeug­schmiede</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-stone-600">
+    <div class="container mx-auto px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between">
+      <h2 class="text-3xl font-bold text-white mb-6 md:mb-0 leading-snug">
+        Kostenloses Beratungs­gespräch<br/>inkl. Skizzen-Entwurf!
+      </h2>
+      <a href="#contact" class="inline-block bg-white hover:bg-gray-100 text-stone-700 px-8 py-3 rounded-lg text-lg">
+        Termin vereinbaren
+      </a>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Beispiel-Pakete</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Schmiede-Check -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-stone-600 mb-2">ab 199 €</div>
+          <p class="text-gray-600 mb-6">Schmiede-Check</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Vor-Ort-Begutachtung</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Mängelreport PDF</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Sanierungs­empfehlung</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+        <!-- Tor Basic -->
+        <div class="bg-white text-center p-8 border-2 border-stone-600 relative rounded-lg">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-stone-600 text-white text-sm px-3 py-1 rounded-full">Beliebt</span>
+          <div class="text-4xl font-bold text-stone-600 mb-2">ab 1.999 €</div>
+          <p class="text-gray-600 mb-6">Tor „Basic“</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>1-flügelig bis 3 m</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Pulverbeschichtet</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Montage inklusive</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+        <!-- Restaurierung -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-stone-600 mb-2">ab 499 €</div>
+          <p class="text-gray-600 mb-6">Restaurierungs-Paket</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Oberflächen­reinigung</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Korrosions­schutz</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Neulackierung</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        10 Jahre Garantie<br/>auf geschmiedete Tore & Zäune
+      </h2>
+    </div>
+  </section>
+
+  <!-- Professional Service -->
+  <section class="py-16 bg-cover bg-center relative"
+           style="background-image:url('https://www.ihr-schmied.de/images/content/referenzen/treppe_gr.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-10 lg:px-20">
+      <div class="max-w-2xl text-gray-200">
+        <h2 class="text-3xl font-bold mb-6 leading-snug">
+          Für perfekte Metall­arbeiten<br/>braucht es perfekte Handwerker.
+        </h2>
+        <a href="#contact" class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-6 py-3 rounded-lg">
+          Projekt besprechen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="py-16" id="projects">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft's ab</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-stone-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-4">Beratung</h3>
+          <p class="text-gray-600">Ideen besprechen & Skizzen erstellen.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-stone-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-4">Fertigung</h3>
+          <p class="text-gray-600">Handschmiede, Schweißen & Oberflächen.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-stone-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-4">Montage</h3>
+          <p class="text-gray-600">Vor Ort passgenau installiert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-[#f9fafb]">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie planen ein Projekt? Rufen Sie an oder senden Sie uns Ihre Anfrage – wir melden uns umgehend.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Ihre Vorteile</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-stone-600 mr-4 mt-1"></i>
+              <p>Einzelstücke statt Massenware</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-stone-600 mr-4 mt-1"></i>
+              <p>Restaurator im Metallbauer­handwerk</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-stone-600 mr-4 mt-1"></i>
+              <p>Fertigung & Montage aus einer Hand</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-stone-600 mr-4 mt-1"></i>
+              <p>Sachsenweit & deutschlandweit tätig</p>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-stone-50 rounded-lg">
+            <h4 class="font-bold text-lg mb-2">Direkt anrufen</h4>
+            <div class="flex items-center text-stone-700 text-xl font-bold">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              03724&nbsp;14848
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Nachricht senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-stone-600 focus:border-transparent">
+                <input type="text" placeholder="Nachname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-stone-600 focus:border-transparent">
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-stone-600 focus:border-transparent">
+              <input type="tel" placeholder="Telefon"
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-stone-600 focus:border-transparent">
+              <textarea placeholder="Ihre Nachricht …" rows="4" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-stone-600 focus:border-transparent"></textarea>
+              <button type="submit"
+                class="w-full bg-stone-600 hover:bg-stone-700 text-white py-3 rounded-lg">
+                Absenden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-stone-600 rounded-full flex items-center justify-center">
+              <i data-lucide="anvil" class="w-4 h-4 text-white"></i>
+            </div>
+            <span class="text-xl font-bold">Ihr Schmied</span>
+          </div>
+          <p class="text-gray-400 mb-4">Metallbau & Kunstschmiede Koch – individuelle Metall­gestaltung seit 1877.</p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Schmiede­arbeiten</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Bauschlosserei</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Restaurierung</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Edelstahl</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-gray-900">Referenzen</a></li>
+            <li><a href="#contact" class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>03724&nbsp;14848</div>
+            <div class="flex items-center"><i data-lucide="smartphone" class="w-4 h-4 mr-2"></i>0171&nbsp;242&nbsp;8771</div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i>kontakt@ihr-schmied.de</div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>Marienberg 3, 09217 Burgstädt</div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        &copy; 2025 Metallbau & Kunstschmiede Koch. Alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
