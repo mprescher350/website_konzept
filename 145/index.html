@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimmerei Heiden – Dachstühle • Holzbau • Fachwerk in Pirna</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-8 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="tree-pine" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold">Zimmerei&nbsp;Heiden</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="hover:text-orange-500">Home</a>
+          <a href="#about" class="hover:text-orange-500">Über&nbsp;uns</a>
+          <a href="#services" class="hover:text-orange-500">Leistungen</a>
+          <a href="#contact" class="hover:text-orange-500">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">Jetzt anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1200x600?text=Zimmerei+Heiden');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative container mx-auto h-full flex items-center px-8 lg:px-20">
+      <div class="mx-auto text-center max-w-2xl text-white">
+        <h1 class="text-5xl font-bold leading-tight mb-6">
+          Holzbau in Meisterhand<br/>für Dach & Fassade
+        </h1>
+        <p class="text-xl opacity-90 mb-8">
+          René Heiden – Ihr Zimmerer­meister für individuelle Holz­projekte in Pirna, Dresden & Umgebung.
+        </p>
+        <a href="#contact"
+           class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Projekt starten
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-8 lg:px-20">
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <!-- Dachstühle -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="home" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Dachstühle</h3>
+          <p class="text-gray-600">Traditionell & statisch geprüft</p>
+        </div>
+        <!-- Carports -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="car" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Carports</h3>
+          <p class="text-gray-600">Schutz & Design fürs Auto</p>
+        </div>
+        <!-- Terrassen & Balkone -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="sun" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Terrassen & Balkone</h3>
+          <p class="text-gray-600">Wetterfeste Wohlfühlflächen</p>
+        </div>
+        <!-- Holzrahmenbau -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="leaf" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Holzrahmenbau</h3>
+          <p class="text-gray-600">Energie­effiziente Neubauten</p>
+        </div>
+        <!-- Fachwerksanierung -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="history" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fachwerk­sanierung</h3>
+          <p class="text-gray-600">Historie bewahren & stärken</p>
+        </div>
+        <!-- Gauben -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="square" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Gauben</h3>
+          <p class="text-gray-600">Mehr Licht unterm Dach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-8 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <img src="https://via.placeholder.com/500x400?text=Team+Heiden" alt="Team Zimmerei Heiden"
+             class="w-full h-auto rounded-lg">
+        <div>
+          <span
+            class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">Meisterbetrieb aus Pirna</span>
+          <h2 class="text-4xl font-bold leading-snug mb-6">
+            Holzleidenschaft seit über 15 Jahren.
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Vom klassischen Dachstuhl bis zum modernen Holzrahmen­haus: Wir planen,
+            fertigen und montieren alles aus einer Hand – präzise, nachhaltig und terminsicher.
+          </p>
+          <a href="#contact"
+             class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-8 lg:px-20 flex flex-col md:flex-row items-center justify-between">
+      <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+        Ihr Holzbau-Projekt verdient Meisterqualität – wir setzen es um.
+      </h2>
+      <a href="#contact"
+         class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+        Unverbindlich anfragen
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-[#f9fafb]">
+    <div class="container mx-auto px-8 lg:px-20">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Bereit für Ihr Projekt? Fordern Sie jetzt Ihr unverbindliches Angebot an.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Zimmerei Heiden?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="award" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Meister­qualität</h4>
+                <p class="text-gray-700">Persönliche Betreuung durch René Heiden.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="leaf" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Nachhaltig</h4>
+                <p class="text-gray-700">Holz aus verantwortungs­voller Forst­wirtschaft.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Termintreu</h4>
+                <p class="text-gray-700">Feste Zeit- und Kosten­pläne.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="hammer" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Alles aus einer Hand</h4>
+                <p class="text-gray-700">Planung, Fertigung & Montage.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg">
+            <h4 class="font-bold mb-2">Direkt anrufen</h4>
+            <p class="mb-3">Wir beraten Sie gern persönlich:</p>
+            <div class="flex items-center text-orange-600 text-xl font-bold">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>01578&nbsp;490&nbsp;4403
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Kostenloses Angebot anfordern</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="border border-gray-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+                <input type="text" placeholder="Nachname" required
+                       class="border border-gray-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="border border-gray-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <input type="tel" placeholder="Telefon" required
+                     class="border border-gray-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-500">
+              <textarea rows="4" placeholder="Projektbeschreibung …" required
+                        class="border border-gray-300 p-3 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+              <button type="submit"
+                      class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 rounded-lg text-lg">
+                Angebot anfordern
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-8 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="tree-pine" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold">Zimmerei Heiden</span>
+          </div>
+          <p class="text-gray-400 mb-4">Holzbau & Sanierung – aus Pirna.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="phone" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Dachstühle</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Carports</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Terrassen & Balkone</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Fachwerk­sanierung</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#contact" class="hover:text-gray-900">Kontakt</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Leistungen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>01578 490 4403</div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i>info@zimmerer-heiden.com</div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>Am Rundling 20, 01796 Pirna</div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Zimmerei René Heiden. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
