@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dachdeckermeister Mühle – Auf Dresdens Dächern</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+            <i data-lucide="mountain" class="w-4 h-4 text-white"></i>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Dachdeckermeister Mühle</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-green-600">Start</a>
+          <a href="#about" class="text-gray-700 hover:text-green-600">Über uns</a>
+          <a href="#services" class="text-gray-700 hover:text-green-600">Leistungen</a>
+          <a href="#contact" class="text-gray-700 hover:text-green-600">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">Angebot anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center" style="background-image: url('https://www.auf-dresdens-daechern.de/bilder/dacharbeiten.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl text-white text-center mx-auto">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">Traditionelles Dachhandwerk<br/>mit Blick auf das Ganze</h1>
+        <p class="text-xl mb-8">Zuverlässige Dacharbeiten, Naturbaustoffe und Denkmalpflege – direkt vom Meisterbetrieb aus Dresden.</p>
+        <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg">Jetzt Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://www.auf-dresdens-daechern.de/bilder/team.jpg" alt="Team auf dem Dach" class="rounded-lg w-full h-auto"/>
+        </div>
+        <div>
+          <span class="inline-block bg-green-100 text-green-600 font-semibold px-4 py-1 rounded-full mb-4">Dachdecker aus Berufung</span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">Wir stehen für nachhaltige Handwerkskunst auf höchstem Niveau</h2>
+          <p class="text-gray-600 mb-6">
+            Unser Team rund um Dachdeckermeister Torsten Mühle vereint langjährige Erfahrung mit Liebe zur Tradition. Ob Naturdächer, Biberschwanzdeckung oder Schieferarbeiten – jedes Projekt wird mit höchster Sorgfalt und Fachwissen umgesetzt.
+          </p>
+          <a href="#services" class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg">Mehr erfahren</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <h2 class="text-3xl font-bold text-center mb-12">Unsere Leistungen</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white text-center p-6 hover:shadow-lg rounded-lg">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="leaf" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Naturdächer</h3>
+          <p class="text-gray-600">Ökologisch und langlebig – Gründächer und Reetdächer vom Fachmann.</p>
+        </div>
+        <div class="bg-white text-center p-6 hover:shadow-lg rounded-lg">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="building" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Denkmalpflege</h3>
+          <p class="text-gray-600">Historische Dächer mit traditionellen Techniken erhalten & sanieren.</p>
+        </div>
+        <div class="bg-white text-center p-6 hover:shadow-lg rounded-lg">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="check-square" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Dachwartung</h3>
+          <p class="text-gray-600">Regelmäßige Kontrolle & Instandhaltung für Ihre Sicherheit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">Sie haben ein Projekt oder Fragen? Wir freuen uns auf Ihre Nachricht.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Ihre Vorteile mit uns</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Individuelle Beratung</h4>
+                <p>Wir nehmen uns Zeit für Ihre Wünsche und finden die passende Lösung.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Handwerk mit Erfahrung</h4>
+                <p>Langjährige Praxis und fundiertes Wissen im traditionellen Dachbau.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Meisterqualität</h4>
+                <p>Alle Arbeiten unter Leitung von Dachdeckermeister Torsten Mühle.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-green-50 rounded-lg">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Telefonischer Kontakt</h4>
+            <p class="text-gray-900 mb-2">Gerne beraten wir Sie persönlich:</p>
+            <div class="flex items-center text-green-700 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              0351 213 22 77
+            </div>
+          </div>
+        </div>
+
+        <!-- Kontaktformular -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Anfrage senden</h3>
+            <form class="space-y-4">
+              <input type="text" placeholder="Ihr Name" required class="w-full p-3 border rounded-md focus:ring-2 focus:ring-green-600"/>
+              <input type="email" placeholder="Ihre E-Mail" required class="w-full p-3 border rounded-md focus:ring-2 focus:ring-green-600"/>
+              <input type="tel" placeholder="Telefonnummer" class="w-full p-3 border rounded-md focus:ring-2 focus:ring-green-600"/>
+              <textarea placeholder="Ihre Nachricht…" rows="4" required class="w-full p-3 border rounded-md focus:ring-2 focus:ring-green-600"></textarea>
+              <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg">Absenden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-10 lg:px-20 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-semibold mb-3">Dachdeckermeister Mühle</h3>
+        <p class="text-sm">Meisterbetrieb für traditionelles Dachdeckerhandwerk in Dresden und Umgebung.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3">Kontakt</h3>
+        <ul class="text-sm space-y-2">
+          <li><i data-lucide="map-pin" class="w-4 h-4 inline mr-2"></i>Bismarckstraße 5, 01257 Dresden</li>
+          <li><i data-lucide="phone" class="w-4 h-4 inline mr-2"></i>0351 213 22 77</li>
+          <li><i data-lucide="mail" class="w-4 h-4 inline mr-2"></i>info@auf-dresdens-daechern.de</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3">Folgen Sie uns</h3>
+        <div class="flex space-x-4">
+          <i data-lucide="facebook" class="w-5 h-5 hover:text-white cursor-pointer"></i>
+          <i data-lucide="instagram" class="w-5 h-5 hover:text-white cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-sm text-gray-500">&copy; 2025 Dachdeckermeister Mühle. Alle Rechte vorbehalten.</div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
