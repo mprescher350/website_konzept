@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tischlerei Pochert – Meisterbetrieb seit 1993</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="antialiased text-gray-900 bg-white min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+          <i data-lucide="tool" class="w-5 h-5 text-white"></i>
+        </div>
+        <span class="text-xl font-bold">Tischlerei Pochert</span>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#about" class="hover:text-orange-500">Unternehmen</a>
+        <a href="#services" class="hover:text-orange-500">Leistungen</a>
+        <a href="#contact" class="hover:text-orange-500">Kontakt</a>
+      </nav>
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg">Termin anfragen</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-64 bg-cover bg-center" style="background-image:url('https://via.placeholder.com/1600x400?text=Tischlerei+Pochert');">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative container mx-auto h-full flex items-center justify-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-white text-center">Ihre Tischlerei<br>im Raum Freital</h1>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://via.placeholder.com/600x400?text=Werkstatt" alt="Werkstatt" class="rounded-lg shadow-lg">
+      <div>
+        <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">Seit 1993</span>
+        <h2 class="text-3xl font-bold mb-4">Tradition & Meisterhandwerk</h2>
+        <p class="text-gray-700 mb-4">
+          Die Tischlerei Matthias Pochert – ein Familienbetrieb in Freital, geführt von Tischlermeister Matthias Pochert. Seit über 30 Jahren stehen wir für handwerkliche Präzision bei Möbeln, Innenausbauten und Reparaturen aus Massivholz sowie Holzwerkstoffen :contentReference[oaicite:2]{index=2}.
+        </p>
+        <p class="text-gray-700">
+          Nachhaltigkeit ist uns wichtig: wir setzen auf materialgerechte Verarbeitung, langlebige Qualität sowie sinnvolle Restaurierungen und Reparaturen :contentReference[oaicite:3]{index=3}.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-24">
+      <h2 class="text-3xl font-bold text-center mb-12">Unsere Leistungen</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg text-center shadow-sm hover:shadow-lg">
+          <i data-lucide="box" class="w-8 h-8 text-orange-500 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">Möbel & Innenausbau</h3>
+          <p class="text-gray-600">Massivholzmöbel und Einbauten nach Maß – robust, funktional und stilvoll :contentReference[oaicite:4]{index=4}.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg text-center shadow-sm hover:shadow-lg">
+          <i data-lucide="door-open" class="w-8 h-8 text-orange-500 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">Türen & Fenster</h3>
+          <p class="text-gray-600">Passgenaue Holztüren sowie Holzfenster, gefertigt nach Ihren Vorgaben :contentReference[oaicite:5]{index=5}.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg text-center shadow-sm hover:shadow-lg">
+          <i data-lucide="wrench" class="w-8 h-8 text-orange-500 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">Reparatur & Restauration</h3>
+          <p class="text-gray-600">Materialgerechte Instandhaltung, Restaurierungen und Ergänzungen für langlebigen Gebrauch :contentReference[oaicite:6]{index=6}.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-6 lg:px-24 grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Kontakt & Anfahrt</h2>
+        <p class="text-gray-700 mb-2">
+          <i data-lucide="map-pin" class="inline w-5 h-5 mr-2"></i>
+          Hüttenstr. 1, 01705 Freital
+        </p>
+        <p class="text-gray-700 mb-2">
+          <i data-lucide="phone" class="inline w-5 h-5 mr-2"></i>
+          +49 351 6495290
+        </p>
+        <p class="text-gray-700 mb-4">
+          <i data-lucide="mail" class="inline w-5 h-5 mr-2"></i>
+          mpochert@yahoo.de
+        </p>
+        <p class="text-gray-700">Öffnungszeiten: Mo–Fr 09:00–15:00 (nach Vereinbarung) :contentReference[oaicite:7]{index=7}.</p>
+      </div>
+      <div>
+        <form class="bg-gray-50 p-8 rounded-lg shadow-lg space-y-4">
+          <input type="text" placeholder="Ihr Name" required class="w-full p-3 border rounded focus:ring-2 focus:ring-orange-500"/>
+          <input type="email" placeholder="Ihre E‑Mail" required class="w-full p-3 border rounded focus:ring-2 focus:ring-orange-500"/>
+          <textarea placeholder="Ihre Nachricht..." rows="4" required class="w-full p-3 border rounded focus:ring-2 focus:ring-orange-500"></textarea>
+          <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg">Nachricht senden</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-6 lg:px-24 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm">&copy; 2025 Tischlerei Matthias Pochert. Alle Rechte vorbehalten.</p>
+      <a href="impressum.html" class="text-sm hover:text-white">Impressum</a>
+      <a href="datenschutz.html" class="text-sm hover:text-white ml-4">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
