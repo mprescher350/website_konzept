@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dachdeckermeister Matthias Müller – Dächer & Abdichtung in Friedewald</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="layers" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold">Dachdeckermeister Müller</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#"          class="text-gray-700 hover:text-orange-500">Home</a>
+          <a href="#about"     class="text-gray-700 hover:text-orange-500">Unternehmen</a>
+          <a href="#services"  class="text-gray-700 hover:text-orange-500">Leistungen</a>
+          <a href="#projects"  class="text-gray-700 hover:text-orange-500">Referenzen</a>
+          <a href="#service"   class="text-gray-700 hover:text-orange-500">Service</a>
+          <a href="#contact"   class="text-gray-700 hover:text-orange-500">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">
+          Anfrage starten
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1600x900?text=Dachdeckermeister+M%C3%BCller');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Ihr Dach&nbsp;–<br/>von Meister­hand gedeckt
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Familien­geführter Innungs­betrieb für Moritzburg & Dresden<br/>
+          Qualität seit über&nbsp;25&nbsp;Jahren.
+        </p>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Kostenlos beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Dacheindeckung -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="layers" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Dacheindeckung</h3>
+          <p class="text-gray-600">Ziegel-, Schiefer- & Flachdächer</p>
+        </div>
+        <!-- Abdichtung & Dämmung -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="droplet" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Abdichtung & Dämmung</h3>
+          <p class="text-gray-600">Flachdach, Balkon & Wärmeschutz</p>
+        </div>
+        <!-- Fassaden & Schornstein -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="home" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fassaden & Schornstein</h3>
+          <p class="text-gray-600">Metall­verkleidung & Kaminbau</p>
+        </div>
+        <!-- Reparatur & Wartung -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="wrench" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Reparatur & Wartung</h3>
+          <p class="text-gray-600">Dach­entwässerung & Havarie­dienst</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Dachdecker+M%C3%BCller+Team"
+               alt="Team Dachdeckermeister Müller" class="rounded-lg w-full h-auto" />
+        </div>
+        <div>
+          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">25 +</span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Meister­qualität aus Friedewald –<br/>Dächer für Generationen.
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Seit 1998 vereint Dachdeckermeister Matthias Müller tradi­tionelle
+            Handwerks­kunst mit moderner Technik. Ob Steil- oder Flach­dach,
+            Fassaden­verkleidung oder Dach­begrünung – wir liefern alles
+            aus einer Hand: fach­geplant, energie­effizient und langlebig.
+          </p>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Unternehmen kennenlernen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prozess Icons -->
+  <section id="service" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Alles aus einer Hand –<br/>von der Idee bis zur Wartung
+      </h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="lightbulb" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Beratung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="monitor" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Planung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="layers" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Deckung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="droplet" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Abdichtung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="wrench" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Wartung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="check-circle" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Qualitäts­check</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gelbe CTA -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+          Jetzt Dach­sanierung planen –<br/>wir kümmern uns um den Rest.
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Angebot sichern
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preisbeispiele -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Preisbeispiele</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Basic -->
+        <div class="bg-white p-8 text-center border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 8.200 €</div>
+          <p class="text-gray-600 mb-6">Ziegeldach Basis</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                 class="w-5 h-5 text-green-500 mr-2"></i>ca. 100 m² Fläche</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                 class="w-5 h-5 text-green-500 mr-2"></i>Tondachziegel</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                 class="w-5 h-5 text-green-500 mr-2"></i>Bauzeit 4 Wochen</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+        <!-- Beliebt -->
+        <div class="bg-white p-8 text-center border-2 border-orange-500 rounded-lg relative">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-500 text-gray-900 text-sm px-3 py-1 rounded-full">
+            Beliebt
+          </span>
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 13.000 €</div>
+          <p class="text-gray-600 mb-6">Flachdach Plus</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                 class="w-5 h-5 text-green-500 mr-2"></i>Bitumen/EPDM</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                 class="w-5 h-5 text-green-500 mr-2"></i>ca. 120 m² Fläche</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                 class="w-5 h-5 text-green-500 mr-2"></i>Bauzeit 6 Wochen</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Wählen
+          </a>
+        </div>
+        <!-- Premium -->
+        <div class="bg-white p-8 text-center border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 18.700 €</div>
+          <p class="text-gray-600 mb-6">Schieferdach Premium</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                 class="w-5 h-5 text-green-500 mr-2"></i>Naturschiefer 30×60</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                 class="w-5 h-5 text-green-500 mr-2"></i>Unterkonstruktion inkl.</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle"
+                 class="w-5 h-5 text-green-500 mr-2"></i>Persönlicher Bauleiter</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gewährleistung -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        10 Jahre Gewährleistung<br/>auf alle Dacharbeiten.
+      </h2>
+    </div>
+  </section>
+
+  <!-- Qualität -->
+  <section class="py-16 bg-cover bg-center relative"
+           style="background-image:url('https://via.placeholder.com/1200x400?text=Dacharbeiten+in+Aktion');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-10 lg:px-20">
+      <div class="max-w-2xl text-gray-900">
+        <h2 class="text-3xl font-bold mb-6 leading-snug">
+          Wer auf Qualität setzt,<br/>setzt auf Meister­handwerk.
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+          Jetzt anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft es ab</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-4">Erstgespräch</h3>
+          <p class="text-gray-600">Bedarfsanalyse & Budget</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-4">Festpreis-Angebot</h3>
+          <p class="text-gray-600">Transparente Kalkulation</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-4">Ausführung & Abnahme</h3>
+          <p class="text-gray-600">Schlüsselfertig & sauber</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Bereit für Ihr neues Dach? Fordern Sie jetzt ein unverbindliches Angebot an.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Warum wir -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum wir?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Meisterbetrieb</h4>
+                <p class="text-gray-700">Über 25 Jahre Erfahrung im Dach­handwerk.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Innungs­mitglied</h4>
+                <p class="text-gray-700">Regel­mäßige Schulungen & Qualitäts­sicherung.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">24/7 Havarie­dienst</h4>
+                <p class="text-gray-700">Schnelle Hilfe bei Sturm & Schaden.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Fixe Termine</h4>
+                <p class="text-gray-700">Verbindliche Planung & Festpreise.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Direkt anrufen</h4>
+            <p class="text-gray-900 mb-3">Wir beraten Sie gerne persönlich</p>
+            <div class="flex items-center text-orange-600 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              +49&nbsp;173&nbsp;860 2002
+            </div>
+          </div>
+        </div>
+
+        <!-- Formular -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Kostenloses Angebot anfordern</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+              <textarea placeholder="Projektbeschreibung…" rows="4" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+              <button type="submit"
+                      class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+                Angebot anfordern
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-12 text-gray-900">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="layers" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold">Dachdeckermeister Müller</span>
+          </div>
+          <p class="text-gray-400 mb-4">Dach, Abdichtung & Reparatur – aus Friedewald.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook"  class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="linkedin"  class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Dacheindeckung</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Abdichtung & Dämmung</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Fassaden & Schornstein</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Reparatur & Wartung</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about"    class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-gray-900">Referenzen</a></li>
+            <li><a href="#contact"  class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>0173 860 2002</span></div>
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>0351 830 4370</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Großenhainer Str. 41, 01468 Moritzburg/Friedewald</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Dachdeckermeister Matthias Müller. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>lucide.createIcons();</script>
+</body>
+</html>
