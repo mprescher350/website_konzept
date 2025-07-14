@@ -1,82 +1,160 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tischlerei Suschke – Möbel & Innenausbau aus Meisterhand</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tischlerei Suschke – Individuelle Möbel & Innenausbau</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="min-h-screen bg-white antialiased text-gray-900">
 
   <!-- Header -->
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="container mx-auto px-10 lg:px-20 py-4">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-            <i data-lucide="ruler" class="w-4 h-4 text-white"></i>
-          </div>
-          <span class="text-xl font-bold text-gray-900">Tischlerei Suschke</span>
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+          <i data-lucide="ruler" class="w-5 h-5 text-white"></i>
         </div>
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="#" class="text-gray-700 hover:text-orange-500">Start</a>
-          <a href="#about" class="text-gray-700 hover:text-orange-500">Unternehmen</a>
-          <a href="#services" class="text-gray-700 hover:text-orange-500">Leistungen</a>
-          <a href="#contact" class="text-gray-700 hover:text-orange-500">Kontakt</a>
-        </nav>
-        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg">Anfrage senden</a>
+        <span class="text-xl font-bold">Tischlerei Suschke</span>
       </div>
+      <nav class="hidden md:flex space-x-10">
+        <a href="#about" class="hover:text-orange-500">Unternehmen</a>
+        <a href="#services" class="hover:text-orange-500">Leistungen</a>
+        <a href="#contact" class="hover:text-orange-500">Kontakt</a>
+        <a href="#more" class="hover:text-orange-500">Mehr</a>
+      </nav>
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg">Anfrage senden</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="relative h-[600px] bg-cover bg-center" style="background-image: url('https://www.tischlerei-suschke.de/images/header_1.jpg');">
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
-      <div class="max-w-2xl text-white text-center mx-auto">
-        <h1 class="text-5xl font-bold mb-6 leading-tight">Individuelle Möbel<br/>mit Liebe zum Detail</h1>
-        <p class="text-xl mb-8">Seit über 60 Jahren fertigen wir hochwertige Tischlerarbeiten – präzise, zuverlässig und mit Herz.</p>
-        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg">Jetzt beraten lassen</a>
-      </div>
+  <!-- Hero Unterseite -->
+  <section class="relative h-96 bg-cover bg-center" style="background-image:url('https://via.placeholder.com/1600x600');">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative container mx-auto px-6 flex items-center justify-center h-full">
+      <h1 class="text-white text-4xl md:text-5xl font-bold text-center">Die Tischlerei Suschke<br>– Unikate aus Meisterhand</h1>
     </div>
   </section>
 
   <!-- Über uns -->
   <section id="about" class="py-16">
-    <div class="container mx-auto px-10 lg:px-20">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <img src="https://www.tischlerei-suschke.de/images/tischlerei.jpg" alt="Werkstatt Tischlerei Suschke" class="rounded-lg w-full h-auto"/>
-        </div>
-        <div>
-          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">Familienbetrieb seit 1961</span>
-          <h2 class="text-4xl font-bold mb-6 leading-snug">Tradition & Handwerk aus einer Hand</h2>
-          <p class="text-gray-600 mb-6">
-            Die Tischlerei Suschke steht für höchste Präzision, ehrliches Handwerk und zeitloses Design. Unsere Kunden profitieren von über sechs Jahrzehnten Erfahrung und einer hauseigenen Werkstatt mit modernem Maschinenpark.
-          </p>
-          <a href="#services" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg">Unsere Leistungen</a>
-        </div>
+    <div class="container mx-auto px-6 lg:px-24 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://via.placeholder.com/600x400?text=Werkstatt" alt="Werkstatt" class="rounded-lg shadow">
+      <div>
+        <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full inline-block mb-4">Seit 2000</span>
+        <h2 class="text-3xl font-bold mb-4">Möbel, die Persönlichkeit zeigen</h2>
+        <p class="text-gray-700 mb-4">
+          „Masse ist der Feind der Individualität“ – unter diesem Motto gründete Frank Suschke im Jahr 2000 seine Meisterwerkstatt.
+          Seither entstehen in Freital Unikate für Kunden weit über Dresden hinaus :contentReference[oaicite:2]{index=2}.
+        </p>
+        <p class="text-gray-700">
+          Höchste handwerkliche Qualität, detailverliebte Planung und Maßarbeit machen jedes Projekt zu etwas Besonderem.
+          Wir schaffen Räume, die Charakter haben.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Leistungen -->
   <section id="services" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-10 lg:px-20">
-      <h2 class="text-3xl font-bold text-center mb-12">Unsere Leistungen</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white text-center p-6 hover:shadow-lg rounded-lg">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="sofa" class="w-8 h-8 text-orange-500"></i>
+    <div class="container mx-auto px-6 lg:px-24">
+      <h2 class="text-3xl font-bold text-center mb-8">Unsere Leistungen</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <i data-lucide="sofa" class="w-6 h-6 text-orange-500 mr-3"></i>
+            <p>Möbelbau – individuelle Einzelstücke nach Maß</p>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Möbelbau</h3>
-          <p class="text-gray-600">Individuelle Möbel nach Maß – funktional, langlebig und formschön.</p>
+          <div class="flex items-start">
+            <i data-lucide="stairs" class="w-6 h-6 text-orange-500 mr-3"></i>
+            <p>Treppenbau – präzise geplant und umgesetzt</p>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="home" class="w-6 h-6 text-orange-500 mr-3"></i>
+            <p>Fenster & Türen – harmonisch in Wohnräume integriert</p>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="layers" class="w-6 h-6 text-orange-500 mr-3"></i>
+            <p>Innenausbau – from concept to completion</p>
+          </div>
+          <div class="flex items-start">
+            <i data-lucide="package" class="w-6 h-6 text-orange-500 mr-3"></i>
+            <p>Restaurierung – traditionelle Techniken mit modernem Finish :contentReference[oaicite:3]{index=3}</p>
+          </div>
         </div>
-        <div class="bg-white text-center p-6 hover:shadow-lg rounded-lg">
-          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i data-lucide="home" class="w-8 h-8 text-orange-500"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Innenausbau</h3>
-          <p class="text-gray-600">Einbauschränke, Raumlösungen, Decken- & Wandverkleidung aus Meisterhand.</p>
-        </
+        <div>
+          <h3 class="font-semibold mb-3">Design & Planung</h3>
+          <p class="text-gray-700 mb-4">
+            Farb- und Stilberatung bei Ihnen vor Ort, 3D-Entwürfe am PC & individuelle Konzepte – wir begleiten Sie von Anfang bis zur Umsetzung :contentReference[oaicite:4]{index=4}.
+          </p>
+          <h3 class="font-semibold mb-3">Fertigung & Oberfläche</h3>
+          <p class="text-gray-700">
+            Moderne Technik trifft Meisterhand: Schleif-, Furnier- und Lackiertechnik auf höchstem Niveau, ergänzt durch traditionelle Handwerkskunst :contentReference[oaicite:5]{index=5}.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referenzen -->
+  <section id="more" class="py-16">
+    <div class="container mx-auto px-6 lg:px-24 text-center">
+      <h2 class="text-3xl font-bold mb-6">Referenzen & Unikate</h2>
+      <p class="text-gray-700 mb-8">
+        Ob Möbel, Treppen, Fenster oder komplette Einrichtungen – unsere Arbeiten sprechen für sich :contentReference[oaicite:6]{index=6}.
+      </p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <img src="https://via.placeholder.com/400x300?text=Referenz+1" alt="Referenz 1" class="rounded-lg shadow">
+        <img src="https://via.placeholder.com/400x300?text=Referenz+2" alt="Referenz 2" class="rounded-lg shadow">
+        <img src="https://via.placeholder.com/400x300?text=Referenz+3" alt="Referenz 3" class="rounded-lg shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Wissenswertes -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-24">
+      <h2 class="text-3xl font-bold text-center mb-6">Wissenswertes</h2>
+      <p class="text-gray-700 text-center">
+        Holz hat viele Gesichter – jede Maserung ist einzigartig, jedes Stück ein Unikat. Unsere „Holzkunde“ folgt bald :contentReference[oaicite:7]{index=7}.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-6 lg:px-24 grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Kontakt</h2>
+        <p class="text-gray-700 mb-4">Tischlerei Frank Suschke<br>Lutherstraße 4, 01705 Freital</p>
+        <p class="text-gray-700 mb-2"><i data-lucide="phone" class="inline w-5 h-5 mr-2"></i>0351–6526542</p>
+        <p class="text-gray-700"><i data-lucide="mail" class="inline w-5 h-5 mr-2"></i>tischlerei.suschke@t-online.de</p>
+      </div>
+      <div>
+        <form class="space-y-4 bg-gray-50 p-8 rounded-lg shadow">
+          <input type="text" placeholder="Ihr Name" required class="w-full border p-3 rounded focus:ring-2 focus:ring-orange-500">
+          <input type="email" placeholder="Ihre E-Mail" required class="w-full border p-3 rounded focus:ring-2 focus:ring-orange-500">
+          <textarea placeholder="Ihre Nachricht..." rows="4" required class="w-full border p-3 rounded focus:ring-2 focus:ring-orange-500"></textarea>
+          <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded">Absenden</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-6 lg:px-24 grid md:grid-cols-2 gap-8">
+      <div>
+        <p>&copy; 2025 Tischlerei Frank Suschke e.K.</p>
+        <p>Tischlermeister | Lutherstraße 4, 01705 Freital</p>
+      </div>
+      <div class="text-right">
+        <a href="impressum.html" class="hover:text-white">Impressum</a> ·
+        <a href="datenschutz.html" class="hover:text-white">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
