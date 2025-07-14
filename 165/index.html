@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tischlerei Ihmann – Möbel & Bautischlerei aus Freital</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="hammer" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold">Tischlerei Ihmann</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#"          class="text-gray-700 hover:text-orange-500">Home</a>
+          <a href="#about"     class="text-gray-700 hover:text-orange-500">Unternehmen</a>
+          <a href="#services"  class="text-gray-700 hover:text-orange-500">Leistungen</a>
+          <a href="#projects"  class="text-gray-700 hover:text-orange-500">Referenzen</a>
+          <a href="#contact"   class="text-gray-700 hover:text-orange-500">Kontakt</a>
+        </nav>
+        <a href="#contact"
+           class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">
+          Projekt anfragen
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1600x900?text=Tischlerei+Ihmann');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Möbel &amp; Bautischlerei<br/>nach Maß
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Familienbetrieb seit&nbsp;1962 – Qualität aus&nbsp;Freital.
+        </p>
+        <a href="#contact"
+           class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Kostenlos beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Möbelbau -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="layout" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Möbelbau</h3>
+          <p class="text-gray-600">Individuelle Einzel­möbel &amp; Einbau­lösungen</p>
+        </div>
+        <!-- Objekt- & Innenausbau -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="home" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Innen- & Objektbau</h3>
+          <p class="text-gray-600">Serien- & Funktionsmöbel für Gewerbe</p>
+        </div>
+        <!-- Türen & Fenster -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="door-closed" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Türen &amp; Fenster</h3>
+          <p class="text-gray-600">Holz-, Kunststoff- & Alu­systeme passgenau</p>
+        </div>
+        <!-- Reparatur & Wartung -->
+        <div class="bg-white p-6 text-center rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="wrench" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Reparatur & Wartung</h3>
+          <p class="text-gray-600">Schneller Service rund ums Holz</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Werkstatt+Ihmann"
+               alt="Werkstatt Tischlerei Ihmann" class="rounded-lg w-full h-auto" />
+        </div>
+        <div>
+          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">seit&nbsp;1962</span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Tradition &amp; CNC-Präzision –<br/>Tischlerhandwerk in&nbsp;Familien­hand.
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Unsere alteingesessene Tischlerei wurde 1993 erweitert und mit moderner
+            CNC-Technik ausgestattet. Heute fertigen wir hochwertige Bau- und
+            Möbeltischlerarbeiten, übernehmen Reparaturen sowie Wartungen und gehen
+            flexibel auf jedes Kunden­wunsch-Detail ein.
+          </p>
+          <a href="#contact"
+             class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Unternehmen kennenlernen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prozess Icons -->
+  <section id="service" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Alles aus einer Hand –<br/>von Idee bis Montage
+      </h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="lightbulb" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Beratung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="monitor" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">3D-Planung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="saw" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Fertigung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="brush" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Oberfläche</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="wrench" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Montage</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="check-circle" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Qualitäts­check</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+          Wir bauen Ihr Wunsch­möbel –<br/>maßgenau & termingerecht.
+        </h2>
+        <a href="#contact"
+           class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Angebot sichern
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preisbeispiele -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Preisbeispiele</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Einbauschrank -->
+        <div class="bg-white p-8 text-center border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab&nbsp;1.200&nbsp;€</div>
+          <p class="text-gray-600 mb-6">Einbauschrank Basic</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Höhe&nbsp;bis 2,40&nbsp;m</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Weiß Dekor</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Montage 1 Tag</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+        <!-- Küche Komfort -->
+        <div class="bg-white p-8 text-center border-2 border-orange-500 rounded-lg relative">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-orange-500 text-gray-900 text-sm px-3 py-1 rounded-full">
+            Beliebt
+          </span>
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab&nbsp;6.900&nbsp;€</div>
+          <p class="text-gray-600 mb-6">Küchenzeile Komfort</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>bis 4 lfd Meter</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Echtholz-Fronten</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Bauzeit 3 Wochen</li>
+          </ul>
+          <a href="#contact"
+             class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Wählen
+          </a>
+        </div>
+        <!-- Holztreppe Premium -->
+        <div class="bg-white p-8 text-center border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab&nbsp;9.800&nbsp;€</div>
+          <p class="text-gray-600 mb-6">Holztreppe Premium</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Eiche massiv</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Geländer inkl.</li>
+            <li class="flex items-center justify-center"><i data-lucide="check-circle" class="w-5 h-5 text-green-500 mr-2"></i>Persönlicher Bauleiter</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gewährleistung -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        5 Jahre Gewährleistung<br/>auf alle Tischlerarbeiten.
+      </h2>
+    </div>
+  </section>
+
+  <!-- Qualität -->
+  <section class="py-16 bg-cover bg-center relative"
+           style="background-image:url('https://via.placeholder.com/1200x400?text=M%C3%B6belbau+Ihmann');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-10 lg:px-20">
+      <div class="max-w-2xl text-gray-900">
+        <h2 class="text-3xl font-bold mb-6 leading-snug">
+          Wer Qualität will,<br/>setzt auf Meister­handwerk.
+        </h2>
+        <a href="#contact"
+           class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+          Jetzt anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft es ab</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-4">Erstgespräch</h3>
+          <p class="text-gray-600">Wünsche &amp; Budget definieren</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-4">Festpreis-Angebot</h3>
+          <p class="text-gray-600">Transparente Kalkulation &amp; Termin</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-4">Fertigung &amp; Montage</h3>
+          <p class="text-gray-600">Sauber, pünktlich, schlüssel­fertig</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Bereit für Ihr Holz-Projekt? Fordern Sie jetzt Ihr unverbindliches Angebot an.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Warum wir -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Tischlerei Ihmann?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Meisterbetrieb seit 1962</h4>
+                <p class="text-gray-700">Über 60 Jahre Erfahrung &amp; Innovation.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">CNC-Technik</h4>
+                <p class="text-gray-700">Präzision &amp; Wiederhol­genauigkeit.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Komplettservice</h4>
+                <p class="text-gray-700">Planung, Fertigung &amp; Montage aus einer Hand.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Festpreis &amp; Termine</h4>
+                <p class="text-gray-700">Verbindliche Zusagen – keine Überraschungen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Direkt anrufen</h4>
+            <p class="text-gray-900 mb-3">Wir beraten Sie gerne persönlich</p>
+            <div class="flex items-center text-orange-600 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              +49&nbsp;351&nbsp;642965
+            </div>
+          </div>
+        </div>
+
+        <!-- Formular -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Kostenloses Angebot anfordern</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+              <textarea placeholder="Projektbeschreibung…" rows="4" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+              <button type="submit"
+                      class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+                Angebot anfordern
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-12 text-gray-900">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="hammer" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold">Tischlerei Ihmann</span>
+          </div>
+          <p class="text-gray-400 mb-4">Möbel- & Bautischlerei – aus Freital.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook"  class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="linkedin"  class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Möbelbau</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Innen- & Objektbau</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Türen & Fenster</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Reparatur & Wartung</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about"    class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-gray-900">Referenzen</a></li>
+            <li><a href="#contact"  class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>0351&nbsp;642965</span></div>
+            <div class="flex items-center"><i data-lucide="mail"  class="w-4 h-4 mr-2"></i><span>info@tischlerei-ihmann.de</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Gitterseer Str. 38, 01705 Freital</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Tischlerei Benno Ihmann. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>lucide.createIcons();</script>
+</body>
+</html>
