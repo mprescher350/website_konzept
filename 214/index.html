@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spezial-Gerüstbau Hein – Denkmal- & Sondergerüste in Sachsen</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="container mx-auto px-6 lg:px-20 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-sky-700 rounded-full flex items-center justify-center">
+          <i data-lucide="scaffolding" class="w-4 h-4 text-gray-100"></i>
+        </div>
+        <span class="text-xl font-bold">Gerüstbau&nbsp;Hein</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 font-medium">
+        <a href="#services" class="hover:text-sky-700">Leistungen</a>
+        <a href="#about"    class="hover:text-sky-700">Über&nbsp;uns</a>
+        <a href="#contact"  class="hover:text-sky-700">Kontakt</a>
+      </nav>
+
+      <a href="#contact" class="bg-sky-700 hover:bg-sky-800 text-gray-100 px-4 py-2 rounded-lg">
+        Angebot anfordern
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://via.placeholder.com/1920x1080?text=Spezial-Geruestbau+Hein');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative container mx-auto px-6 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <span class="inline-block bg-sky-700/80 px-4 py-1 rounded-full mb-4 uppercase tracking-wider text-sm">
+          Über&nbsp;30&nbsp;Jahre Erfahrung
+        </span>
+        <h1 class="text-5xl font-extrabold leading-tight mb-6">
+          Spezial­gerüste für historische&nbsp;Bauten
+        </h1>
+        <p class="text-xl mb-8">
+          Konstruktionen für Kirchen, Schlösser & Kultur­denkmäler – ausgezeichnet
+          mit dem Bundespreis für Denkmal­pflege&nbsp;2013.
+        </p>
+        <a href="#contact"
+           class="inline-block bg-sky-700 hover:bg-sky-800 text-gray-100 px-8 py-3 rounded-lg text-lg">
+          Jetzt beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEISTUNGEN ===== -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Unser Leistungsspektrum</h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Denkmal- & Fassadengerüste -->
+        <div class="bg-white p-6 rounded-lg hover:shadow-lg transition text-center">
+          <div class="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="home" class="w-8 h-8 text-sky-700"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Denkmal- & Fassadengerüste</h3>
+          <p class="text-gray-600">Schonende Lösungen für sensible Bau­substanz.</p>
+        </div>
+
+        <!-- Raum- & Modulgerüste -->
+        <div class="bg-white p-6 rounded-lg hover:shadow-lg transition text-center">
+          <div class="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="grid" class="w-8 h-8 text-sky-700"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Raum- & Modulgerüste</h3>
+          <p class="text-gray-600">Flexible Systeme für Kirchen­schiffe & Innenräume.</p>
+        </div>
+
+        <!-- Traggerüste & Sonderkonstruktionen -->
+        <div class="bg-white p-6 rounded-lg hover:shadow-lg transition text-center">
+          <div class="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="settings" class="w-8 h-8 text-sky-700"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Trag- & Sondergerüste</h3>
+          <p class="text-gray-600">Individuell statisch berechnete Lösungen.</p>
+        </div>
+
+        <!-- Wetterschutzdächer -->
+        <div class="bg-white p-6 rounded-lg hover:shadow-lg transition text-center">
+          <div class="w-16 h-16 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="umbrella" class="w-8 h-8 text-sky-700"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Wetterschutzdächer</h3>
+          <p class="text-gray-600">Fahrbare & feste Dach­konstruktionen für jede Baustelle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ÜBER UNS ===== -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-20 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://via.placeholder.com/600x400?text=Team+Geruestbau+Hein"
+           alt="Team Gerüstbau Hein" class="rounded-lg w-full h-auto" />
+
+      <div>
+        <span class="inline-block bg-sky-100 text-sky-800 font-semibold px-4 py-1 rounded-full mb-4">
+          Spezial-Gerüstbau Hein GmbH
+        </span>
+        <h2 class="text-4xl font-bold mb-6 leading-snug">
+          Präzision&nbsp;auf höchstem&nbsp;Niveau
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Als inhaber­geführter Meister- & Ingenieur­betrieb entwickeln wir seit 1990
+          sichere Gerüst­lösungen für anspruchs­volle Restaurierungen und komplexe
+          Sonder­projekte in ganz Sachsen.
+        </p>
+
+        <ul class="space-y-3 text-gray-600 mb-6">
+          <li class="flex"><i data-lucide="check" class="w-5 h-5 text-sky-700 mr-3 mt-[2px]"></i>
+              Bundespreis für Denkmal­pflege 2013</li>
+          <li class="flex"><i data-lucide="check" class="w-5 h-5 text-sky-700 mr-3 mt-[2px]"></i>
+              Eigener Planungs- & Statik­service</li>
+          <li class="flex"><i data-lucide="check" class="w-5 h-5 text-sky-700 mr-3 mt-[2px]"></i>
+              Zertifizierte Sicherheits­standards</li>
+        </ul>
+
+        <a href="#contact"
+           class="inline-block bg-sky-700 hover:bg-sky-800 text-gray-100 px-6 py-3 rounded-lg">
+          Mehr über uns
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie benötigen ein Gerüst oder ein individuelles Angebot? Wir freuen uns auf Ihre Nachricht!
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Kontaktinfos -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Spezial-Gerüstbau Hein GmbH</h3>
+          <div class="space-y-6 text-gray-700">
+            <div class="flex items-start">
+              <i data-lucide="map-pin" class="w-6 h-6 text-sky-700 mr-4 mt-[2px]"></i>
+              <p>Goldbacher Straße 73<br>01877 Bischofswerda&nbsp;/ OT Goldbach</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="phone" class="w-6 h-6 text-sky-700 mr-4 mt-[2px]"></i>
+              <p>03594 / 70 67 96</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="mail" class="w-6 h-6 text-sky-700 mr-4 mt-[2px]"></i>
+              <p>info@geruestbau-hein.de</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-sky-700 mr-4 mt-[2px]"></i>
+              <p>Mo – Fr 07:00 – 17:00 Uhr</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formular -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Nachricht senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700" />
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700" />
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700" />
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700" />
+              <textarea placeholder="Ihre Nachricht …" rows="4" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700"></textarea>
+              <button type="submit"
+                      class="w-full bg-sky-700 hover:bg-sky-800 text-gray-100 py-3 text-lg rounded-lg">
+                Absenden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-sky-700 rounded-full flex items-center justify-center">
+              <i data-lucide="scaffolding" class="w-4 h-4 text-gray-100"></i>
+            </div>
+            <span class="text-xl font-bold text-gray-200">Gerüstbau&nbsp;Hein</span>
+          </div>
+          <p class="mb-4">
+            Spezial­lösungen für Denkmal, Kultur­bauten & Industrie – seit über 30 Jahren.
+          </p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook"  class="w-5 h-5 hover:text-sky-500 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 hover:text-sky-500 cursor-pointer"></i>
+            <i data-lucide="linkedin"  class="w-5 h-5 hover:text-sky-500 cursor-pointer"></i>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Navigation</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-gray-200">Leistungen</a></li>
+            <li><a href="#about"    class="hover:text-gray-200">Über uns</a></li>
+            <li><a href="#contact"  class="hover:text-gray-200">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Leistungen kurz -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Leistungen</h3>
+          <ul class="space-y-2">
+            <li>Denkmal- & Fassadengerüste</li>
+            <li>Raum- & Modulgerüste</li>
+            <li>Wetterschutzdächer</li>
+            <li>Sonderkonstruktionen</li>
+          </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Kontakt</h3>
+          <div class="space-y-3">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>03594 / 70 67 96</div>
+            <div class="flex items-center"><i data-lucide="mail"  class="w-4 h-4 mr-2"></i>info@geruestbau-hein.de</div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>Goldbacher Str. 73, 01877 Bischofswerda</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        © 2024 – 2025 Spezial-Gerüstbau Hein GmbH – alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide init -->
+  <script>lucide.createIcons();</script>
+</body>
+</html>
