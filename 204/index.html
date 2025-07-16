@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Zimmerei Jos Nowack – Holzbau & Dachstühle in Riesa</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 lg:px-20 py-4 flex items-center justify-between">
+
+      <!-- Logo / Brand -->
+      <a href="#" class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
+          <i data-lucide="hammer" class="w-4 h-4 text-gray-900"></i>
+        </div>
+        <span class="text-xl font-bold">Zimmerei&nbsp;Jos&nbsp;Nowack</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 font-medium">
+        <a href="#services" class="text-gray-700 hover:text-amber-600">Leistungen</a>
+        <a href="#about"    class="text-gray-700 hover:text-amber-600">Über&nbsp;uns</a>
+        <a href="#contact"  class="text-gray-700 hover:text-amber-600">Kontakt</a>
+      </nav>
+
+      <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-lg">
+        Angebot anfordern
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section
+    class="relative h-[600px] bg-cover bg-center"
+    style="background-image:url('https://via.placeholder.com/1920x1080?text=Zimmerei+Jos+Nowack');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative container mx-auto px-6 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl text-center mx-auto text-white">
+        <h1 class="text-5xl font-extrabold leading-tight mb-6">
+          Meisterhafte&nbsp;Holzbau­lösungen<br/>für Ihr&nbsp;Bauvorhaben
+        </h1>
+        <p class="text-xl mb-8">
+          Dachstühle, Holzrahmenbau & Dach­sanierung – Qualitäts­handwerk direkt aus&nbsp;Riesa.
+        </p>
+        <a href="#contact"
+           class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Jetzt beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Unser Leistungsspektrum</h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Holzrahmenbau -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="layers" class="w-8 h-8 text-amber-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Holzrahmenbau</h3>
+          <p class="text-gray-600">Nachhaltig, energie­effizient & schnell montiert</p>
+        </div>
+
+        <!-- Dachstühle -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="home" class="w-8 h-8 text-amber-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Dachstühle</h3>
+          <p class="text-gray-600">Meisterlich geplant & millimeter­genau abgebunden</p>
+        </div>
+
+        <!-- Dachstuhlsanierung -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="refresh-ccw" class="w-8 h-8 text-amber-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Dachstuhlsanierung</h3>
+          <p class="text-gray-600">Substanz sichern & Wohnwert steigern</p>
+        </div>
+
+        <!-- Dachfenster -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="sun" class="w-8 h-8 text-amber-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Dachfenster</h3>
+          <p class="text-gray-600">Mehr Licht, Luft & Ausblick im Dachgeschoss</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-20 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://via.placeholder.com/600x400?text=Holzbau+bei+der+Arbeit"
+           alt="Zimmermann bei der Arbeit" class="rounded-lg w-full h-auto"/>
+
+      <div>
+        <span class="inline-block bg-amber-100 text-amber-700 font-semibold px-4 py-1 rounded-full mb-4">
+          Meisterbetrieb in 2.&nbsp;Generation
+        </span>
+        <h2 class="text-4xl font-bold mb-6 leading-snug">
+          Leidenschaft&nbsp;für Holz<br/>seit über&nbsp;25&nbsp;Jahren
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Als inhaber­geführte Zimmerei verbinden wir traditionelle Handwerks­kunst mit modernster
+          CNC-Technik. Von der ersten Idee über die Statik bis zur letzten Schraube erhalten Sie bei uns
+          alles aus einer Hand – zuverlässig, termintreu und mit höchstem Qualitäts­anspruch.
+        </p>
+        <a href="#contact"
+           class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 px-6 py-3 rounded-lg">
+          Mehr über uns
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie planen ein Projekt oder benötigen fachkundige Beratung? Wir freuen uns auf Ihre Anfrage!
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Kontaktinfos -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Zimmerei&nbsp;Jos&nbsp;Nowack</h3>
+          <div class="space-y-6 text-gray-700">
+            <div class="flex items-start">
+              <i data-lucide="map-pin" class="w-6 h-6 text-amber-600 mr-4 mt-[2px]"></i>
+              <p>Altmarkt&nbsp;6<br/>01589 Riesa</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="phone" class="w-6 h-6 text-amber-600 mr-4 mt-[2px]"></i>
+              <p>03525&nbsp;/&nbsp;73&nbsp;46&nbsp;69</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="mail" class="w-6 h-6 text-amber-600 mr-4 mt-[2px]"></i>
+              <p>info@jos-nowack.de</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-amber-600 mr-4 mt-[2px]"></i>
+              <p>Mo – Fr 07:00 – 18:00 Uhr</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formular -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Projekt anfragen</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"/>
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"/>
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"/>
+              <textarea placeholder="Ihre Nachricht …" rows="4" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+              <button type="submit"
+                      class="w-full bg-amber-500 hover:bg-amber-600 text-gray-900 py-3 text-lg rounded-lg">
+                Nachricht senden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
+              <i data-lucide="hammer" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold text-gray-200">Zimmerei&nbsp;Jos&nbsp;Nowack</span>
+          </div>
+          <p class="mb-4">Holzbau, Dachstühle & Sanierung – Ihr Meister­betrieb in Riesa und Umgebung.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook"  class="w-5 h-5 hover:text-amber-500 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 hover:text-amber-500 cursor-pointer"></i>
+            <i data-lucide="linkedin"  class="w-5 h-5 hover:text-amber-500 cursor-pointer"></i>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Navigation</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-gray-200">Leistungen</a></li>
+            <li><a href="#about"    class="hover:text-gray-200">Über uns</a></li>
+            <li><a href="#contact"  class="hover:text-gray-200">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Leistungen Kurz -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Leistungen</h3>
+          <ul class="space-y-2">
+            <li>Holzrahmenbau</li>
+            <li>Dachstühle</li>
+            <li>Dachstuhlsanierung</li>
+            <li>Dachfenster</li>
+          </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Kontakt</h3>
+          <div class="space-y-3">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>03525 / 73 46 69</div>
+            <div class="flex items-center"><i data-lucide="mail"  class="w-4 h-4 mr-2"></i>info@jos-nowack.de</div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>Altmarkt 6, 01589 Riesa</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        &copy; 2024 Zimmerei Jos Nowack – alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide init -->
+  <script>lucide.createIcons();</script>
+</body>
+</html>
