@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fenster & Türen Reuße – Fenster, Haustüren & Insektenschutz in Radebeul</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen antialiased bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="container mx-auto px-6 lg:px-20 py-4 flex items-center justify-between">
+      <!-- Logo / Brand -->
+      <a href="#" class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+          <i data-lucide="square" class="w-4 h-4 text-gray-900"></i>
+        </div>
+        <span class="text-xl font-bold">Fenster&nbsp;•&nbsp;Türen&nbsp;Reuße</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 font-medium">
+        <a href="#services" class="hover:text-emerald-600">Leistungen</a>
+        <a href="#process"  class="hover:text-emerald-600">Ablauf</a>
+        <a href="#contact"  class="hover:text-emerald-600">Kontakt</a>
+      </nav>
+
+      <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 text-gray-900 px-4 py-2 rounded-lg">
+        Angebot anfordern
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('https://fenster-tueren-reusse.de/wp-content/uploads/elementor/thumbs/IMG_3877-4-scaled-q2w2zyvbuzspgkxpx4dwz65qkohmtbez5swra3op14.jpg');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative container mx-auto px-6 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <span class="inline-block bg-emerald-600/80 px-4 py-1 rounded-full mb-4 uppercase tracking-wider text-sm">
+          20 Jahre Erfahrung
+        </span>
+        <h1 class="text-5xl font-extrabold leading-tight mb-6">
+          Fenster, Haustüren<br/>und Insektenschutz&nbsp;vom Profi
+        </h1>
+        <p class="text-xl mb-8">
+          Maßgefertigte Qualitäts­produkte, fachgerechte Montage&nbsp;und zuverlässiger Service
+          in Dresden, Radebeul und Umgebung. :contentReference[oaicite:2]{index=2}
+        </p>
+        <a href="#contact"
+           class="inline-block bg-emerald-500 hover:bg-emerald-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Jetzt beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Unser Leistungsspektrum</h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Fenster & Türen -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="square-stack" class="w-8 h-8 text-emerald-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fenster&nbsp;& Türen</h3>
+          <p class="text-gray-600">
+            Individuelle Beratung&nbsp;und Planung – Kunststoff, Holz oder Alu :contentReference[oaicite:3]{index=3}
+          </p>
+        </div>
+
+        <!-- Insektenschutz -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="bug" class="w-8 h-8 text-emerald-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Insektenschutz</h3>
+          <p class="text-gray-600">
+            Maßgefertigte NEHER-Systeme für Fenster&nbsp;und Türen :contentReference[oaicite:4]{index=4}
+          </p>
+        </div>
+
+        <!-- Montage & Wartung -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="wrench" class="w-8 h-8 text-emerald-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Montage&nbsp;& Wartung</h3>
+          <p class="text-gray-600">
+            Fachmännisch, pünktlich und sauber – ReparaturService inklusive :contentReference[oaicite:5]{index=5}
+          </p>
+        </div>
+
+        <!-- Sicht-& Sonnenschutz -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition">
+          <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="sun" class="w-8 h-8 text-emerald-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Sicht-&nbsp;Sonnenschutz</h3>
+          <p class="text-gray-600">
+            Plissees, Rollläden&nbsp;und Markisen für innen & außen :contentReference[oaicite:6]{index=6}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf -->
+  <section id="process" class="py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft&nbsp;es mit uns</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Schritt 1 -->
+        <div class="text-center px-6">
+          <div class="w-16 h-16 mx-auto mb-4 bg-emerald-500 text-gray-900 rounded-full flex items-center justify-center font-bold text-2xl">
+            1
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Maß&nbsp;nehmen</h3>
+          <p class="text-gray-600">
+            Vor-Ort-Termin, exakte Aufmaß­nahme und Prüfung der Einbau­situation. :contentReference[oaicite:7]{index=7}
+          </p>
+        </div>
+        <!-- Schritt 2 -->
+        <div class="text-center px-6">
+          <div class="w-16 h-16 mx-auto mb-4 bg-emerald-500 text-gray-900 rounded-full flex items-center justify-center font-bold text-2xl">
+            2
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Beratung&nbsp;&&nbsp;Angebot</h3>
+          <p class="text-gray-600">
+            Auswahl der passenden Produkte, transparente Kalkulation & individuelles Angebot. :contentReference[oaicite:8]{index=8}
+          </p>
+        </div>
+        <!-- Schritt 3 -->
+        <div class="text-center px-6">
+          <div class="w-16 h-16 mx-auto mb-4 bg-emerald-500 text-gray-900 rounded-full flex items-center justify-center font-bold text-2xl">
+            3
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Montage</h3>
+          <p class="text-gray-600">
+            Präzise Fertigung und sauberer Einbau durch unser geschultes Team. :contentReference[oaicite:9]{index=9}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-20 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://fenster-tueren-reusse.de/wp-content/uploads/2023/03/H-7-scaled.jpg"
+           alt="Ricardo Reuße – Inhaber" class="rounded-lg w-full h-auto" />
+
+      <div>
+        <span class="inline-block bg-emerald-100 text-emerald-700 font-semibold px-4 py-1 rounded-full mb-4">
+          Inhaber: Ricardo Reuße
+        </span>
+        <h2 class="text-4xl font-bold mb-6 leading-snug">
+          Verlässliche&nbsp;Qualität<br/>aus&nbsp;Radebeul
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Als zertifizierter Fach­betrieb liefern wir Ihnen langlebige Fenster- und Tür­lösungen,
+          kombiniert mit persönlicher Beratung und Rundum-Service – dafür stehen wir seit zwei Jahr­zehnten. :contentReference[oaicite:10]{index=10}
+        </p>
+        <a href="#contact"
+           class="inline-block bg-emerald-500 hover:bg-emerald-600 text-gray-900 px-6 py-3 rounded-lg">
+          Unverbindlich anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie (Service-Shots) -->
+  <section class="py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Einblicke&nbsp;in&nbsp;unsere&nbsp;Arbeit</h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-4">
+        <img src="https://fenster-tueren-reusse.de/wp-content/uploads/elementor/thumbs/IMG_3936-scaled-q2w34zccb6nrdpnknaea9wm8mns3v7bfum5zf893ug.jpg"
+             alt="Montage Insektenschutztür" class="rounded-lg w-full h-auto" />
+        <img src="https://fenster-tueren-reusse.de/wp-content/uploads/elementor/thumbs/IMG_3877-4-scaled-q2w2zyvbuzspgkxpx4dwz65qkohmtbez5swra3op14.jpg"
+             alt="Fensterinstallation" class="rounded-lg w-full h-auto" />
+        <img src="https://fenster-tueren-reusse.de/wp-content/uploads/elementor/thumbs/IMG_3894-scaled-q2w31ujpj2dcoi7exxn1yp2xcf827ivnf3vpu0wcl4.jpg"
+             alt="Pflege & Wartung" class="rounded-lg w-full h-auto" />
+        <img src="https://fenster-tueren-reusse.de/wp-content/uploads/elementor/thumbs/IMG_3915-3-scaled-q2w34gjkihy0xievp29qw1d0qycrl98t4149tp0zaw.jpg"
+             alt="Rollladenberatung" class="rounded-lg w-full h-auto" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie haben Fragen oder wünschen ein Angebot? Rufen Sie an oder schreiben Sie uns – wir helfen gern weiter!
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Kontaktinfos -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Fenster-Türen Reuße</h3>
+          <div class="space-y-6 text-gray-700">
+            <div class="flex items-start">
+              <i data-lucide="map-pin" class="w-6 h-6 text-emerald-600 mr-4 mt-[2px]"></i>
+              <p>An der Jägermühle 18<br/>01445 Radebeul</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="phone" class="w-6 h-6 text-emerald-600 mr-4 mt-[2px]"></i>
+              <p>0151 / 233 70 143</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="mail" class="w-6 h-6 text-emerald-600 mr-4 mt-[2px]"></i>
+              <p>ricardo_reusse@web.de</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-emerald-600 mr-4 mt-[2px]"></i>
+              <p>Mo-Fr 08:00-17:00&nbsp;Uhr<br/>Sa 09:00-12:00&nbsp;Uhr</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formular -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Nachricht senden</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+              <textarea placeholder="Ihre Nachricht …" rows="4" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+              <button type="submit"
+                      class="w-full bg-emerald-500 hover:bg-emerald-600 text-gray-900 py-3 text-lg rounded-lg">
+                Absenden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center">
+              <i data-lucide="square" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold text-gray-200">Fenster&nbsp;•&nbsp;Türen&nbsp;Reuße</span>
+          </div>
+          <p class="mb-4">
+            Fenster, Haustüren, Insektenschutz&nbsp;und Sonnenschutz – Ihr Fach­betrieb rund um Dresden & Radebeul. :contentReference[oaicite:11]{index=11}
+          </p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 hover:text-emerald-500 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 hover:text-emerald-500 cursor-pointer"></i>
+            <i data-lucide="linkedin" class="w-5 h-5 hover:text-emerald-500 cursor-pointer"></i>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Navigation</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-gray-200">Leistungen</a></li>
+            <li><a href="#process"  class="hover:text-gray-200">Ablauf</a></li>
+            <li><a href="#contact"  class="hover:text-gray-200">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Leistungen Kurz -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Leistungen</h3>
+          <ul class="space-y-2">
+            <li>Fenster & Türen</li>
+            <li>Insektenschutz</li>
+            <li>Montage & Wartung</li>
+            <li>Sicht- & Sonnenschutz</li>
+          </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Kontakt</h3>
+          <div class="space-y-3">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>0151 / 233 70 143</div>
+            <div class="flex items-center"><i data-lucide="mail"  class="w-4 h-4 mr-2"></i>ricardo_reusse@web.de</div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>An der Jägermühle 18, 01445 Radebeul</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        &copy; 2024 – 2025 Fenster • Türen Reuße – alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide init -->
+  <script>lucide.createIcons();</script>
+</body>
+</html>
