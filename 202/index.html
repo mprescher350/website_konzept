@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dachdeckerei Schild – Dächer, Dachstühle & Holzbau in Meißen</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 lg:px-20 py-4 flex items-center justify-between">
+      <!-- Logo / Brand -->
+      <a href="#" class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+          <i data-lucide="home" class="w-4 h-4 text-gray-900"></i>
+        </div>
+        <span class="text-xl font-bold">Dachdeckerei&nbsp;Schild</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 font-medium">
+        <a href="#services" class="text-gray-700 hover:text-orange-500">Leistungen</a>
+        <a href="#about" class="text-gray-700 hover:text-orange-500">Über&nbsp;uns</a>
+        <a href="#contact" class="text-gray-700 hover:text-orange-500">Kontakt</a>
+      </nav>
+
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">
+        Angebot anfordern
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section
+    class="relative h-[600px] bg-cover bg-center"
+    style="background-image:url('https://www.dachdeckerei-schild.de/files/dachdeckerei/fotos/11_Dacharbeiten_Steildach1.jpg');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative container mx-auto px-6 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl text-center mx-auto text-white">
+        <h1 class="text-5xl font-extrabold leading-tight mb-6">
+          Dächer sind<br/>unsere&nbsp;Leidenschaft
+        </h1>
+        <p class="text-xl mb-8">
+          Meisterbetrieb aus Diera-Zehren – Dachdeckungen, Holzbau & Dachfenster aus einer Hand.
+        </p>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Jetzt beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Unser Leistungsspektrum</h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Dacharbeiten -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="layers" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Dacharbeiten</h3>
+          <p class="text-gray-600">Steil- & Flachdach, Neubau bis Reparatur</p>
+        </div>
+
+        <!-- Dachstuhl & Holzbau -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="hammer" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Dachstuhl&nbsp;& Holzbau</h3>
+          <p class="text-gray-600">Fachgerechter Neubau & Sanierung</p>
+        </div>
+
+        <!-- Dachfenster -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="sun" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Dachfenster</h3>
+          <p class="text-gray-600">Mehr Licht, Luft & Wohnkomfort</p>
+        </div>
+
+        <!-- Terrassen & Gründächer -->
+        <div class="bg-white text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="leaf" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Terrassen&nbsp;& Gründächer</h3>
+          <p class="text-gray-600">Grüne Oasen zum Wohlfühlen</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-20 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://www.dachdeckerei-schild.de/files/dachdeckerei/fotos/21_Dachstuhlbau_Holzarbeiten_Dachstuhl.jpeg"
+           alt="Holzarbeiten Dachstuhl" class="rounded-lg w-full h-auto"/>
+
+      <div>
+        <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">Meisterbetrieb seit 1994</span>
+        <h2 class="text-4xl font-bold mb-6 leading-snug">
+          Qualität vom ersten&nbsp;Ziegel<br/>bis zum letzten&nbsp;Nagel
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Ob Neubau, Anbau oder Sanierung – wir verbinden traditionelles Handwerk
+          mit moderner Technik und stehen Ihnen von der Planung bis zur Fertigstellung
+          zuverlässig zur Seite :contentReference[oaicite:2]{index=2}.
+        </p>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+          Mehr über uns
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie haben Fragen oder benötigen ein Angebot? Rufen Sie uns an oder nutzen Sie das Formular.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Kontaktinfos -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Dachdeckerei Schild GmbH</h3>
+          <div class="space-y-6 text-gray-700">
+            <div class="flex items-start">
+              <i data-lucide="map-pin" class="w-6 h-6 text-orange-500 mr-4 mt-[2px]"></i>
+              <p>Zum Gosetal 1<br/>01665 Diera-Zehren (Naundörfel)</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="phone" class="w-6 h-6 text-orange-500 mr-4 mt-[2px]"></i>
+              <p>03521 – 45 99 99</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="mail" class="w-6 h-6 text-orange-500 mr-4 mt-[2px]"></i>
+              <p>info@dachdeckerei-schild.de</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-orange-500 mr-4 mt-[2px]"></i>
+              <p>Mo – Fr 07:00 – 18:00 Uhr</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formular -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Kostenloses Angebot anfordern</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+                <input type="text" placeholder="Nachname" required
+                       class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+              <input type="tel" placeholder="Telefon" required
+                     class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+              <textarea placeholder="Ihre Nachricht …" rows="4" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+              <button type="submit"
+                      class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+                Nachricht senden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="home" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold text-gray-200">Dachdeckerei&nbsp;Schild</span>
+          </div>
+          <p class="mb-4">Ihr Partner für Dächer, Holz- & Bauklempnerarbeiten in der Region Meißen.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 hover:text-orange-500 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 hover:text-orange-500 cursor-pointer"></i>
+            <i data-lucide="linkedin" class="w-5 h-5 hover:text-orange-500 cursor-pointer"></i>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Navigation</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-gray-200">Leistungen</a></li>
+            <li><a href="#about" class="hover:text-gray-200">Über uns</a></li>
+            <li><a href="#contact" class="hover:text-gray-200">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Leistungen Kurz -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Leistungen</h3>
+          <ul class="space-y-2">
+            <li>Dacharbeiten</li>
+            <li>Holz- & Dachstuhlbau</li>
+            <li>Dachfenster</li>
+            <li>Gründächer</li>
+          </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Kontakt</h3>
+          <div class="space-y-3">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>03521 – 45 99 99</div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i>info@dachdeckerei-schild.de</div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>Zum Gosetal 1, 01665 Diera-Zehren</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        &copy; 2024 Dachdeckerei Schild GmbH – alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide init -->
+  <script>lucide.createIcons();</script>
+</body>
+</html>
