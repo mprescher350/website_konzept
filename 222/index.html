@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meisterbetrieb Gruner – Heizung · Sanitär · Klempnerei in Pirna</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen antialiased bg-white text-gray-900">
+  <!-- ===== HEADER ===== -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="container mx-auto px-6 lg:px-20 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-sky-700 rounded-full flex items-center justify-center">
+          <i data-lucide="flame" class="w-4 h-4 text-gray-100"></i>
+        </div>
+        <span class="text-xl font-bold">Meisterbetrieb Gruner</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 font-medium">
+        <a href="#services" class="hover:text-sky-700">Leistungen</a>
+        <a href="#process"  class="hover:text-sky-700">Ablauf</a>
+        <a href="#about"    class="hover:text-sky-700">Über&nbsp;uns</a>
+        <a href="#contact"  class="hover:text-sky-700">Kontakt</a>
+      </nav>
+
+      <a href="#contact" class="bg-sky-700 hover:bg-sky-800 text-gray-100 px-4 py-2 rounded-lg">
+        Angebot anfordern
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative h-[600px] bg-cover bg-center"
+           style="background-image:url('assets/hero.jpg');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative container mx-auto px-6 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl mx-auto text-center text-white">
+        <span class="inline-block bg-sky-700/80 px-4 py-1 rounded-full mb-4 uppercase tracking-wider text-sm">
+          Ihr Fachbetrieb seit&nbsp;1997 :contentReference[oaicite:1]{index=1}
+        </span>
+        <h1 class="text-5xl font-extrabold leading-tight mb-6">
+          Heizung · Sanitär · Klempnerei
+        </h1>
+        <p class="text-xl mb-8">
+          Von der effizienten Wärmepumpe bis zur barrierefreien Bad­modernisierung –
+          kompetent, zuverlässig und termintreu in Pirna & Umgebung. :contentReference[oaicite:2]{index=2}
+        </p>
+        <a href="#contact"
+           class="inline-block bg-sky-700 hover:bg-sky-800 text-gray-100 px-8 py-3 rounded-lg text-lg">
+          Jetzt beraten lassen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEISTUNGEN ===== -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Unsere Kern­leistungen</h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Heizung -->
+        <div class="bg-white p-6 rounded-lg hover:shadow-lg transition text-center">
+          <img src="assets/service-heizung.jpg" alt="Heizungsbau"
+               class="rounded-md mb-4 w-full h-40 object-cover">
+          <h3 class="text-xl font-semibold mb-2">Heizungs­technik</h3>
+          <p class="text-gray-600">Gas- & Öl­brennwert, Wärmepumpen, Fußboden­heizung & Wartungs­service.</p>
+        </div>
+
+        <!-- Sanitär -->
+        <div class="bg-white p-6 rounded-lg hover:shadow-lg transition text-center">
+          <img src="assets/service-sanitaer.jpg" alt="Sanitär"
+               class="rounded-md mb-4 w-full h-40 object-cover">
+          <h3 class="text-xl font-semibold mb-2">Sanitär & Bad</h3>
+          <p class="text-gray-600">Trinkwasser­installation, barriere­freie Bad­gestaltung & Regen­wasser­nutzung.</p>
+        </div>
+
+        <!-- Klempnerei -->
+        <div class="bg-white p-6 rounded-lg hover:shadow-lg transition text-center">
+          <img src="assets/service-klempnerei.jpg" alt="Klempnerei"
+               class="rounded-md mb-4 w-full h-40 object-cover">
+          <h3 class="text-xl font-semibold mb-2">Klempnerei</h3>
+          <p class="text-gray-600">Dach­entwässerung, Blech­verkleidung & Zink-/Kupfer­arbeiten.</p>
+        </div>
+
+        <!-- Energieberatung -->
+        <div class="bg-white p-6 rounded-lg hover:shadow-lg transition text-center">
+          <img src="assets/service-energie.jpg" alt="Energieberatung"
+               class="rounded-md mb-4 w-full h-40 object-cover">
+          <h3 class="text-xl font-semibold mb-2">Energie­beratung</h3>
+          <p class="text-gray-600">Individuelle Konzepte zur Energie­ein­sparung und Förderung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABLAUF ===== -->
+  <section id="process" class="py-16">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft&nbsp;Ihr Projekt</h2>
+        <p class="text-gray-600 mt-2">Von der Idee bis zur Wartung – alles aus einer Hand.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center px-6">
+          <div class="w-16 h-16 mx-auto mb-4 bg-sky-700 text-gray-100 rounded-full flex items-center justify-center font-bold text-2xl">
+            1
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Beratung&nbsp;& Planung</h3>
+          <p class="text-gray-600">
+            Vor-Ort-Termin, Bedarf­s­analyse und Förder­mittel­check.
+          </p>
+        </div>
+
+        <div class="text-center px-6">
+          <div class="w-16 h-16 mx-auto mb-4 bg-sky-700 text-gray-100 rounded-full flex items-center justify-center font-bold text-2xl">
+            2
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Montage</h3>
+          <p class="text-gray-600">
+            Fachgerechte Installation durch unser geschultes Team – sauber & termintreu.
+          </p>
+        </div>
+
+        <div class="text-center px-6">
+          <div class="w-16 h-16 mx-auto mb-4 bg-sky-700 text-gray-100 rounded-full flex items-center justify-center font-bold text-2xl">
+            3
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Abnahme&nbsp;& Wartung</h3>
+          <p class="text-gray-600">
+            Gemeinsame System­prüfung, Einweisung und Wartungs­vertrag auf Wunsch.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ÜBER UNS ===== -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-6 lg:px-20 grid md:grid-cols-2 gap-12 items-center">
+      <img src="assets/team.jpg" alt="Team Meisterbetrieb Gruner"
+           class="rounded-lg w-full h-auto">
+
+      <div>
+        <span class="inline-block bg-sky-100 text-sky-700 font-semibold px-4 py-1 rounded-full mb-4">
+          Inhaber: Roberto Gruner
+        </span>
+        <h2 class="text-4xl font-bold mb-6 leading-snug">
+          Kompetenz trifft&nbsp;Erfahrung
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Seit 1997 stehen wir unseren Kunden mit Know-how, modernster Technik
+          und einem freundlichen Team zur Seite. Qualität, Zuverlässigkeit
+          und Fairness sind die Basis jedes Projekts. :contentReference[oaicite:3]{index=3}
+        </p>
+
+        <ul class="space-y-3 text-gray-600 mb-6">
+          <li class="flex"><i data-lucide="check" class="w-5 h-5 text-sky-700 mr-3 mt-[2px]"></i>24-h Notdienst im Heizungs­bereich</li>
+          <li class="flex"><i data-lucide="check" class="w-5 h-5 text-sky-700 mr-3 mt-[2px]"></i>Eigenes Gerüst & Montage­logistik</li>
+          <li class="flex"><i data-lucide="check" class="w-5 h-5 text-sky-700 mr-3 mt-[2px]"></i>Zertifizierte Fach­kräfte & regelmäßige Schulungen</li>
+        </ul>
+
+        <a href="#contact" class="inline-block bg-sky-700 hover:bg-sky-800 text-gray-100 px-6 py-3 rounded-lg">
+          Mehr über uns
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Sie benötigen Unterstützung oder wünschen ein Angebot? Wir freuen uns auf Ihre Anfrage!
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Kontaktinfos -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Meisterbetrieb Gruner</h3>
+          <div class="space-y-6 text-gray-700">
+            <div class="flex items-start">
+              <i data-lucide="map-pin" class="w-6 h-6 text-sky-700 mr-4 mt-[2px]"></i>
+              <p>Niederleite&nbsp;28<br/>01796 Pirna</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="phone" class="w-6 h-6 text-sky-700 mr-4 mt-[2px]"></i>
+              <p>03501&nbsp;586 007<br/>Mobil 0172&nbsp;792 03 14</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="mail" class="w-6 h-6 text-sky-700 mr-4 mt-[2px]"></i>
+              <p>info@ggrruunneerr.de</p>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="clock" class="w-6 h-6 text-sky-700 mr-4 mt-[2px]"></i>
+              <p>Mo – Fr 07:00 – 17:00 Uhr</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formular -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Schnellanfrage</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700">
+                <input type="text" placeholder="Nachname" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700">
+              </div>
+              <input type="email" placeholder="E-Mail" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700">
+              <input type="tel" placeholder="Telefon" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700">
+              <textarea placeholder="Ihre Nachricht …" rows="4" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-700"></textarea>
+              <button type="submit" class="w-full bg-sky-700 hover:bg-sky-800 text-gray-100 py-3 text-lg rounded-lg">
+                Absenden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-sky-700 rounded-full flex items-center justify-center">
+              <i data-lucide="flame" class="w-4 h-4 text-gray-100"></i>
+            </div>
+            <span class="text-xl font-bold text-gray-200">Meisterbetrieb Gruner</span>
+          </div>
+          <p class="mb-4">
+            Heizung | Sanitär | Klempnerei – Ihr zuverlässiger Fachbetrieb in Pirna & Umgebung.
+          </p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook"  class="w-5 h-5 hover:text-sky-500 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 hover:text-sky-500 cursor-pointer"></i>
+            <i data-lucide="linkedin"  class="w-5 h-5 hover:text-sky-500 cursor-pointer"></i>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Navigation</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-gray-200">Leistungen</a></li>
+            <li><a href="#process"  class="hover:text-gray-200">Ablauf</a></li>
+            <li><a href="#about"    class="hover:text-gray-200">Über uns</a></li>
+            <li><a href="#contact"  class="hover:text-gray-200">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Leistungen kurz -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Leistungen</h3>
+          <ul class="space-y-2">
+            <li>Heizungsbau</li>
+            <li>Sanitär & Bad</li>
+            <li>Klempnerei</li>
+            <li>Energieberatung</li>
+          </ul>
+        </div>
+
+        <!-- Kontakt -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4 text-gray-200">Kontakt</h3>
+          <div class="space-y-3">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>03501 586 007</div>
+            <div class="flex items-center"><i data-lucide="mail"  class="w-4 h-4 mr-2"></i>info@ggrruunneerr.de</div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>Niederleite 28, 01796 Pirna</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        © 2024 – 2025 Meisterbetrieb Gruner – alle Rechte vorbehalten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide init -->
+  <script>lucide.createIcons();</script>
+</body>
+</html>
