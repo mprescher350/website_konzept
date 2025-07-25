@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glaserei Freudenberg – Glaslösungen nach Maß</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white text-gray-900 antialiased">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+          <i data-lucide="layers" class="w-4 h-4 text-gray-900"></i>
+        </div>
+        <span class="text-xl font-bold text-gray-900">Glaserei Freudenberg</span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#" class="hover:text-orange-500">Start</a>
+        <a href="#about" class="hover:text-orange-500">Über uns</a>
+        <a href="#services" class="hover:text-orange-500">Leistungen</a>
+        <a href="#contact" class="hover:text-orange-500">Kontakt</a>
+      </nav>
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">Jetzt anfragen</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1200x600?text=Glaserei+Freudenberg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="text-center text-white max-w-2xl mx-auto">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">Moderne Glaslösungen<br/>für Ihr Zuhause</h1>
+        <p class="text-xl mb-8">Ob Glasdusche, Ganzglastür oder individuelle Glasreparatur – wir bringen klare Qualität in Form.</p>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">Jetzt beraten lassen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <h2 class="text-3xl font-bold text-center mb-12">Unsere Leistungen</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center">
+          <i data-lucide="shower-head" class="w-10 h-10 text-orange-500 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Glasduschen</h3>
+          <p class="text-gray-600">Individuelle Glasduschen für Ihr Badezimmer – elegant, pflegeleicht und millimetergenau montiert.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center">
+          <i data-lucide="door-open" class="w-10 h-10 text-orange-500 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Ganzglastüren</h3>
+          <p class="text-gray-600">Zeitlose Transparenz im Innenraum – mit hochwertigen Glastüren für jedes Ambiente.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center">
+          <i data-lucide="wrench" class="w-10 h-10 text-orange-500 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Reparaturservice</h3>
+          <p class="text-gray-600">Schnelle und zuverlässige Glasreparaturen bei Bruch, Riss oder Beschädigung – im Privat- & Gewerbebereich.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://via.placeholder.com/600x400?text=Glaserei+Werkstatt" alt="Werkstatt Glaserei Freudenberg" class="rounded-lg w-full h-auto"/>
+      <div>
+        <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">Familienbetrieb</span>
+        <h2 class="text-4xl font-bold mb-6 leading-snug">Ihre Glaserei mit Erfahrung<br/>und Leidenschaft</h2>
+        <p class="text-gray-600 mb-6">Als Meisterbetrieb im Glaserhandwerk verbinden wir Qualität, Termintreue und persönliche Beratung – seit vielen Jahren in Freudenberg und Umgebung.</p>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Jetzt Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between">
+      <h2 class="text-3xl font-bold text-white mb-4 md:mb-0">Ihr Wunschprojekt aus Glas beginnt hier.</h2>
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">Kostenlos anfragen</a>
+    </div>
+  </section>
+
+  <!-- Kontaktformular -->
+  <section id="contact" class="py-24 bg-gray-100">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Unverbindlich beraten lassen</h2>
+        <p class="text-xl text-gray-700">Fragen Sie direkt an – wir finden gemeinsam die passende Lösung aus Glas für Ihr Projekt.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Vorteile -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Glaserei Freudenberg?</h3>
+          <ul class="space-y-6 text-gray-700">
+            <li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-3"></i>Individuelle Maßanfertigungen</li>
+            <li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-3"></i>Meisterqualität & persönlicher Service</li>
+            <li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-3"></i>Schnelle Reparatur bei Glasschäden</li>
+            <li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-3"></i>Modernste Technik & hochwertiges Material</li>
+          </ul>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg">
+            <h4 class="font-bold mb-2">Rufen Sie uns an</h4>
+            <p class="mb-2">Wir beraten Sie gerne persönlich:</p>
+            <div class="flex items-center text-orange-600 text-lg font-bold">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              02734 4797
+            </div>
+          </div>
+        </div>
+        <!-- Formular -->
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-6">Kontaktformular</h3>
+          <form class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Vorname" required class="w-full p-3 border border-gray-300 rounded-md"/>
+              <input type="text" placeholder="Nachname" required class="w-full p-3 border border-gray-300 rounded-md"/>
+            </div>
+            <input type="email" placeholder="E‑Mail" required class="w-full p-3 border border-gray-300 rounded-md"/>
+            <input type="tel" placeholder="Telefon" required class="w-full p-3 border border-gray-300 rounded-md"/>
+            <textarea rows="4" placeholder="Ihre Nachricht…" required class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+            <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">Absenden</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-10 lg:px-20 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="layers" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold text-white">Glaserei Freudenberg</span>
+        </div>
+        <p>Ihr Partner für maßgeschneiderte Glaslösungen in Freudenberg und Umgebung.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3">Leistungen</h4>
+        <ul class="space-y-2">
+          <li><a href="#services" class="hover:text-white">Glasduschen</a></li>
+          <li><a href="#services" class="hover:text-white">Ganzglastüren</a></li>
+          <li><a href="#services" class="hover:text-white">Reparaturservice</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3">Kontakt</h4>
+        <p class="mb-2"><i data-lucide="map-pin" class="inline w-4 h-4 mr-1"></i>Asdorfer Straße 129, 57258 Freudenberg</p>
+        <p class="mb-2"><i data-lucide="phone" class="inline w-4 h-4 mr-1"></i>02734 4797</p>
+        <p><i data-lucide="mail" class="inline w-4 h-4 mr-1"></i>info@glaserei-freudenberg.de</p>
+      </div>
+    </div>
+    <div class="text-center mt-10 border-t border-gray-800 pt-6 text-sm text-gray-500">
+      &copy; 2025 Glaserei Freudenberg. Alle Rechte vorbehalten.
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
