@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schmiedemeister Heise – Kunstschmiede & Metallgestaltung</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white text-gray-900 antialiased">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+          <i data-lucide="flame" class="w-4 h-4 text-gray-900"></i>
+        </div>
+        <span class="text-xl font-bold text-gray-900">Schmiedemeister Heise</span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#" class="hover:text-orange-500">Start</a>
+        <a href="#about" class="hover:text-orange-500">Über uns</a>
+        <a href="#services" class="hover:text-orange-500">Leistungen</a>
+        <a href="#contact" class="hover:text-orange-500">Kontakt</a>
+      </nav>
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">Jetzt anfragen</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-[600px] bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1200x600?text=Schmiedekunst+Heise');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="text-center text-white max-w-2xl mx-auto">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">Traditionelles Schmiedehandwerk<br/>in moderner Gestaltung</h1>
+        <p class="text-xl mb-8">Unikate aus Metall – kunstvoll, hochwertig & individuell gefertigt vom Meisterbetrieb aus Börnichen.</p>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">Projekt anfragen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <h2 class="text-3xl font-bold text-center mb-12">Unsere Leistungen</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center">
+          <i data-lucide="shield" class="w-10 h-10 text-orange-500 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Zäune & Tore</h3>
+          <p class="text-gray-600">Klassisch oder modern geschmiedet – für Sicherheit und stilvolle Einfriedung Ihres Grundstücks.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center">
+          <i data-lucide="stairs" class="w-10 h-10 text-orange-500 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Treppengeländer</h3>
+          <p class="text-gray-600">Individuelle Geländerkonzepte aus Stahl & Schmiedeeisen – langlebig und elegant.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow text-center">
+          <i data-lucide="sun" class="w-10 h-10 text-orange-500 mx-auto mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Schmiedekunst</h3>
+          <p class="text-gray-600">Dekorative Elemente wie Wetterfahnen, Rankgitter oder Schmiedeskulpturen – echte Handwerkskunst.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://via.placeholder.com/600x400?text=Schmiedewerkstatt" alt="Werkstatt Schmiedemeister Heise" class="rounded-lg w-full h-auto"/>
+      <div>
+        <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">Seit 1996</span>
+        <h2 class="text-4xl font-bold mb-6 leading-snug">Echte Schmiedekunst<br/>aus Meisterhand</h2>
+        <p class="text-gray-600 mb-6">Schmiedemeister Gunter Heise verbindet traditionelles Handwerk mit zeitgemäßer Gestaltung. In unserer Werkstatt entstehen individuelle Lösungen für Privatkunden, Architekten und Restauratoren.</p>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Jetzt Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt CTA -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between">
+      <h2 class="text-3xl font-bold text-white mb-4 md:mb-0">Individuelle Schmiedearbeiten für Ihr Projekt?</h2>
+      <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">Anfrage starten</a>
+    </div>
+  </section>
+
+  <!-- Kontaktformular -->
+  <section id="contact" class="py-24 bg-gray-100">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Unverbindlich anfragen</h2>
+        <p class="text-xl text-gray-700">Nutzen Sie unser Kontaktformular oder rufen Sie direkt an – wir beraten Sie persönlich.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Vorteile -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Schmiedemeister Heise?</h3>
+          <ul class="space-y-6 text-gray-700">
+            <li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-3"></i>30+ Jahre Erfahrung im Schmiedehandwerk</li>
+            <li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-3"></i>Meisterbetrieb mit Herz & Handwerk</li>
+            <li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-3"></i>Individuelle Anfertigungen nach Maß</li>
+            <li class="flex items-start"><i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-3"></i>Zuverlässige Beratung und termingerechte Ausführung</li>
+          </ul>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg">
+            <h4 class="font-bold mb-2">Telefonische Beratung</h4>
+            <p class="mb-2">Rufen Sie uns gerne an:</p>
+            <div class="flex items-center text-orange-600 text-lg font-bold">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              03725 22294
+            </div>
+          </div>
+        </div>
+        <!-- Formular -->
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-6">Anfrageformular</h3>
+          <form class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Vorname" required class="w-full p-3 border border-gray-300 rounded-md"/>
+              <input type="text" placeholder="Nachname" required class="w-full p-3 border border-gray-300 rounded-md"/>
+            </div>
+            <input type="email" placeholder="E‑Mail" required class="w-full p-3 border border-gray-300 rounded-md"/>
+            <input type="tel" placeholder="Telefon" required class="w-full p-3 border border-gray-300 rounded-md"/>
+            <textarea rows="4" placeholder="Ihre Nachricht…" required class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+            <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">Nachricht senden</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-10 lg:px-20 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="flame" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold text-white">Schmiedemeister Heise</span>
+        </div>
+        <p>Gestaltung in Eisen – vom Unikat bis zur klassischen Schmiedearbeit.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3">Leistungen</h4>
+        <ul class="space-y-2">
+          <li><a href="#services" class="hover:text-white">Zäune & Tore</a></li>
+          <li><a href="#services" class="hover:text-white">Treppengeländer</a></li>
+          <li><a href="#services" class="hover:text-white">Kunstschmiede</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3">Kontakt</h4>
+        <p class="mb-2"><i data-lucide="map-pin" class="inline w-4 h-4 mr-1"></i>Talstraße 7, 09573 Börnichen</p>
+        <p class="mb-2"><i data-lucide="phone" class="inline w-4 h-4 mr-1"></i>03725 22294</p>
+        <p><i data-lucide="mail" class="inline w-4 h-4 mr-1"></i>info@schmiedemeister-heise.de</p>
+      </div>
+    </div>
+    <div class="text-center mt-10 border-t border-gray-800 pt-6 text-sm text-gray-500">
+      &copy; 2025 Schmiedemeister Gunter Heise. Alle Rechte vorbehalten.
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
