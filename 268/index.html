@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malermeister Stehl – Farbe, Fassade, Fußboden | Vogtland & Sachsen</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="paintbrush" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Malermeister Stehl</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-orange-500">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-orange-500">Über&nbsp;uns</a>
+          <a href="#services" class="text-gray-700 hover:text-orange-500">Leistungen</a>
+          <a href="#projects" class="text-gray-700 hover:text-orange-500">Referenzen</a>
+          <a href="#contact" class="text-gray-700 hover:text-orange-500">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">Angebot anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="relative h-[600px] bg-cover bg-center"
+    style="background-image: url('https://via.placeholder.com/1200x600?text=Malerarbeiten');"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl text-white text-center mx-auto">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Farbe macht Laune –<br/>
+          wir bringen sie fachgerecht an
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Malerarbeiten, Boden­beläge, Fassaden, Gerüstbau &amp; Vollwärme­schutz – alles aus einer Hand vom Meister­betrieb im Vogtland.
+        </p>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Jetzt Beratung sichern
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Cards -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Malerarbeiten -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="brush" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Maler­arbeiten</h3>
+          <p class="text-gray-600">Innen &amp; Außen, kreativ &amp; klassisch</p>
+        </div>
+        <!-- Fassaden -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="home" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Fassaden</h3>
+          <p class="text-gray-600">Reinigung, Sanierung, Neugestaltung</p>
+        </div>
+        <!-- Bodenbeläge -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="layers" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Boden­beläge</h3>
+          <p class="text-gray-600">Parkett, Vinyl, Teppich &amp; mehr</p>
+        </div>
+        <!-- Vollwärmeschutz -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="thermometer-snowflake" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Wärme­dämmung</h3>
+          <p class="text-gray-600">Energie sparen mit WDVS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Malerteam" alt="Malerteam im Einsatz" class="rounded-lg w-full h-auto"/>
+        </div>
+        <div>
+          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">seit 1922</span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Vier Generationen Kompetenz<br/>für Farbe & Oberflächen
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Als familien­geführter Meister­betrieb verbinden wir traditio­nelles Handwerk mit modernen Techniken und beraten Sie von der ersten Idee bis zur fertigen Wohlfühl­fläche – zuverlässig, sauber und termintreu.
+          </p>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP Icons -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Leistungs­stark aus einer Hand
+      </h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="message-circle" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Beratung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="compass" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Planung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="brush" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Ausführung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="truck" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Gerüstbau</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="check-circle-2" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Qualität</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="smile" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Service</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+          Frische Farbe für Ihr Projekt –<br/>wir legen los!
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Unverbindlich anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Beispiel-Pakete</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Zimmer-Refresh -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 499 €</div>
+          <p class="text-gray-600 mb-6">Zimmer-Refresh</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Wandanstrich bis 20 m²</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Abkleb- & Schutzarbeiten</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Müllentsorgung</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+        <!-- Fassaden-Refresh -->
+        <div class="bg-white text-center p-8 border-2 border-orange-500 relative rounded-lg">
+          <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-gray-900 text-sm px-3 py-1 rounded-full">Beliebt</span>
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 3.900 €</div>
+          <p class="text-gray-600 mb-6">Fassaden-Refresh</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Reinigung & Grundierung</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>2-lagiger Anstrich</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Gerüst gestellt</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+        <!-- Energie-Sparpaket -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 9.900 €</div>
+          <p class="text-gray-600 mb-6">Energie-Sparpaket</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>WDVS 100 m²</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Endbeschichtung</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Energie-Nachweis</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">
+        Gratis Erstberatung für Ihr Farb-Projekt
+      </h2>
+    </div>
+  </section>
+
+  <!-- Professional Service -->
+  <section
+    class="py-16 bg-cover bg-center relative"
+    style="background-image: url('https://via.placeholder.com/1200x400?text=Malerarbeiten+im+Einsatz');"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative container mx-auto px-10 lg:px-20">
+      <div class="max-w-2xl text-gray-900">
+        <h2 class="text-3xl font-bold mb-6 leading-snug">
+          Sauber, schnell &amp; termintreu –<br/>so arbeitet Stehl
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">So läuft's ab</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-4">Beratung</h3>
+          <p class="text-gray-600">Farbschema & Materialien wählen.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-4">Vorbereitung</h3>
+          <p class="text-gray-600">Abdecken, Untergründe prüfen.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-500 text-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-4">Ausführung</h3>
+          <p class="text-gray-600">Sauber streichen & perfektes Finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Lassen Sie sich unverbindlich beraten oder fordern Sie Ihr individuelles Angebot an.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Stehl?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Meisterqualität</h4>
+                <p class="text-gray-700">Höchster Anspruch an Material & Ausführung.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Komplettservice</h4>
+                <p class="text-gray-700">Von Gerüst bis Endreinigung.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Energieeffizienz</h4>
+                <p class="text-gray-700">Modernes WDVS senkt Heizkosten.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Termin­treue</h4>
+                <p class="text-gray-700">Wir halten, was wir zusagen.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg text-gray-800">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Direkt anrufen</h4>
+            <p class="text-gray-900 mb-3">Wir beraten Sie gerne persönlich</p>
+            <div class="flex items-center text-orange-600 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              037465&nbsp;40408
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Angebot anfordern</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+                <input type="text" placeholder="Nachname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              <input type="tel" placeholder="Telefon" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              <textarea placeholder="Ihr Anliegen…" rows="4" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
+              <button type="submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+                Absenden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="paintbrush" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold">Malermeister Stehl</span>
+          </div>
+          <p class="text-gray-400 mb-4">Farben, Fassaden, Fußböden – Vogtland &amp; Sachsen.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Maler­arbeiten</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Fassaden</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Boden­beläge</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Wärme­dämmung</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-gray-900">Referenzen</a></li>
+            <li><a href="#contact" class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>037465 40408</span></div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>info@maler-stehl.de</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Klingenthaler Str.&nbsp;54a, 08262 Muldenhammer</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Malermeister Ronny Stehl GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
