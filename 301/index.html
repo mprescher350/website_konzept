@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baubüro Axel Zwicker – Innenausbau & Sanierung | Dresden</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-white antialiased text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-10 lg:px-20 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+            <i data-lucide="tool" class="w-4 h-4 text-gray-900"></i>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Baubüro Zwicker</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-orange-500">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-orange-500">Über&nbsp;uns</a>
+          <a href="#services" class="text-gray-700 hover:text-orange-500">Leistungen</a>
+          <a href="#projects" class="text-gray-700 hover:text-orange-500">Referenzen</a>
+          <a href="#contact" class="text-gray-700 hover:text-orange-500">Kontakt</a>
+        </nav>
+        <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-gray-900 px-4 py-2 rounded-lg">Angebot anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="relative h-[600px] bg-cover bg-center"
+    style="background-image: url('https://via.placeholder.com/1200x600?text=Innenausbau+%7C+Sanierung');"
+  >
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative container mx-auto px-10 lg:px-20 h-full flex items-center">
+      <div class="max-w-2xl text-white text-center mx-auto">
+        <h1 class="text-5xl font-bold mb-6 leading-tight">
+          Innenausbau & Sanierung<br/>
+          seit&nbsp;1996 in Dresden
+        </h1>
+        <p class="text-xl mb-8 opacity-90">
+          Bauschäden- und Mängel­beseitigung, Wärmedämmung, Betonsanierung, Trockenbau, Boden­verlegung, Maler­arbeiten & Korrosions­schutz – alles aus einer Hand.
+        </p>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Jetzt Beratung sichern
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Cards -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Bauschäden -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="alert-triangle" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Mängel­beseitigung</h3>
+          <p class="text-gray-600">Schnelle Reparatur von Bauschäden</p>
+        </div>
+        <!-- Wärmedämmung -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="thermometer" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Wärmedämmung</h3>
+          <p class="text-gray-600">Energie sparen & Fassade schützen</p>
+        </div>
+        <!-- Betonsanierung -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="hard-hat" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Betonsanierung</h3>
+          <p class="text-gray-600">Dauerhafte Instandsetzung von Bauteilen</p>
+        </div>
+        <!-- Trockenbau -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="layers" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Trockenbau</h3>
+          <p class="text-gray-600">Flexible Raumlösungen & Akustikdecken</p>
+        </div>
+        <!-- Korrosionsschutz -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="shield" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Korrosions­schutz</h3>
+          <p class="text-gray-600">Stahl­oberflächen langfristig sichern</p>
+        </div>
+        <!-- Bodenverlegung -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="list" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Boden­verlegung</h3>
+          <p class="text-gray-600">Fliesen, Vinyl, Estrich & mehr</p>
+        </div>
+        <!-- Malerarbeiten -->
+        <div class="bg-white text-center p-6 hover:shadow-lg transition-shadow rounded-lg">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="paintbrush" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Maler­arbeiten</h3>
+          <p class="text-gray-600">Innen & Außen, fachgerecht ausgeführt</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://via.placeholder.com/500x400?text=Baubüro+Zwicker+Team" alt="Team Baubüro Zwicker" class="rounded-lg w-full h-auto"/>
+        </div>
+        <div>
+          <span class="inline-block bg-orange-100 text-orange-600 font-semibold px-4 py-1 rounded-full mb-4">seit 1996</span>
+          <h2 class="text-4xl font-bold mb-6 leading-snug">
+            Ihr Bau­partner für Innen­ausbau & Sanierung
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Gegründet als Zwei-Mann-Betrieb, ist das Baubüro Axel Zwicker heute ein 15-köpfiges Team aus erfahrenen Fach­leuten. Unser Anspruch: zufriedene Kunden und saubere, termingerechte Ausführung – von Dresden bis in die Region.
+          </p>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">
+            Mehr erfahren
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP Icons -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-10 lg:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">Komplettservice aus einer Hand</h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="message-circle" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Beratung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="compass" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Planung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="hammer" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Ausführung</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="truck" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Logistik</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="check-circle-2" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Abnahme</h3>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="smile" class="w-8 h-8 text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold">Service</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-yellow-400">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <h2 class="text-3xl font-bold text-white mb-4 md:mb-0 leading-snug">
+          Qualität aus Dresden –<br/>wir realisieren Ihr Bauprojekt
+        </h2>
+        <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg text-lg">
+          Jetzt anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Beispiel-Pakete</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <!-- Dämm-Starter -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 3.990 €</div>
+          <p class="text-gray-600 mb-6">Dämm-Starter</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>WDVS 50 m²</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>2-lagiger Putz</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Energie-Nachweis</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+        <!-- Sanierungs-Plus -->
+        <div class="bg-white text-center p-8 border-2 border-orange-500 relative rounded-lg">
+          <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-gray-900 text-sm px-3 py-1 rounded-full">Beliebt</span>
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 9.900 €</div>
+          <p class="text-gray-600 mb-6">Sanierungs-Plus</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Betonsanierung Balkon</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Korrosionsschutz</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Endbeschichtung</li>
+          </ul>
+          <a href="#contact" class="inline-block bg-orange-500 hover:bg-orange-600 text-gray-900 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+        <!-- Innenausbau Komplett -->
+        <div class="bg-white text-center p-8 border-2 rounded-lg">
+          <div class="text-4xl font-bold text-orange-500 mb-2">ab 19.500 €</div>
+          <p class="text-gray-600 mb-6">Innenausbau Komplett</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Trockenbau 100 m²</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Boden­belag & Maler</li>
+            <li class="flex items-center justify-center"><i data-lucide="check" class="w-5 h-5 text-green-500 mr-2"></i>Abnahme & Reinigung</li>
+          </ul>
+          <a href="#contact" class="inline-block border border-gray-300 px-6 py-3 rounded-lg">Wählen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-[#f9fafb] text-gray-800">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4">Kontakt aufnehmen</h2>
+        <p class="text-xl text-gray-700">
+          Lassen Sie sich unverbindlich beraten oder fordern Sie Ihr individuelles Angebot an.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Why choose -->
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Warum Baubüro Zwicker?</h3>
+          <div class="space-y-8">
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Über 20 Jahre Erfahrung</h4>
+                <p class="text-gray-700">Fester Ansprechpartner seit 1996.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Komplettservice</h4>
+                <p class="text-gray-700">Planen, Bauen, Sanieren aus einer Hand.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Termintreue</h4>
+                <p class="text-gray-700">Zuverlässige Planung & pünktliche Fertigstellung.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i data-lucide="check-circle" class="w-6 h-6 text-orange-500 mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Regional vor Ort</h4>
+                <p class="text-gray-700">Persönlicher Service in Dresden & Umgebung.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 p-6 bg-orange-50 rounded-lg text-gray-800">
+            <h4 class="font-bold text-lg mb-2 text-gray-900">Direkt anrufen</h4>
+            <p class="text-gray-900 mb-3">Wir beraten Sie gerne persönlich</p>
+            <div class="flex items-center text-orange-600 font-bold text-xl">
+              <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+              0351&nbsp;251&nbsp;22&nbsp;38
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Angebot anfordern</h3>
+            <form class="space-y-4">
+              <div class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Vorname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+                <input type="text" placeholder="Nachname" required
+                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              </div>
+              <input type="email" placeholder="E-Mail" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              <input type="tel" placeholder="Telefon" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"/>
+              <textarea placeholder="Ihr Anliegen…" rows="4" required
+                class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"></textarea>
+              <button type="submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-gray-900 py-3 text-lg rounded-lg">
+                Absenden
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-900 py-12">
+    <div class="container mx-auto px-10 lg:px-20">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+              <i data-lucide="tool" class="w-4 h-4 text-gray-900"></i>
+            </div>
+            <span class="text-xl font-bold">Baubüro Zwicker</span>
+          </div>
+          <p class="text-gray-400 mb-4">Innenausbau, Sanierung & Dämmung – Dresden & Umgebung.</p>
+          <div class="flex space-x-4">
+            <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+            <i data-lucide="mail" class="w-5 h-5 text-gray-400 hover:text-gray-900 cursor-pointer"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Leistungen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#services" class="hover:text-gray-900">Mängel­beseitigung</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Wärmedämmung</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Betonsanierung</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Trockenbau</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Korrosions­schutz</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Boden­verlegung</a></li>
+            <li><a href="#services" class="hover:text-gray-900">Maler­arbeiten</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Unternehmen</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#about" class="hover:text-gray-900">Über uns</a></li>
+            <li><a href="#projects" class="hover:text-gray-900">Referenzen</a></li>
+            <li><a href="#contact" class="hover:text-gray-900">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+          <div class="space-y-3 text-gray-400">
+            <div class="flex items-center"><i data-lucide="phone" class="w-4 h-4 mr-2"></i><span>0351 251 22 38</span></div>
+            <div class="flex items-center"><i data-lucide="mail" class="w-4 h-4 mr-2"></i><span>info@baz-zwicker.de</span></div>
+            <div class="flex items-center"><i data-lucide="map-pin" class="w-4 h-4 mr-2"></i><span>Lindenweg 2, 01328 Dresden</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Baubüro Axel Zwicker GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
